@@ -1,0 +1,587 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: Degular;
+    src: url(../font/fonnts.com-DegularDemo-Regular.otf);
+}
+
+
+body{
+    font-family: Degular;
+}
+
+/* navbar css  */
+  #navbar {
+    background-color: transparent;
+    transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+  }
+
+  /* When scrolled */
+  #navbar.scrolled {
+    background-color: rgba(15, 15, 15, 0.95); 
+    backdrop-filter: blur(10px); 
+
+  }
+/* navbar css  end*/
+
+
+
+ /* Active Style partner logo */
+  .active-partner {
+    background-color: #d2b94e !important;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+  }
+
+
+
+/* 🌟 Perfect Seamless Vertical Marquee */
+.marquee-up,
+.marquee-down {
+  position: absolute;
+  width: calc(50% - 5px); /* 👈 Adjusted for 10px total gap */
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.marquee-up {
+  left: 0;
+  margin-right: 10px; /* 👈 Adds 10px space between the two marquees */
+}
+
+.marquee-down {
+  right: 0;
+}
+
+.marquee-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image styling */
+.marquee-up img,
+.marquee-down img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* Animations */
+.marquee-up .marquee-group {
+  animation: moveUp 100s linear infinite;
+}
+
+.marquee-down .marquee-group {
+  animation: moveDown 100s linear infinite;
+}
+
+/* Keyframes */
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ✅ Responsive Tweaks */
+@media (max-width: 1024px) {
+  .marquee-up,
+  .marquee-down {
+    width: calc(50% - 5px);
+  }
+}
+
+@media (max-width: 768px) {
+  .marquee-up,
+  .marquee-down {
+    width: calc(50% - 5px);
+  }
+  .marquee-up .marquee-group,
+  .marquee-down .marquee-group {
+    animation-duration: 25s; /* slower for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .marquee-up,
+  .marquee-down {
+    width: calc(50% - 5px);
+  }
+  .marquee-up img,
+  .marquee-down img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
+
+  
+/* home page and job page slider marquee  */
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 60s linear infinite;
+}
+
+/* 👇 Hover pe rukne ke liye */
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+/* home page and job page slider marquee  end*/
+
+
+
+
+
+/* ===first page img Floating Glow Animation === */
+@keyframes floatPremium {
+  0% { transform: translateY(0) scale(1); filter: drop-shadow(0 0 10px rgba(210,185,78,0.3)); }
+  50% { transform: translateY(-12px) scale(1.02); filter: drop-shadow(0 0 25px rgba(210,185,78,0.6)); }
+  100% { transform: translateY(0) scale(1); filter: drop-shadow(0 0 10px rgba(210,185,78,0.3)); }
+}
+
+.animate-premium {
+  animation: floatPremium 4.5s ease-in-out infinite;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  will-change: transform, filter;
+}
+
+/* === 3D Parallax Tilt === */
+.premium-tilt {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+.premium-tilt img {
+  transform: rotateY(0) rotateX(0);
+  transition: transform 0.15s ease-out;
+}
+.premium-tilt:hover img {
+  transform: scale(1.05) rotateY(8deg) rotateX(4deg);
+  filter: drop-shadow(0 0 30px rgba(210,185,78,0.8));
+}
+.premium-tilt:active img {
+  transform: scale(1.02) rotateY(-5deg) rotateX(-2deg);
+}
+
+/* ===first page img Floating Glow Animation end === */
+
+
+
+/* faqs section css */
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+.faq-content.open {
+    max-height: 100px; /* Adjust height as needed */
+    opacity: 1;
+}
+
+/* scrooll bar  */
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px transparent;
+	background-color: black;
+}
+
+::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: black;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #011318;
+  border-radius: 30px;
+  
+}
+   .faq-active {
+        color: #E5A301 !important;
+        
+    }
+
+.hover-underline {
+  position: relative;
+  color: white;
+  padding-bottom: 4px; /* Space between text and underline */
+  transition: all 0.3s ease;
+}
+
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #D2B94E;
+  transition: all 0.3s ease;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+/* Active link style */
+.hover-underline.active {
+  font-weight: 600;
+}
+
+.hover-underline.active::after {
+  width: 100%; /* Active link pe hamesha underline dikhe */
+}
+
+/* faqs section css end  */
+
+
+
+/* branding section home page bg  */
+@media (min-width: 1024px) {
+  .branding {
+    background-image: url("/build/assets/img/brandbg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (max-width: 1023px) {
+  .branding {
+    background-image: none;
+  }
+}
+/* branding section home page bg  end*/
+
+
+
+
+
+  /* Optional smooth fade for desktop dropdown */
+  .group:hover ul {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+
+
+
+  
+
+/* popup contact form*/
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from {opacity: 0; transform: scale(0.95);}
+    to {opacity: 1; transform: scale(1);}
+  }
+/* popup contact form end*/
+
+
+
+
+/* client feedback slider of services  */
+  /* Custom gold color */
+  .border-gold {
+    border-color: #D2B94E;
+  }
+
+  /* Feedback box style */
+  .feedback-box {
+    position: relative;
+    border: 1px solid #D2B94E;
+    padding: 2rem;
+  }
+
+  .feedback-box::before,
+  .feedback-box::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    background: #D2B94E;
+  }
+
+  .feedback-box::before {
+    top: -1px;
+    left: 40px;
+  }
+
+  .feedback-box::after {
+    bottom: -1px;
+    right: 40px;
+  }
+
+  .feedback-decoration {
+    position: absolute;
+    bottom: 15px;
+    left: 40px;
+    display: flex;
+    gap: 6px;
+  }
+
+  .feedback-decoration div {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #D2B94E;
+  }
+
+  .feedback-decoration div:nth-child(1) {
+    background: #D2B94E;
+  }
+
+  /* Slider core */
+  .feedback-slider {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+  }
+
+  .feedback-slide {
+    min-width: 100%;
+  }
+
+  /* Dots */
+  .feedback-dot {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #D2B94E;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .feedback-dot.active {
+    background: #D2B94E;
+  }
+
+
+
+   /* befor after effect bird css  home page*/
+.slider-container {
+  margin: 0 auto;
+  margin-top: 5rem;
+  position: relative;
+  /* width: 100%;
+  max-width: 800px;
+  height: 400px; */
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+
+.before-image,
+.after-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Styling the Before/After text */
+.before-text,
+.after-text {
+  position: absolute;
+  font-family: system-ui;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3a3a3a;
+  z-index: 4;
+  padding: 10px 20px;
+  background-color: #ffffff9e;
+  border-radius: 0.3rem;
+  letter-spacing: 2px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Before text */
+.before-text {
+  left: 20px; /* Position text to the left */
+  top: 20px;
+  z-index: 5;
+}
+
+/* After text */
+.after-text {
+  right: 20px; /* Position text to the right */
+  top: 20px;
+  z-index: 3;
+}
+
+/* Hide the After text initially */
+.after-image .after-text {
+  visibility: visible;
+  z-index: 3;
+}
+
+.after-image {
+  clip-path: inset(0 50% 0 0);
+}
+
+.slider-handle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0px;
+  height: 100%;
+  background-color: #fff;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.slider-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  z-index: 1;
+}
+.pulse-container {
+  position: relative;
+  display: inline-block;
+}
+
+.pulse-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px; /* Larger than the SVG */
+  height: 70px;
+  border-radius: 50%;
+  background-color: #D2B94E; /* Color of the pulse */
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.8);
+    opacity: 0;
+  }
+}
+
+.slider-line svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  cursor: pointer;
+}
+/* Prevent text/image selection while dragging */
+.slider-container,
+.before-image img,
+.after-image img {
+  user-select: none; /* Disable selection on most browsers */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+}
+
+.slider-handle,
+.slider-line {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+   /* befor after effect bird css home page end*/
+
+
+
+
+
+
+
+/* job page first slider css  */
+
+.card {
+  background: #181818;
+  border-radius: 20px;
+  padding: 2rem;
+  color: #ddd;
+  /* height: 380px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.stars span {
+  color: #00FF84;
+  font-size: 1.1rem;
+}
+.arrow-btn {
+  background: #1C1C1C;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  transition: background 0.2s;
+}
+.arrow-btn:hover {
+  background: #D2B94E;
+}
+.slide {
+  min-width: 50%;
+  transition: transform 0.6s ease-in-out;
+  padding: 0 12px;
+}
+
+/* ✅ Responsive for mobile */
+@media (max-width: 620px) {
+  .slide {
+    min-width: 100%;
+    padding: 0 8px;
+  }
+}

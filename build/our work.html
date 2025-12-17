@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-[#0F0F0F]">
+
+<!-- NAVBAR -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-transparent transition-all duration-500">
+    <div class="flex justify-between items-center 2xl:px-24 lg:px-10 px-5 2xl:py-10 py-6">
+      <!-- Logo -->
+      <a href="./index.html">
+        <img src="./assets/img/logo.png" alt="Logo" class="w-48">
+      </a>
+
+      <!-- Hamburger -->
+      <button id="menu-btn" class="relative w-10 h-5 flex flex-col justify-between focus:outline-none z-[60]">
+        <span class="w-full h-[3px] bg-white transition-all duration-500 origin-center"></span>
+        <span class="w-full h-[3px] bg-white transition-all duration-500 origin-center"></span>
+        <span class="w-full h-[3px] bg-white transition-all duration-500 origin-center"></span>
+      </button>
+    </div>
+
+    <!-- FULLSCREEN MENU -->
+    <div
+      id="fullscreen-menu"
+      class="fixed inset-0 backdrop-blur-3xl scale-95 opacity-0 pointer-events-none transition-all duration-500 ease-in-out flex flex-col justify-center items-center text-white"
+    >
+      <ul class="lg:space-y-8 space-y-6 2xl:text-4xl lg:text-3xl text-xl font-light text-center transform transition-all duration-700 pt-24">
+        <li><a href="./index.html" class="hover:text-[#D2B94E] transition">Home</a></li>
+
+        <!-- Services Dropdown -->
+        <li class="relative group w-full flex flex-col items-center">
+          <button id="services-btn" class="flex items-center justify-center space-x-2 hover:text-[#D2B94E]">
+            <span>Services</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <!-- Dropdown -->
+          <ul
+            id="services-dropdown"
+            class="absolute bg-[#0F0F0F] top-full w-64 left-1/2 -translate-x-1/2 flex-col space-y-3 text-lg transition-all duration-300 ease-in-out transform origin-top opacity-0 scale-y-0 py-3 px-3 rounded-lg"
+          >
+            <li><a href="services.html" class="hover:text-[#D2B94E] ">Web Design & Development</a></li>
+            <li><a href="./uiux.html" class="hover:text-[#D2B94E] ">UI/UX Design</a></li>
+             <li><a href="./cms.html" class="hover:text-[#D2B94E] ">CMS design</a></li>
+            <li><a href="./mobileapp.html" class="hover:text-[#D2B94E] ">Mobile App Design and Development</a></li>
+            <li><a href="./SEO.html" class="hover:text-[#D2B94E] ">SEO Optimization</a></li>
+            <li><a href="./E-Commerce.html" class="hover:text-[#D2B94E] ">E-Commerce Development</a></li>
+            <li><a href="./Brand.html" class="hover:text-[#D2B94E] ">Brand Identity Creation</a></li>
+            <li><a href="./business.html" class="hover:text-[#D2B94E] ">Strategy for Business Development</a></li>
+            <li><a href="./socielmedia.html" class="hover:text-[#D2B94E] ">Social Media Management & Post Creation</a></li>
+          </ul>
+        </li>
+
+        <li><a href="./our work.html" class="hover:text-[#D2B94E] transition">Works</a></li>
+        <li><a href="#" class="hover:text-[#D2B94E] transition">Network</a></li>
+        <li><a href="./job.html" class="hover:text-[#D2B94E] transition">Jobs</a></li>
+        
+      </ul>
+
+      <div class="mt-12 flex flex-col space-y-4">
+        <button class="px-8 py-3 2xl:text-2xl lg:text-xl text-lg bg-[#D2B94E] text-[#0F0F0F] rounded-sm font-medium hover:bg-[#c0a840] transition">
+          Dashboard Login
+        </button>
+        <button id="openModal"
+          class="px-8 py-3 2xl:text-2xl lg:text-xl text-lg border border-[#D2B94E] hover:bg-[#D2B94E] hover:text-[#0F0F0F] transition rounded-sm"
+        >
+          Contact Us
+        </button>
+      </div>
+    </div>
+
+    <hr class="border border-[#41414166]">
+  </nav>
+
+<!-- work hero section  -->
+ <section class="relative 2xl:top-32 top-24 2xl:py-40 lg:py-28 py-20 md:px-20 px-5 bg-center bg-cover bg-no-repeat" style="background-image: url(./assets/img/workherobg.png);">
+    <div class="text-center">
+        <h1 class="xl:text-[64px] md:text-5xl text-4xl text-white">Our Work</h1>
+        <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-white pt-5">
+            Discover a portfolio of visually stunning and strategically crafted digital projects that showcase our creativity and <br class="xl:block hidden"> expertise.
+        </p>
+    </div>
+ </section>
+
+<section class="2xl:pt-64 lg:pt-40 pt-40">
+  <div class="2xl:px-24 lg:px-10 px-5 ">
+  <div>
+  <h2 class="xl:text-6xl md:text-4xl text-3xl font-bold xl:leading-[78px] md:leading-[54px] leading-[45px] text-white">At SquareUp </h2>
+  <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-white pt-6 ">We have had the privilege of working with a diverse range of clients and delivering exceptional digital products that drive success.</p>
+  </div>
+  <div class="flex justify-start items-center pt-8 xl:pt-14">
+    <p class="xl:text-[26px] text-white text-xl bg-[#262626] 2xl:py-6 py-4 px-4 rounded-lg">Here are ten examples of our notable works:</p>
+  </div>
+</div>
+
+<!-- First Row  -->
+  <div class="flex lg:flex-row flex-col xl:pt-16 pt-8">
+
+    <!-- first card  -->
+  <div class="lg:w-1/2 w-full border-r border-[#262626]">
+    <div>
+      <p class="xl:text-3xl text-[#98989A] text-xl font-medium 2xl:py-8 py-4 2xl:pl-24 lg:pl-10 md:pl-5 px-5 md:px-0 border-t border-b border-[#262626] ">E-Commerce Platform for Fashion Hub</p>
+    </div>
+
+    <div class="xl:pt-10 pt-5 xl:pb-24 pb-12 2xl:px-24 lg:px-10 px-5">
+      <img src="./assets/img/firstcard.png" class="w-full" alt="">
+
+      <div>
+        <div class="flex justify-between items-center pt-5">
+          <div>
+        <h3 class="2xl:text-3xl md:text-2xl text-xl text-[#E6E6E6]">Chic Boutique</h3>
+        <p class="text-[#98989A] 2xl:text-xl md:text-lg text-base bg-[#262626] rounded-md mt-4 py-2 px-2"><a href="">htttps:/www.chicboutique.com</a></p>
+        </div>
+        <div>
+          <img src="./assets/img/next.png" class="md:w-full w-10" alt="">
+        </div>
+        </div>
+
+        <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#98989A] pt-6 ">We developed a visually stunning and user-friendly e-commerce platform for Chic Boutique, a renowned fashion retailer. The platform featured seamless product browsing, secure payment integration, and personalized recommendations, resulting in increased online sales and customer satisfaction.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2nd cards  -->
+    <div class="lg:w-1/2 w-full">
+    <div>
+      <p class="xl:text-3xl text-[#98989A] text-xl font-medium 2xl:py-8 py-4 2xl:pl-24 lg:pl-10 md:pl-5 px-5 md:px-0 border-t border-b border-[#262626] ">Mobile App for Food Delivery Service</p>
+    </div>
+
+    <div class="xl:pt-10 pt-5 xl:pb-24 pb-12 2xl:px-24 lg:px-10 px-5">
+      <img src="./assets/img/2ndcard.png" class="w-full" alt="">
+
+      <div>
+        <div class="flex justify-between items-center pt-5">
+          <div>
+        <h3 class="2xl:text-3xl md:text-2xl text-xl text-[#E6E6E6]">HungryBites</h3>
+        <p class="text-[#98989A] 2xl:text-xmd:text-lg text-base bg-[#262626] rounded-md mt-4 py-2 px-2"><a href="">htttps:/www.hungrybites.com</a></p>
+        </div>
+        <div>
+          <img src="./assets/img/next.png" class="md:w-full w-10" alt="">
+        </div>
+        </div>
+
+        <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#98989A] pt-6 ">HungryBites approached us to create a mobile app that streamlined their food delivery service. The app included features like real-time order tracking, easy menu customization, and secure payment options, resulting in improved customer convenience and operational efficiency.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- 2nd Row  -->
+  <div class="flex lg:flex-row flex-col">
+    
+    <!-- 3rd card  -->
+  <div class="lg:w-1/2 w-full border-r border-[#262626]">
+    <div>
+      <p class="xl:text-3xl text-[#98989A] text-xl font-medium 2xl:py-8 py-4 2xl:pl-24 lg:pl-10 md:pl-5 px-5 md:px-0 border-t border-b border-[#262626] ">Booking and Reservation System for Event Management</p>
+    </div>
+
+    <div class="xl:pt-10 pt-5 xl:pb-24 pb-12 2xl:px-24 lg:px-10 px-5">
+      <img src="./assets/img/3rdcard.png" class="w-full" alt="">
+
+      <div>
+        <div class="flex justify-between items-center pt-5">
+          <div>
+        <h3 class="2xl:text-3xl md:text-2xl text-xl text-[#E6E6E6]">EventMasters</h3>
+        <p class="text-[#98989A] 2xl:text-xmd:text-lg text-base bg-[#262626] rounded-md mt-4 py-2 px-2"><a href="">htttps:/www.eventmasters.com</a></p>
+        </div>
+        <div>
+          <img src="./assets/img/next.png" class="md:w-full w-10" alt="">
+        </div>
+        </div>
+
+        <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#98989A] pt-6 ">EventMasters required a comprehensive booking and reservation system for their event management services. We designed a user-friendly platform that allowed seamless event registration, ticketing, and attendee management, resulting in streamlined processes and enhanced customer experiences.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4th cards  -->
+    <div class="lg:w-1/2 w-full">
+    <div>
+      <p class="xl:text-3xl text-[#98989A] text-xl font-medium 2xl:py-8 py-4 2xl:pl-24 lg:pl-10 md:pl-5 px-5 md:px-0 border-t border-b border-[#262626] ">Custom Software for Workflow Automation</p>
+    </div>
+
+    <div class="xl:pt-10 pt-5 xl:pb-24 pb-12 2xl:px-24 lg:px-10 px-5">
+      <img src="./assets/img/4card.png" class="w-full" alt="">
+
+      <div>
+        <div class="flex justify-between items-center pt-5">
+          <div>
+        <h3 class="2xl:text-3xl md:text-2xl text-xl text-[#E6E6E6]">ProTech Solutions</h3>
+        <p class="text-[#98989A] 2xl:text-xl md:text-lg text-base bg-[#262626] rounded-md mt-4 py-2 px-2"><a href="">htttps:/www.protechsolutions.com</a></p>
+        </div>
+        <div>
+          <img src="./assets/img/next.png" class="md:w-full w-10" alt="">
+        </div>
+        </div>
+
+        <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#98989A] pt-6 ">HungryBites approached us to create a mobile app that streamlined their food delivery service. The app included features like real-time order tracking, easy menu customization, and secure payment options, resulting in improved customer convenience and operational efficiency.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+   <!-- 3rd Row  -->
+  <div class="flex lg:flex-row flex-col">
+    
+    <!-- 5rd card  -->
+  <div class="lg:w-1/2 w-full border-r border-[#262626]">
+    <div>
+      <p class="xl:text-3xl text-[#98989A] text-xl font-medium 2xl:py-8 py-4 2xl:pl-24 lg:pl-10 md:pl-5 px-5 md:px-0 border-t border-b border-[#262626] ">Web Portal for Real Estate Listings</p>
+    </div>
+
+    <div class="xl:pt-10 pt-5 xl:pb-24 pb-12 2xl:px-24 lg:px-10 px-5">
+      <img src="./assets/img/5thcard.png" class="w-full" alt="">
+
+      <div>
+        <div class="flex justify-between items-center pt-5">
+          <div>
+        <h3 class="2xl:text-3xl md:text-2xl text-xl text-[#E6E6E6]">Dream Homes Realty</h3>
+        <p class="text-[#98989A] 2xl:text-xmd:text-lg text-base bg-[#262626] rounded-md mt-4 py-2 px-2"><a href="">htttps:/www.dreamhomesrealty.com</a></p>
+        </div>
+        <div>
+          <img src="./assets/img/next.png" class="md:w-full w-10" alt="">
+        </div>
+        </div>
+
+        <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#98989A] pt-6 ">Dream Homes Realty wanted an intuitive web portal for showcasing their property listings. We created a visually appealing platform with advanced search filters, virtual tours, and a user-friendly interface, enabling potential buyers to find their dream homes easily.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6th cards  -->
+    <div class="lg:w-1/2 w-full">
+    <div>
+      <p class="xl:text-3xl text-[#98989A] text-xl font-medium 2xl:py-8 py-4 2xl:pl-24 lg:pl-10 md:pl-5 px-5 md:px-0 border-t border-b border-[#262626] ">Mobile App for Fitness Tracking</p>
+    </div>
+
+    <div class="xl:pt-10 pt-5 xl:pb-24 pb-12 2xl:px-24 lg:px-10 px-5">
+      <img src="./assets/img/6thcard.png" class="w-full" alt="">
+
+      <div>
+        <div class="flex justify-between items-center pt-5">
+          <div>
+        <h3 class="2xl:text-3xl md:text-2xl text-xl text-[#E6E6E6]">FitLife Tracker</h3>
+        <p class="text-[#98989A] 2xl:text-xl md:text-lg text-base bg-[#262626] rounded-md mt-4 py-2 px-2"><a href="">htttps:/www.fitlifetracker.com</a></p>
+        </div>
+        <div>
+          <img src="./assets/img/next.png" class="md:w-full w-10" alt="">
+        </div>
+        </div>
+
+        <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#98989A] pt-6 ">FitLife Tracker approached us to develop a mobile app that tracked fitness activities and provided personalized workout plans. The app included features such as activity tracking, progress monitoring, and social sharing, empowering users to lead healthier lifestyles.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+    <!-- 4th Row  -->
+  <div class="flex lg:flex-row flex-col">
+    
+    <!-- 7rd card  -->
+  <div class="lg:w-1/2 w-full border-r border-[#262626]">
+    <div>
+      <p class="xl:text-3xl text-[#98989A] text-xl font-medium 2xl:py-8 py-4 2xl:pl-24 lg:pl-10 md:pl-5 px-5 md:px-0 border-t border-b border-[#262626] ">Custom Software for Supply Chain Management</p>
+    </div>
+
+    <div class="xl:pt-10 pt-5 xl:pb-24 pb-12 2xl:px-24 lg:px-10 px-5">
+      <img src="./assets/img/7thcrad.png" class="w-full" alt="">
+
+      <div>
+        <div class="flex justify-between items-center pt-5">
+          <div>
+        <h3 class="2xl:text-3xl md:text-2xl text-xl text-[#E6E6E6]">Global Logistics Solutions</h3>
+        <p class="text-[#98989A] 2xl:text-xmd:text-lg text-base bg-[#262626] rounded-md mt-4 py-2 px-2"><a href="">htttps:/www.globallogisticssolutions.com</a></p>
+        </div>
+        <div>
+          <img src="./assets/img/next.png" class="md:w-full w-10" alt="">
+        </div>
+        </div>
+
+        <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#98989A] pt-6 ">Global Logistics Solutions required a custom software solution to streamline their supply chain operations. We developed a scalable system that optimized inventory management, automated order processing, and enhanced logistics tracking, resulting in improved efficiency and reduced costs.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8th cards  -->
+    <div class="lg:w-1/2 w-full">
+    <div>
+      <p class="xl:text-3xl text-[#98989A] text-xl font-medium 2xl:py-8 py-4 2xl:pl-24 lg:pl-10 md:pl-5 px-5 md:px-0 border-t border-b border-[#262626] ">Educational Platform for Online Learning</p>
+    </div>
+
+    <div class="xl:pt-10 pt-5 xl:pb-24 pb-12 2xl:px-24 lg:px-10 px-5">
+      <img src="./assets/img/8thcrad.png" class="w-full" alt="">
+
+      <div>
+        <div class="flex justify-between items-center pt-5">
+          <div>
+        <h3 class="2xl:text-3xl md:text-2xl text-xl text-[#E6E6E6]">EduConnect</h3>
+        <p class="text-[#98989A] 2xl:text-xl md:text-lg text-base bg-[#262626] rounded-md mt-4 py-2 px-2"><a href="">htttps:/www.educonnect.com</a></p>
+        </div>
+        <div>
+          <img src="./assets/img/next.png" class="md:w-full w-10" alt="">
+        </div>
+        </div>
+
+        <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#98989A] pt-6 ">EduConnect sought an educational platform to facilitate online learning. We developed an interactive platform with virtual classrooms, multimedia content, and student progress tracking, providing a seamless and engaging learning experience for students of all ages.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+      <!-- 5th Row  -->
+  <div class="flex lg:flex-row flex-col border-b border-[#262626]">
+    
+    <!-- 9th card  -->
+  <div class="lg:w-1/2 w-full border-r border-[#262626]">
+    <div>
+      <p class="xl:text-3xl text-[#98989A] text-xl font-medium 2xl:py-8 py-4 2xl:pl-24 lg:pl-10 md:pl-5 px-5 md:px-0 border-t border-b border-[#262626] ">Mobile App for Travel Planning</p>
+    </div>
+
+    <div class="xl:pt-10 pt-5 xl:pb-24 pb-12 2xl:px-24 lg:px-10 px-5">
+      <img src="./assets/img/9thcard.png" class="w-full" alt="">
+
+      <div>
+        <div class="flex justify-between items-center pt-5">
+          <div>
+        <h3 class="2xl:text-3xl md:text-2xl text-xl text-[#E6E6E6]">WanderWise</h3>
+        <p class="text-[#98989A] 2xl:text-xmd:text-lg text-base bg-[#262626] rounded-md mt-4 py-2 px-2"><a href="">htttps:/www.wanderwise.com</a></p>
+        </div>
+        <div>
+          <img src="./assets/img/next.png" class="md:w-full w-10" alt="">
+        </div>
+        </div>
+
+        <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#98989A] pt-6 ">WanderWise wanted a mobile app that simplified travel planning and discovery. We developed an app with features like personalized itineraries, destination guides, and integrated booking options, making it easier for travelers to explore new destinations.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10th cards  -->
+    <div class="lg:w-1/2 w-full">
+    <div>
+      <p class="xl:text-3xl text-[#98989A] text-xl font-medium 2xl:py-8 py-4 2xl:pl-24 lg:pl-10 md:pl-5 px-5 md:px-0 border-t border-b border-[#262626] ">Web Application for Customer Relationship Management</p>
+    </div>
+
+    <div class="xl:pt-10 pt-5 xl:pb-24 pb-12 2xl:px-24 lg:px-10 px-5">
+      <img src="./assets/img/10thcard.png" class="w-full" alt="">
+
+      <div>
+        <div class="flex justify-between items-center pt-5">
+          <div>
+        <h3 class="2xl:text-3xl md:text-2xl text-xl text-[#E6E6E6]">ConnectCRM</h3>
+        <p class="text-[#98989A] 2xl:text-xl md:text-lg text-base bg-[#262626] rounded-md mt-4 py-2 px-2"><a href="">htttps:/www.connectcrm.com</a></p>
+        </div>
+        <div>
+          <img src="./assets/img/next.png" class="md:w-full w-10" alt="">
+        </div>
+        </div>
+
+        <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#98989A] pt-6 ">ConnectCRM needed a web application to manage their customer relationships effectively. We developed a feature-rich CRM platform with lead management, communication tracking, and data analytics, enabling businesses to nurture customer relationships and drive growth.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</section>
+
+
+<!-- digital marketing  -->
+<section class="2xl:mt-52 lg:mt-36 mt-20 bg-center bg-cover bg-no-repeat border-t border-[#262626]" style="background-image: url(./assets/img/marketingbg.png);">
+  <div class="2xl:py-36 lg:py-20 py-10 2xl:px-32 lg:px-16 px-6 text-center">
+    <h2 class=" 2xl:text-7xl xl:text-6xl lg:text-[43px] md:text-[40px] text-4xl font-semibold text-white 2xl:leading-[85px] xl:leading-[70px] lg:leading-[54px] md:leading-[48px] leading-[45px]">DIGITALES MARKETING <br> FÜR UNTERNEHMEN MIT ANSPRUCH.</h2>
+<p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-white pt-6 ">Aus Hamburg. Für den Mittelstand, der mehr will. Wir sind keine klassische Werbeagentur – wir sind convince me.
+Ein Partner für Unternehmen, die die Chancen der Digitalisierung nutzen wollen, um sichtbarer zu werden, effizienter zu arbeiten und nachhaltig zu wachsen.
+Wir kombinieren Strategie, Technologie und kreative Kommunikation, um Ergebnisse zu erzielen, die zählen: mehr Reichweite, mehr Bewerbungen, mehr Umsatz. Statt auf kostspielige Massenwerbung zu setzen, schaffen wir digitale Lösungen, die präzise auf Ihre Zielgruppe und Ihre Unternehmensziele abgestimmt sind. Ob Marketingstrategie, Recruiting oder Markenaufbau – wir entwickeln individuelle Konzepte, die Wirkung zeigen und echten Mehrwert schaffen. Unser Ziel: Ihr Erfolg. Planbar, messbar und langfristig.</p>
+
+ <div class="text-center">
+  <button data-open="projectModal" class="text-lg font-semibold px-8 py-4 xl:mt-16 mt-8 text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E] transition">
+  Jetzt Fachkräfte einstellen &nbsp;&nbsp;<i class="fa-solid fa-chevron-right"></i>
+</button>
+</div>
+<div class="flex items-center justify-center pt-8 gap-2 flex-wrap">
+          <div class="stars text-white text-lg">
+            <span>★ </span>Trustpilot <span>★ ★ ★ ★ ★</span>
+          </div>
+          <div class="flex items-center gap-2 flex-wrap">
+            <img src="./assets/img/white line.png" alt="">
+            <p class="text-white text-lg font-bold">Hervorragend</p>
+          </div>
+        </div>
+  </div>
+</section>
+
+<!-- Footer -->
+  <footer class="text-white px-6 lg:px-12 xl:px-20 2xl:px-28 py-12 xl:py-20 bg-[#0F0F0F]">
+
+    <div class="md:hidden block flex justify-center pb-10">
+      <img src="./assets/img/footer.png" alt="">
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7  gap-8 text-center md:text-start">
+      
+      <!-- Left Content -->
+      <div class="lg:col-span-2">
+        <div class=""
+        >
+        <img src="./assets/img/footer.png" class="md:block hidden" alt="">
+        </div>
+        <p class="text-white/70 md:mt-4 2xl:text-lg text-sm leading-relaxed">
+         A collective of driven minds empowering companies <br class="md:block hidden"> to grow digitally.
+        </p>
+
+        <div class="lg:block hidden">
+         <div class="flex md:justify-start justify-center gap-2 pt-6 ">
+          <a href="https://www.kununu.com/de/convince-me1">
+      <img src="./assets/img/company1.png" alt="">
+      </a>
+      <a href="">
+      <img src="./assets/img/company2.png" alt="">
+      </a>
+        </div>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Quick Links</h3>
+        <ul class="space-y-2 text-white/70 2xl:text-base text-sm ">
+          <li class="hover:underline"><a href="./index.html"  >Home</a></li>
+          <li class="hover:underline"><a href="./our work.html">Our Works</a></li>
+          <li class="hover:underline"><a href="#">Network</a></li>
+          <li class="hover:underline"><a href="./job.html">Jobs</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div>
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Support</h3>
+        <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
+          <!-- <li><a href="#">Blog</a></li> -->
+          <li class="hover:underline"><a href="./contact.html">Contact Us</a></li>
+          <!-- <li><a href="#">Online Chat</a></li> -->
+          <li class="hover:underline"><a href="#">Whatsapp</a></li>
+          <li class="hover:underline"><a href="#">Telegram</a></li>
+          <!-- <li class="hover:underline"><a href="#">Help Center</a></li> -->
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Services</h3>
+        <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
+          <li class="hover:underline"><a href="./job.html">Job</a></li>
+          <li class="hover:underline"><a href="./services.html">Web Design & Development</a></li>
+          <li class="hover:underline"><a href="./SEO.html">SEO Optimization</a></li>
+          <li class="hover:underline"><a href="./E-Commerce.html">E-Commerce Development</a></li>
+          <li class="hover:underline"><a href="./Brand.html">Brand Identity Creation</a></li>
+           <li class="hover:underline"><a href="./business.html">Strategy for Business Development</a></li>
+          <li class="hover:underline"><a href="./socielmedia.html">Social Media Management & Post Creation</a></li>
+          <li class="hover:underline"><a href="./cms.html">CMS design</a></li>
+          <li class="hover:underline"><a href="./mobileapp.html">Mobile App Design and Development</a></li>
+          <li class="hover:underline"><a href="./uiux.html">UI/UX Design</a></li>
+        </ul>
+      </div>
+
+         <!-- Resources -->
+      <div>
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Privacy</h3>
+        <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
+          <li class="hover:underline"><a href="./privacypoliciy.html">Privacy Policies</a></li>
+          <li class="hover:underline"><a href="./termandcondition.html">Terms And Condition</a></li>
+         
+        </ul>
+      </div>
+        <!-- Resources -->
+      <div>
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Company</h3>
+        <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
+          <li class="hover:underline"><a href="https://www.convinceme.de/impressum/">Impressum:</a></li>
+          <li class="hover:underline"><a href="https://www.convinceme.de/datenschutzerklaerung/">Datenschutz:</a></li>
+        </ul>
+        <img src="./assets/img/attachment.png" class="mt-6" alt="">
+      </div>
+
+    </div>
+  <div class="flex md:justify-start justify-center gap-2 pt-6 lg:hidden block">
+          <a href="https://www.kununu.com/de/convince-me1">
+      <img src="./assets/img/company1.png" alt="">
+      </a>
+      <a href="">
+      <img src="./assets/img/company2.png" alt="">
+      </a>
+        </div>
+       
+    <!-- Bottom Bar -->
+    <div class="border-t border-[#414141] mt-10 flex justify-between items-center">
+       <!-- Copyright -->
+        <div>© 2025, Convince me.</div>
+
+      <div class="py-4 flex flex-col md:flex-row justify-between items-center text-sm text-white/70 space-y-3 md:space-y-0">
+        <!-- Social Icons -->
+        <div class="flex justify-center md:justify-start space-x-4">
+          <a href="#" class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#D2B94E]">
+            <i class="fab fa-instagram "></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#D2B94E]">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#D2B94E]">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- contact popup form  -->
+<div id="contactModal" 
+     class="fixed inset-0 bg-black/70 z-50 hidden overflow-y-auto">
+  
+  <!-- Center Content with Spacing -->
+  <div class="min-h-screen flex items-center justify-center py-6 px-4">
+    
+    <!-- Modal Card -->
+    <div class="bg-[#1a1a1a] rounded-2xl shadow-xl w-full max-w-5xl 2xl:max-w-7xl
+                flex flex-col-reverse md:flex-row relative animate-fadeIn">
+      
+      <!-- Close Button -->
+      <button id="closeModal" 
+              class="absolute top-2 right-4 text-[#A4A7AE] text-xl">
+        ✕
+      </button>
+
+      <!-- Left: Form -->
+      <div class="w-full md:w-1/2 px-6 md:px-0 md:pl-8 sm:py-8 py-6 flex flex-col justify-center text-white">
+        <h2 class="2xl:text-3xl text-2xl font-semibold mb-3">Let's connect constellations</h2>
+        <p class="2xl:text-lg text-sm text-white mb-6">
+          Let's align our constellations! Reach out and let the magic of collaboration illuminate our skies.
+        </p>
+
+        <form action="#" method="POST" class="space-y-4">
+          <div class="flex flex-col sm:flex-row gap-4">
+            <input type="text" placeholder="Last Name" 
+                   class="w-full sm:w-1/2 p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none" />
+            <input type="text" placeholder="First Name" 
+                   class="w-full sm:w-1/2 p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none" />
+          </div>
+          <input type="email" placeholder="Email" 
+                 class="w-full p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none" />
+          <input type="tel" placeholder="Phone Number" 
+                 class="w-full p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none" />
+          <textarea placeholder="Message" rows="4" 
+                    class="w-full p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none"></textarea>
+
+          <button type="submit" 
+                  class="w-full bg-[#D2B94E] text-[#040404] font-medium py-3 rounded-md flex items-center justify-center gap-2 transition">
+            Send it 🚀
+          </button>
+        </form>
+      </div>
+
+      <!-- Right: Astronaut Image -->
+      <div class="w-full md:w-1/2 flex items-center justify-center px-6 py-10">
+        <img src="./assets/img/contactimg.png" 
+             alt="Astronaut" 
+             class="w-full max-h-[600px] object-contain rounded-lg" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Questioning popup Modal Overlay -->
+<div id="projectModal"
+  class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50 overflow-y-auto p-4">
+  
+  <!-- Modal Box -->
+  <div
+    class="relative bg-[#0F0F0F] border border-[#D2B94E] rounded-2xl shadow-xl w-full max-w-5xl my-auto p-6 sm:p-8 overflow-y-auto max-h-[90vh]">
+    
+    <!-- Close Button -->
+    <button id="closeProjectModal"
+      class="absolute top-4 right-4 text-[#D2B94E] text-2xl font-bold">&times;</button>
+
+    <!-- Page Counter -->
+    <div id="pageIndicator" class="text-[#D2B94E] text-lg font-semibold text-center mb-4">
+      Seite 1 von 5
+    </div>
+
+    <!-- Steps -->
+    <div id="projectStepsContainer" class="space-y-10 lg:py-10 py-5">
+      
+      <!-- Page 1 -->
+      <div class="project-step">
+        <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">Du bist...?</h2>
+        <div class="grid md:grid-cols-4 gap-5 pt-6">
+          <div class="md:block hidden"></div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img1.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Geschäftsführer</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img2.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Mitarbeiter</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 2 -->
+      <div class="project-step hidden">
+        <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">Wie viele Mitarbeiter sind in Deinem Betrieb?</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 pt-6">
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img3.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">1 bis 4</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img4.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">5 bis 10</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img5.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">11 bis 30</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img6.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Über 30</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 3 -->
+      <div class="project-step hidden">
+        <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">Wie viele Fachkräfte möchtest Du in den nächsten 30 Tagen einstellen?</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 pt-6">
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img7.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">1 Fachkraft</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img8.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">2 bis 3</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img9.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">4 bis 5</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img10.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">6 oder mehr</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 4 -->
+      <div class="project-step hidden">
+        <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">Wie schnell möchtest Du neue Fachkräfte einstellen?</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 pt-6">
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img11.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Sofort</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img12.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">2 bis 4 Wochen</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img13.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">1 bis 2 Monate</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img14.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Weiß noch nicht</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 5 (Form Page) -->
+      <div class="project-step hidden">
+        <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">
+          Bitte fülle das Formular aus
+        </h2>
+        
+        <form id="projectForm" class="max-w-2xl mx-auto space-y-5 pt-6">
+          <!-- Name -->
+          <div>
+            <label for="name" class="block text-[#D2B94E] text-lg mb-2">Name</label>
+            <input type="text" id="name" name="name" required
+              class="w-full px-4 py-3 rounded-lg bg-[#1A1A1A] border border-[#D2B94E] text-white focus:outline-none focus:ring-2 focus:ring-[#D2B94E]" />
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label for="email" class="block text-[#D2B94E] text-lg mb-2">E-Mail</label>
+            <input type="email" id="email" name="email" required
+              class="w-full px-4 py-3 rounded-lg bg-[#1A1A1A] border border-[#D2B94E] text-white focus:outline-none focus:ring-2 focus:ring-[#D2B94E]" />
+          </div>
+
+          <!-- Phone -->
+          <div>
+            <label for="phone" class="block text-[#D2B94E] text-lg mb-2">Telefonnummer</label>
+            <input type="tel" id="phone" name="phone"
+              class="w-full px-4 py-3 rounded-lg bg-[#1A1A1A] border border-[#D2B94E] text-white focus:outline-none focus:ring-2 focus:ring-[#D2B94E]" />
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit"
+            class="w-full bg-[#D2B94E] text-[#0F0F0F] font-semibold text-xl py-3 rounded-lg hover:bg-[#C0A83E] transition duration-300">
+            Abschicken
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- questioning popup js -->
+<script>
+  const openProjectButtons = document.querySelectorAll('[data-open="projectModal"]');
+  const closeProjectModal = document.getElementById('closeProjectModal');
+  const projectModal = document.getElementById('projectModal');
+  const projectSteps = document.querySelectorAll('.project-step');
+  const pageIndicator = document.getElementById('pageIndicator');
+  let projectCurrentStep = 0;
+
+  const showProjectStep = (index) => {
+    projectSteps.forEach((s, i) => s.classList.toggle('hidden', i !== index));
+    pageIndicator.textContent = `Seite ${index + 1} von ${projectSteps.length}`;
+  };
+
+  // ✅ Open modal on any button click
+  openProjectButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      projectModal.classList.remove('hidden');
+      projectModal.classList.add('flex');
+      document.body.classList.add('no-scroll');
+      projectCurrentStep = 0;
+      showProjectStep(projectCurrentStep);
+    });
+  });
+
+  // ✅ Close modal
+  closeProjectModal.addEventListener('click', () => {
+    projectModal.classList.add('hidden');
+    projectModal.classList.remove('flex');
+    document.body.classList.remove('no-scroll');
+    projectCurrentStep = 0;
+  });
+
+  // ✅ Click outside modal to close
+  projectModal.addEventListener('click', (e) => {
+    if (e.target === projectModal) {
+      projectModal.classList.add('hidden');
+      projectModal.classList.remove('flex');
+      document.body.classList.remove('no-scroll');
+      projectCurrentStep = 0;
+    }
+  });
+
+  // ✅ Handle step images click
+  document.querySelectorAll('.project-step img').forEach(img => {
+    img.addEventListener('click', () => {
+      if (projectCurrentStep < projectSteps.length - 1) {
+        projectCurrentStep++;
+        showProjectStep(projectCurrentStep);
+      }
+    });
+  });
+
+  // ✅ Handle final form submit
+  document.getElementById('projectForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('✅ Formular erfolgreich abgeschickt!');
+    projectModal.classList.add('hidden');
+    projectModal.classList.remove('flex');
+    document.body.classList.remove('no-scroll');
+    projectCurrentStep = 0;
+  });
+</script>
+
+
+<!--contact Script -->
+<script>
+  const openModalButtons = document.querySelectorAll("#openModal"); // Saare "Contact Us" buttons select karo
+  const closeModal = document.getElementById("closeModal");
+  const modal = document.getElementById("contactModal");
+
+  // Har ek Contact Us button pe listener lagao
+  openModalButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      modal.classList.remove("hidden");
+    });
+  });
+
+  // Close button
+  closeModal.addEventListener("click", () => {
+    modal.classList.add("hidden");
+  });
+
+  // Background click par close
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.add("hidden");
+    }
+  });
+</script>
+  
+
+<!-- Navbar js  -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const fullscreenMenu = document.getElementById('fullscreen-menu');
+  const servicesBtn = document.getElementById('services-btn');
+  const servicesDropdown = document.getElementById('services-dropdown');
+  const svgArrow = servicesBtn.querySelector('svg');
+  let isOpen = false;
+  let scrollPosition = 0; // store current scroll position
+
+  // Fullscreen menu toggle
+  menuBtn.addEventListener('click', () => {
+    isOpen = !isOpen;
+    const [line1, line2, line3] = menuBtn.children;
+
+    if (isOpen) {
+      // Store current scroll position and lock scroll visually
+      scrollPosition = window.scrollY;
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollPosition}px`;
+      document.body.style.left = '0';
+      document.body.style.right = '0';
+      document.body.style.overflow = 'hidden';
+      fullscreenMenu.style.overflowY = 'auto';
+
+      // Animate hamburger -> X
+      line1.style.transform = 'rotate(45deg) translateY(10px)';
+      line2.style.opacity = '0';
+      line3.style.transform = 'rotate(-45deg) translateY(-10px)';
+
+      fullscreenMenu.classList.remove('pointer-events-none');
+      fullscreenMenu.classList.add('opacity-100', 'scale-100');
+      fullscreenMenu.classList.remove('opacity-0', 'scale-95');
+      
+      // Force scroll to top (menu starts from top)
+      window.scrollTo(0, 0);
+    } else {
+      // Animate X -> hamburger
+      line1.style.transform = 'rotate(0) translateY(0)';
+      line2.style.opacity = '1';
+      line3.style.transform = 'rotate(0) translateY(0)';
+
+      fullscreenMenu.classList.add('opacity-0', 'scale-95');
+      fullscreenMenu.classList.remove('opacity-100', 'scale-100');
+      setTimeout(() => fullscreenMenu.classList.add('pointer-events-none'), 500);
+
+      // Restore scroll position
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      document.body.style.overflow = '';
+      fullscreenMenu.style.overflowY = 'hidden';
+      window.scrollTo(0, scrollPosition);
+    }
+  });
+
+  // Detect mobile
+  const isMobile = () => window.innerWidth < 1024;
+
+  // Toggle dropdown on click (mobile)
+  servicesBtn.addEventListener('click', (e) => {
+    if (isMobile()) {
+      e.stopPropagation();
+      toggleDropdown();
+    }
+  });
+
+  // Hover dropdown (desktop)
+  servicesBtn.addEventListener('mouseenter', () => {
+    if (!isMobile()) openDropdown();
+  });
+  servicesBtn.addEventListener('mouseleave', () => {
+    if (!isMobile()) closeDropdown();
+  });
+  servicesDropdown.addEventListener('mouseenter', () => {
+    if (!isMobile()) openDropdown();
+  });
+  servicesDropdown.addEventListener('mouseleave', () => {
+    if (!isMobile()) closeDropdown();
+  });
+
+  // Dropdown logic
+  function toggleDropdown() {
+    const isDropdownOpen = !servicesDropdown.classList.contains('hidden');
+    if (isDropdownOpen) closeDropdown();
+    else openDropdown();
+  }
+
+  function openDropdown() {
+    servicesDropdown.classList.remove('hidden');
+    setTimeout(() => {
+      servicesDropdown.classList.add('opacity-100', 'scale-y-100');
+      servicesDropdown.classList.remove('opacity-0', 'scale-y-0');
+    }, 10);
+    svgArrow.style.transform = 'rotate(180deg)';
+  }
+
+  function closeDropdown() {
+    servicesDropdown.classList.add('opacity-0', 'scale-y-0');
+    servicesDropdown.classList.remove('scale-y-100');
+    setTimeout(() => servicesDropdown.classList.add('hidden'), 300);
+    svgArrow.style.transform = 'rotate(0deg)';
+  }
+
+  // Close dropdown when clicking outside (mobile)
+  document.addEventListener('click', (e) => {
+    if (isMobile()) {
+      if (!servicesBtn.contains(e.target) && !servicesDropdown.contains(e.target)) {
+        closeDropdown();
+      }
+    }
+  });
+
+  // Update behavior on resize
+  window.addEventListener('resize', () => {
+    closeDropdown();
+  });
+</script>
+
+   <!-- navbar bg js  -->
+  <script>
+  window.addEventListener("scroll", function() {
+    const navbar = document.getElementById("navbar");
+    if (window.scrollY > 50) { 
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+</script>
+
+<script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
+</body>
+</html>

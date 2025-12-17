@@ -1,0 +1,2440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+
+   <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body class="bg-[#0F0F0F]">
+
+<!-- NAVBAR -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-transparent transition-all duration-500">
+    <div class="flex justify-between items-center 2xl:px-24 lg:px-10 px-5 2xl:py-10 py-6">
+      <!-- Logo -->
+      <a href="./index.html">
+        <img src="./assets/img/logo.png" alt="Logo" class="w-48">
+      </a>
+
+      <!-- Hamburger -->
+      <button id="menu-btn" class="relative w-10 h-5 flex flex-col justify-between focus:outline-none z-[60]">
+        <span class="w-full h-[3px] bg-white transition-all duration-500 origin-center"></span>
+        <span class="w-full h-[3px] bg-white transition-all duration-500 origin-center"></span>
+        <span class="w-full h-[3px] bg-white transition-all duration-500 origin-center"></span>
+      </button>
+    </div>
+
+    <!-- FULLSCREEN MENU -->
+    <div
+      id="fullscreen-menu"
+      class="fixed inset-0 backdrop-blur-3xl scale-95 opacity-0 pointer-events-none transition-all duration-500 ease-in-out flex flex-col justify-center items-center text-white"
+    >
+      <ul class="lg:space-y-8 space-y-6 2xl:text-4xl lg:text-3xl text-xl font-light text-center transform transition-all duration-700 pt-24">
+        <li><a href="./index.html" class="hover:text-[#D2B94E] transition">Home</a></li>
+
+        <!-- Services Dropdown -->
+        <li class="relative group w-full flex flex-col items-center">
+          <button id="services-btn" class="flex items-center justify-center space-x-2 hover:text-[#D2B94E]">
+            <span>Services</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <!-- Dropdown -->
+          <ul
+            id="services-dropdown"
+            class="absolute bg-[#0F0F0F] top-full w-64 left-1/2 -translate-x-1/2 flex-col space-y-3 text-lg transition-all duration-300 ease-in-out transform origin-top opacity-0 scale-y-0 py-3 px-3 rounded-lg"
+          >
+            <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] ">Web Design & Development</a></li>
+            <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] ">UI/UX Design</a></li>
+             <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] ">CMS design</a></li>
+            <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] ">Mobile App Design and Development</a></li>
+            <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] ">SEO Optimization</a></li>
+            <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] ">E-Commerce Development</a></li>
+            <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] ">Brand Identity Creation</a></li>
+            <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] ">Strategy for Business Development</a></li>
+            <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] ">Social Media Management & Post Creation</a></li>
+          </ul>
+        </li>
+
+        <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] transition">Works</a></li>
+        <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] transition">Network</a></li>
+        <li><a href="./job.html" class="hover:text-[#D2B94E] transition">Jobs</a></li>
+        
+      </ul>
+
+      <div class="mt-12 flex flex-col space-y-4">
+        <button class="px-8 py-3 2xl:text-2xl lg:text-xl text-lg bg-[#D2B94E] text-[#0F0F0F] rounded-sm font-medium hover:bg-[#c0a840] transition">
+          Dashboard Login
+        </button>
+        <button id="openModal"
+          class="px-8 py-3 2xl:text-2xl lg:text-xl text-lg border border-[#D2B94E] hover:bg-[#D2B94E] hover:text-[#0F0F0F] transition rounded-sm"
+        >
+          Contact Us
+        </button>
+      </div>
+    </div>
+
+    <hr class="border border-[#41414166]">
+  </nav>
+
+  <!-- hero section (video background) -->
+<section class="2xl:px-24 lg:px-10 px-5 bg-center bg-no-repeat bg-cover 2xl:h-[1400px] xl:h-[1180px] md:h-[1000px] h-[1100px] relative overflow-hidden">
+  <!-- video: covers entire section -->
+  <video
+    class="absolute inset-0 w-full h-full object-cover"
+    autoplay
+    muted
+    loop
+    playsinline
+    poster="" 
+    aria-hidden="true"
+  >
+    <!-- <source src="./assets/video/hero.webm" type="video/webm"> -->
+    <source src="./assets/img/Pexels-Videos-2104648.mp4" type="video/mp4">
+    <!-- fallback for very old browsers -->
+  </video>
+
+  <!-- overlay to preserve contrast (adjust opacity/color if needed) -->
+  <div class="absolute inset-0 bg-black opacity-80 pointer-events-none"></div>
+
+  <!-- content: keep same structure but raise z-index so it's above video -->
+  <div class="relative z-10 flex flex-col justify-center items-center xl:pt-60 md:pt-48 pt-40">
+    <h2 class="text-[#F5F5F5] xl:text-xl text-lg font-normal uppercase tracking-widest">WIR MACHEN ERFOLG.</h2>
+    <h1 class="text-[#F5F5F5] 2xl:text-[200px] xl:text-9xl md:text-7xl text-6xl font-extrabold text-center">
+      <span class="bg-[#D2B94E] bg-clip-text text-transparent">
+        Marketing <br>
+      </span> Richtig <br> Gemacht
+    </h1>
+    <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-white pt-5 text-center">
+      Strategische Konzepte, kreative Ideen und messbare Ergebnisse – <br class="md:block hidden"> für Unternehmen, die mehr wollen als nur Werbung. Ihr Wachstum<br class="md:block hidden"> ist unser Ziel – mit intelligentem Marketing, das überzeugt. 
+    </p>
+    <button id="openModal" class="text-lg font-semibold px-8 py-4 mt-12 text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E] transition">
+      Let’s Talk &nbsp;&nbsp;<i class="fa-solid fa-chevron-right"></i>
+    </button>
+  </div>
+
+  <div class="relative z-10 flex md:flex-row flex-col justify-between items-center pt-20">
+    <div class="xl:w-2/5 w-full flex md:justify-start justify-center gap-5">
+      <a href="https://www.kununu.com/de/convince-me1">
+      <img src="./assets/img/company1.png" alt="">
+      </a>
+      <a href="">
+      <img src="./assets/img/company2.png" alt="">
+      </a>
+    </div>
+
+    <div class="xl:w-3/5 w-full flex md:justify-start justify-center flex-wrap items-center gap-6 2xl:gap-10 pt-10 md:pt-0">
+      <a href="https://share.google/fkvIBMRUES4mFLnnb">
+      <img src="./assets/img/google-reviews.png" class="w-28 md:w-auto" alt="">
+    </a>
+      <img src="./assets/img/Line 35.png" alt="">
+      <a href="">
+      <img src="./assets/img/meta.png" class="w-28 md:w-auto" alt="">
+      </a>
+      <img src="./assets/img/Line 35.png" alt="">
+      <a href="">
+      <img src="./assets/img/tiktok.png" class="w-28 md:w-auto" alt="">
+      </a>
+      <img src="./assets/img/Line 35.png" alt="">
+      <a href="">
+      <img src="./assets/img/google-partner.png" class="w-28 md:w-auto" alt="">
+      </a>
+      <img src="./assets/img/Line 35.png" alt="">
+      <a href="">
+      <img src="./assets/img/der.png" class="w-28 md:w-auto" alt="">
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!--Marquee Slider section  -->
+<section class="xl:pt-20 pt-10">
+  <div>
+  <h2 class="text-white text-xl tracking-widest uppercase text-center">Vertrauen, das überzeugt.</h2>
+  </div>
+
+ <div class="relative overflow-hidden w-full xl:pt-10 pt-6">
+  <!-- Marquee Wrapper -->
+  <div class="flex animate-marquee">
+    <!-- Content Wrap (1st copy) -->
+    <div class="flex">
+
+         <div class="group flex flex-col justify-center items-center px-20 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+         <!-- Default Image -->
+  <img src="./assets/img/lorchgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/lorch.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-20 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+        <!-- Default Image -->
+  <img src="./assets/img/werner.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/wernerred.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+       <!-- Default Image -->
+  <img src="./assets/img/mecdonalgrey.png" class="block group-hover:hidden w-2/3" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/mecdonal.png" class="hidden group-hover:block w-2/3" alt="">
+      </div>
+       <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+          <!-- Default Image -->
+  <img src="./assets/img/wenchgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/wenck.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+          <!-- Default Image -->
+  <img src="./assets/img/dussmangrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/dussman.png" class="hidden group-hover:block" alt="">
+      </div>
+       <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+        <!-- Default Image -->
+  <img src="./assets/img/kalmargrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/kalmar.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+       <!-- Default Image -->
+  <img src="./assets/img/tchibe.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/techbirwhite.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-20 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+         <!-- Default Image -->
+  <img src="./assets/img/hellofreshgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/hellofries.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-20 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+        <!-- Default Image -->
+  <img src="./assets/img/edekagry.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/edeka.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+       <!-- Default Image -->
+  <img src="./assets/img/subwaygrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/subway.png" class="hidden group-hover:block" alt="">
+      </div>
+       <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+          <!-- Default Image -->
+  <img src="./assets/img/boschgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/boschred.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+          <!-- Default Image -->
+  <img src="./assets/img/tipicogrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/tipicored.png" class="hidden group-hover:block" alt="">
+      </div>
+       <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+        <!-- Default Image -->
+  <img src="./assets/img/lottogrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/lotto.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+       <!-- Default Image -->
+  <img src="./assets/img/sarpigrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/sarpi.png" class="hidden group-hover:block" alt="">
+      </div>
+    </div>
+
+    <!-- Duplicate Content (2nd copy for seamless effect) -->
+   <div class="flex">
+             <div class="group flex flex-col justify-center items-center px-20 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+         <!-- Default Image -->
+  <img src="./assets/img/lorchgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/lorch.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-20 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+        <!-- Default Image -->
+  <img src="./assets/img/werner.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/wernerred.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+       <!-- Default Image -->
+  <img src="./assets/img/mecdonalgrey.png" class="block group-hover:hidden w-2/3" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/mecdonal.png" class="hidden group-hover:block w-2/3" alt="">
+      </div>
+       <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+          <!-- Default Image -->
+  <img src="./assets/img/wenchgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/wenck.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+          <!-- Default Image -->
+  <img src="./assets/img/dussmangrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/dussman.png" class="hidden group-hover:block" alt="">
+      </div>
+       <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+        <!-- Default Image -->
+  <img src="./assets/img/kalmargrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/kalmar.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+       <!-- Default Image -->
+  <img src="./assets/img/tchibe.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/techbirwhite.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-20 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+         <!-- Default Image -->
+  <img src="./assets/img/hellofreshgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/hellofries.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-20 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+        <!-- Default Image -->
+  <img src="./assets/img/edekagry.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/edeka.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+       <!-- Default Image -->
+  <img src="./assets/img/subwaygrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/subway.png" class="hidden group-hover:block" alt="">
+      </div>
+       <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+          <!-- Default Image -->
+  <img src="./assets/img/boschgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/boschred.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+          <!-- Default Image -->
+  <img src="./assets/img/tipicogrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/tipicored.png" class="hidden group-hover:block" alt="">
+      </div>
+       <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+        <!-- Default Image -->
+  <img src="./assets/img/lottogrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/lotto.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+       <!-- Default Image -->
+  <img src="./assets/img/sarpigrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/sarpi.png" class="hidden group-hover:block" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</section>
+
+<!-- our expertiese  -->
+<section class="2xl:px-24 lg:px-10 px-5 2xl:pt-52 lg:pt-36 pt-20">
+
+  <div class="text-center">
+
+    <h2 class="xl:text-7xl lg:text-[64px] md:text-[40px] text-4xl font-semibold text-white">
+      Convince me – <br> <span class="bg-[#D2B94E] bg-clip-text text-transparent">Digitale Exzellenz, die überzeugt.</span>
+    </h2>
+    <!-- <h2 class="xl:text-7xl lg:text-[64px] md:text-[40px] text-4xl font-semibold text-white flex flex-wrap justify-center items-center gap-2">
+  Your Success,
+  <span class="flex items-center justify-center w-[1em] h-[1em] mx-2">
+    <img src="./assets/img/Ellipse 3367.png" alt="" class="w-full h-full object-contain">
+  </span>ur Expertise:
+</h2> -->
+
+  <!-- <h2 class="xl:text-7xl lg:text-[64px] md:text-[40px] text-4xl font-semibold text-white pt-6 "><span class="bg-[#D2B94E] bg-clip-text text-transparent">Digital Brilliance Redefined</span></h2> -->
+
+  <div class=" flex flex-col justify-center items-center text-center">
+  <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[45px] lg:leading-9 leading-7 text-white pt-6 max-w-5xl 2xl:max-w-6xl">Wir sind eine inhabergeführte Digitalagentur mit Sitz in Hamburg und betreuen nationale wie internationale Marken mit einem klaren Fokus auf messbare Ergebnisse. Unser Team aus Experten für Performance Marketing, Branding und Recruiting entwickelt Strategien, die Marken sichtbar machen, Reichweite schaffen und nachhaltiges Wachstum ermöglichen. <br>
+Durch datenbasierte Entscheidungsprozesse, kontinuierliche Optimierung und den Einsatz modernster Technologien stellen wir sicher, dass unsere Kunden ihren Wettbewerbern stets einen Schritt voraus sind. Wir verbinden Kreativität mit analytischer Präzision und schaffen digitale Lösungen, die nicht nur performen, sondern begeistern. <br>
+Ob durch gezielte Kampagnen, starke Markenstrategien oder intelligente Recruitinglösungen – wir entwickeln Konzepte, die überzeugen, und begleiten Unternehmen ganzheitlich auf ihrem Weg zum digitalen Erfolg.</p>
+</div>
+
+  <button id="openModal" class="text-lg font-semibold px-8 py-4 mt-12 text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E] transition">
+  Request Free Advice &nbsp;<i class="fa-solid fa-chevron-right"></i>
+</button>
+
+  </div>
+
+  <!-- ist block  -->
+<div class="flex md:flex-row flex-col 2xl:mt-28 xl:mt-20 mt-10 border border-[#414141] relative">
+  <div class="md:w-3/12 w-full flex justify-center items-center md:py-20 py-10 2xl:px-16 xl:px-10 px-5">
+    <div class="premium-tilt">
+    <img src="./assets/img/digital.png" class=" animate-premium" alt="">
+    </div>
+  </div>
+  <div class="md:w-3/4 w-full flex flex-col justify-center 2xl:px-32 xl:px-20 px-6 md:border-l border-t border-[#414141] 2xl:py-20 lg:py-10 py-6">
+    <h3 class="2xl:text-7xl lg:text-5xl md:text-[40px] md:text-4xl text-3xl font-semibold text-white"> Ihr Strahlendes Markenimage</h3>
+    <p class="2xl:text-3xl lg:text-xl text-lg 2xl:leading-[65px] lg:leading-9 leading-7 text-white pt-5">Mit Digital Brilliance rücken wir Ihr Unternehmen ins perfekte Licht – egal ob als attraktiver Arbeitgeber für neue Talente oder als starker Dienstleister in Ihrer Region. <br>
+Wir entwickeln eine digitale Markenpräsenz, die Vertrauen schafft, Ihre Sichtbarkeit erhöht und Ihre Zielgruppe begeistert.
+So werden Sie nicht nur gesehen, sondern bleiben auch im Gedächtnis.</p>
+
+<div>
+<button class="text-lg font-semibold px-8 py-4 mt-12 text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E]">
+  Jetzt Kontakt Aufnehmen &nbsp; &nbsp;<i class="fa-solid fa-chevron-right"></i>
+</button>
+</div>
+  </div>
+</div>
+
+
+<!-- 2nd block -->
+<div class="flex md:flex-row flex-col md:mt-0 mt-10 border border-[#414141] relative">
+  <div class="md:w-3/12 w-full flex justify-center items-center md:py-20 py-10 2xl:px-16 xl:px-10 px-5">
+    <div class="premium-tilt">
+      <img src="./assets/img/social.png" class=" animate-premium" alt="">
+    </div>
+  </div>
+
+  <div class="md:w-3/4 w-full flex flex-col justify-center 2xl:px-32 xl:px-20 px-6 md:border-l border-t border-[#414141] 2xl:py-20 lg:py-10 py-6">
+    <h3 class="2xl:text-7xl lg:text-5xl md:text-[40px] md:text-4xl text-3xl font-semibold text-white">
+      Sichtbarkeit, Die Wirkt
+    </h3>
+    <p class="2xl:text-3xl lg:text-xl text-lg 2xl:leading-[65px] lg:leading-9 leading-7 text-white pt-5">
+      Social Media ist heute weit mehr als nur Likes und Follower – es ist einer der stärksten Kanäle, um Kunden zu gewinnen und Mitarbeiter zu erreichen. <br>
+Wir sorgen dafür, dass Ihre Marke auf den relevanten Plattformen sichtbar, nahbar und unverwechselbar wird. <br>
+Ob Content-Strategie, kreative Posts oder zielgerichtete Kampagnen – wir nutzen Social Media, um Ihre Reichweite zu steigern, Ihre Community aufzubauen und Ihre Botschaften genau dort zu platzieren, wo sie wirken.
+    </p>
+
+    <div>
+      <button class="text-lg font-semibold px-8 py-4 mt-12 text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E]">
+        Jetzt Kontakt Aufnehmen &nbsp; &nbsp;<i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<!-- 3rd block  -->
+ <div class="flex md:flex-row flex-col md:mt-0 mt-10 border border-[#414141] relative">
+  <div class="md:w-3/12 w-full flex justify-center items-center md:py-20 py-10 2xl:px-16 xl:px-10 px-5">
+    <div class="premium-tilt">
+    <img src="./assets/img/future.png" class=" animate-premium" alt="">
+    </div>
+  </div>
+  <div class="md:w-3/4 w-full flex flex-col justify-center 2xl:px-32 xl:px-20 px-6 md:border-l border-t border-[#414141] 2xl:py-20 lg:py-10 py-6">
+    <h3 class="2xl:text-7xl lg:text-5xl md:text-[40px] md:text-4xl text-3xl font-semibold text-white">Performance Marketing & Recruiting</h3>
+    <p class="2xl:text-3xl lg:text-xl text-lg 2xl:leading-[65px] lg:leading-9 leading-7 text-white pt-5">Wir bringen dein Business nach vorn – egal ob mehr Umsatz oder neue Mitarbeiter gebraucht werden. <br>
+Mit Performance Marketing steigern wir deine Reichweite und Umsätze messbar durch zielgerichtete Ads. <br>
+Mit Performance Recruiting besetzen wir deine offenen Stellen in maximal 30 Tagen – schnell, effizient, passend und mit Einstellungsgarantie.
+
+
+</p>
+
+<div>
+<button class="text-lg font-semibold px-8 py-4 mt-12 text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E]">
+  Jetzt Kontakt Aufnehmen &nbsp; &nbsp;<i class="fa-solid fa-chevron-right"></i>
+</button>
+</div>
+  </div>
+</div>
+
+
+</section>
+
+<!--bird or branding section  -->
+<section class="branding 2xl:px-24 lg:px-10 px-5 2xl:py-40 py-20">
+  <div class="flex justify-between items-center lg:flex-row flex-col xl:gap-16 2xl:gap-8 gap-10">
+
+    <!-- Before / After Effect -->
+      <div class="lg:w-1/2 w-full ">
+       <div class="slider-container h-[450px] md:h-[700px] 2xl:h-[1080px]">
+  <div class="before-image">
+    <img src="./assets/img/1.png" alt="Before Image">
+    <!-- <div class="before-text">Before</div> -->
+  </div>
+  <div class="after-image">
+    <img src="./assets/img/2.png" alt="After Image">
+    <!-- <div class="after-text">After</div> -->
+  </div>
+  <div class="slider-handle" id="sliderHandle"></div>
+  <div class="slider-line">
+    <div class="pulse-container">
+      <svg role="presentation" focusable="false" fill="none" width="50" height="50" viewBox="0 0 50 50">
+        <g>
+          <rect width="50" height="50" rx="25" fill="#D2B94E"></rect>
+          <path d="m19.25 19-6 6 6 6m11.5 0 6-6-6-6" stroke="#000000" stroke-width=".75" stroke-linecap="square"></path>
+        </g>
+      </svg>
+    </div>
+
+  </div>
+</div>
+      </div>
+
+
+    <div class="brandsec lg:w-1/2 w-full">
+      <h2 class="md:text-start text-center 2xl:text-[70px] xl:text-6xl lg:text-5xl md:text-[40px] text-4xl text-white 2xl:leading-[85px] xl:leading-[70px] lg:leading-[60px] md:leading-[45px] leading-[45px]">Auch ein kleiner Vogel kann groß wirken – mit <span class="font-bold">starkem Branding.</span></h2>
+
+      <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-white pt-6 md:text-start text-center">Viele kleine und mittelständische Unternehmen glauben, dass professionelle Markenbildung nur großen Konzernen vorbehalten ist – und mit hohen Budgets einhergeht. Doch das stimmt nicht. In einer digital vernetzten Welt gibt es unzählige Möglichkeiten, auch mit überschaubaren Mitteln eine starke Marke zu schaffen, die Vertrauen weckt und im Gedächtnis bleibt.
+Jedes Unternehmen – unabhängig von seiner Größe – kann ein hochwertiges Image und eine klare Identität entwickeln. Unsere Aufgabe ist es, die individuellen Stärken und Werte Ihres Unternehmens sichtbar zu machen und in ein unverwechselbares Markenerlebnis zu übersetzen.
+So entsteht Branding, das nicht nur schön aussieht, sondern Wirkung zeigt – online wie offline.</p>
+    </div>
+  </div>
+</section>
+
+<!-- sucess section  -->
+ <section class="2xl:px-24 lg:px-10 px-5">
+      <div class="text-center">
+    <h2 class="xl:text-7xl lg:text-[64px] md:text-[40px] text-4xl font-semibold text-white flex flex-wrap justify-center items-center gap-2">
+  Ihr Erfolg. Unsere Expertise.
+
+</h2>
+
+  <h2 class="xl:text-7xl lg:text-[64px] md:text-[40px] text-4xl font-semibold text-white pt-6 ">Digitale Exzellenz – neu definiert.</h2>
+
+  <div class="flex flex-col justify-center items-center">
+  <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[45px] lg:leading-9 leading-7 text-white pt-5 text-center 2xl:max-w-6xl max-w-5xl ">Convince me. steht für Überzeugungskraft, digitale Exzellenz und strategisches Denken. Mit tiefem Fachwissen und langjähriger Erfahrung bieten wir unseren Kunden das gesamte Spektrum moderner Marketinglösungen – kanalübergreifend, datenbasiert und mit einem klaren Fokus auf messbare Ergebnisse. <br>
+Wir sind nicht nur Experten – wir leben Marketing. Mit Leidenschaft, Präzision und Kreativität entwickeln wir Strategien, die Marken stärken, Abläufe optimieren und Umsätze nachhaltig steigern.
+Unsere Mission: Unternehmen dabei zu unterstützen, im digitalen Zeitalter sichtbar, relevant und erfolgreich zu bleiben.</p>
+</div>
+  </div>
+
+<!-- grid section  -->
+  <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-8 gap-6 2xl:pt-32 lg:pt-20 pt-10">
+
+    <a href="./comingsoon.html">
+    <div class="relative group border border-[#414141] 2xl:p-10 p-6  overflow-hidden cursor-pointer">
+
+  <!-- Normal Content -->
+  <div class="transition-all duration-500 ease-in-out group-hover:opacity-0 group-hover:translate-y-[-20px]">
+    <div class="flex justify-between">
+      <div>
+        <img src="./assets/img/block1.png" alt="" class="">
+      </div>
+      <div>
+        <img src="./assets/img/errow.png" alt="" class="">
+      </div>
+    </div>
+    <h3 class="2xl:text-4xl md:text-3xl text-2xl font-bold text-white pt-24">
+      Kreativ-Kampagnen & Videoproduktion
+    </h3>
+  </div>
+
+  <!-- Hover Content (Gradient Overlay Slide/Fade In) -->
+  <div class="absolute inset-0 bg-gradient-to-br from-[#09E156] to-[#01BCDD] p-6 2xl:p-10  opacity-0 translate-y-10 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+    <div class="flex justify-between">
+      <div>
+        <!-- <img src="./assets/img/convince.png" alt="" class="w-10 h-10"> -->
+      </div>
+      <div>
+        <img src="./assets/img/errow.png" alt="" class="transition-transform duration-300 group-hover:translate-x-1">
+      </div>
+    </div>
+    <h3 class="2xl:text-4xl md:text-3xl text-2xl font-bold text-[#0F0F0F] pt-4">
+      Kreativ-Kampagnen & Videoproduktion
+    </h3>
+    <p class="text-[#0F0F0F] mt-4">
+      Wir entwickeln aufmerksamkeitsstarke Kampagnen und emotionale Bewegtbilder, die Marken erlebbar machen und nachhaltig im Gedächtnis bleiben.
+Von der Idee bis zur Produktion – alles aus einer Hand.
+    </p>
+  </div>
+
+</div>
+</a>
+
+<a href="./comingsoon.html">
+  <div class="relative group border border-[#414141] 2xl:p-10 p-6  overflow-hidden cursor-pointer">
+
+  <!-- Normal Content -->
+  <div class="transition-all duration-500 ease-in-out group-hover:opacity-0 group-hover:translate-y-[-20px]">
+    <div class="flex justify-between">
+      <div>
+        <img src="./assets/img/block2.png" alt="" class="">
+      </div>
+      <div>
+        <img src="./assets/img/errow.png" alt="" class="">
+      </div>
+    </div>
+    <h3 class="2xl:text-4xl md:text-3xl text-2xl font-bold text-white pt-24">
+      Performance <br> Recruiting
+    </h3>
+  </div>
+
+  <!-- Hover Content (Gradient Overlay Slide/Fade In) -->
+  <div class="absolute inset-0 bg-gradient-to-br from-[#FF66E1] to-[#FFE438] p-6 2xl:p-10  opacity-0 translate-y-10 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+    <div class="flex justify-between">
+      <div>
+        <!-- <img src="./assets/img/convince.png" alt="" class="w-10 h-10"> -->
+      </div>
+      <div>
+        <img src="./assets/img/errow.png" alt="" class="transition-transform duration-300 group-hover:translate-x-1">
+      </div>
+    </div>
+    <h3 class="2xl:text-4xl md:text-3xl text-2xl font-bold text-[#0F0F0F] pt-6">
+      Performance Recruiting
+    </h3>
+    <p class="text-[#0F0F0F] mt-4">
+      Mit der convince me. Methode gewinnen wir qualifizierte Mitarbeiter durch KI-gestützte Prozesse und präzise Zielgruppen-Targetierung.
+Unsere datenbasierten Strategien und intelligenten Ads sorgen dafür, dass Sie die richtigen Talente erreichen – effizient, planbar und mit Erfolgsgarantie.
+    </p>
+  </div>
+
+</div>
+</a>
+
+<a href="./comingsoon.html">
+ <div class="relative group border border-[#414141] 2xl:p-10 p-6  overflow-hidden cursor-pointer">
+
+  <!-- Normal Content -->
+  <div class="transition-all duration-500 ease-in-out group-hover:opacity-0 group-hover:translate-y-[-20px]">
+    <div class="flex justify-between">
+      <div>
+        <img src="./assets/img/block3.png" alt="" class="">
+      </div>
+      <div>
+        <img src="./assets/img/errow.png" alt="" class="">
+      </div>
+    </div>
+    <h3 class="2xl:text-4xl md:text-3xl text-2xl font-bold text-white pt-24">
+      Performance <br> Marketing
+    </h3>
+  </div>
+
+  <!-- Hover Content (Gradient Overlay Slide/Fade In) -->
+  <div class="absolute inset-0 bg-gradient-to-br from-[#33CAD7] to-[#FFD675] p-6 2xl:p-10  opacity-0 translate-y-10 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+    <div class="flex justify-between">
+      <div>
+        <!-- <img src="./assets/img/convince.png" alt="" class="w-10 h-10"> -->
+      </div>
+      <div>
+        <img src="./assets/img/errow.png" alt="" class="transition-transform duration-300 group-hover:translate-x-1">
+      </div>
+    </div>
+    <h3 class="2xl:text-4xl md:text-3xl text-2xl font-bold text-[#0F0F0F] pt-6">
+ Performance Marketing    </h3>
+    <p class="text-[#0F0F0F] mt-4">
+      Wir steigern Ihre Sichtbarkeit und Umsätze messbar durch präzise gesteuerte Kampagnen, die auf Zahlen, Daten und klarem ROI basieren.
+    </p>
+  </div>
+
+</div>
+</a>
+
+<a href="./comingsoon.html">
+<div class="relative group border border-[#414141] 2xl:p-10 p-6  overflow-hidden cursor-pointer">
+
+  <!-- Normal Content -->
+  <div class="transition-all duration-500 ease-in-out group-hover:opacity-0 group-hover:translate-y-[-20px]">
+    <div class="flex justify-between">
+      <div>
+        <img src="./assets/img/block4.png" alt="" class="">
+      </div>
+      <div>
+        <img src="./assets/img/errow.png" alt="" class="">
+      </div>
+    </div>
+    <h3 class="2xl:text-4xl md:text-3xl text-2xl font-bold text-white pt-24">
+      Social Media
+    </h3>
+  </div>
+
+  <!-- Hover Content (Gradient Overlay Slide/Fade In) -->
+  <div class="absolute inset-0 bg-gradient-to-br from-[#76FEBA] to-[#F84CB5] p-6 2xl:p-10  opacity-0 translate-y-10 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+    <div class="flex justify-between">
+      <div>
+        <!-- <img src="./assets/img/convince.png" alt="" class="w-10 h-10"> -->
+      </div>
+      <div>
+        <img src="./assets/img/errow.png" alt="" class="transition-transform duration-300 group-hover:translate-x-1">
+      </div>
+    </div>
+    <h3 class="2xl:text-4xl md:text-3xl text-2xl font-bold text-[#0F0F0F] pt-6">
+      Social Media
+    </h3>
+    <p class="text-[#0F0F0F] mt-4">
+     Wir steigern Ihre Sichtbarkeit und Umsätze messbar durch präzise gesteuerte Kampagnen, die auf Zahlen, Daten und klarem ROI basieren.
+    </p>
+  </div>
+
+</div>
+</a>
+
+<a href="./comingsoon.html">
+<div class="relative group border border-[#414141] 2xl:p-10 p-6  overflow-hidden cursor-pointer">
+
+  <!-- Normal Content -->
+  <div class="transition-all duration-500 ease-in-out group-hover:opacity-0 group-hover:translate-y-[-20px]">
+    <div class="flex justify-between">
+      <div>
+        <img src="./assets/img/block5.png" alt="" class="">
+      </div>
+      <div>
+        <img src="./assets/img/errow.png" alt="" class="">
+      </div>
+    </div>
+    <h3 class="2xl:text-4xl md:text-3xl text-2xl font-bold text-white pt-24">
+      Branding
+    </h3>
+  </div>
+
+  <!-- Hover Content (Gradient Overlay Slide/Fade In) -->
+  <div class="absolute inset-0 bg-gradient-to-br from-[#07FFE1] to-[#FFC555] p-6 2xl:p-10  opacity-0 translate-y-10 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+    <div class="flex justify-between">
+      <div>
+        <!-- <img src="./assets/img/convince.png" alt="" class="w-10 h-10"> -->
+      </div>
+      <div>
+        <img src="./assets/img/errow.png" alt="" class="transition-transform duration-300 group-hover:translate-x-1">
+      </div>
+    </div>
+    <h3 class="2xl:text-4xl md:text-3xl text-2xl font-bold text-[#0F0F0F] pt-6">
+      Branding
+    </h3>
+    <p class="text-[#0F0F0F] mt-4">
+      Wir formen Markenidentitäten, die Vertrauen schaffen und Wiedererkennung erzeugen – visuell, emotional und strategisch durchdacht.
+    </p>
+  </div>
+
+</div>
+</a>
+
+<a href="./comingsoon.html">
+<div class="relative group border border-[#414141] 2xl:p-10 p-6  overflow-hidden cursor-pointer">
+
+  <!-- Normal Content -->
+  <div class="transition-all duration-500 ease-in-out group-hover:opacity-0 group-hover:translate-y-[-20px]">
+    <div class="flex justify-between">
+      <div>
+        <img src="./assets/img/block6.png" alt="" class="">
+      </div>
+      <div>
+        <img src="./assets/img/errow.png" alt="" class="">
+      </div>
+    </div>
+    <h3 class="2xl:text-4xl md:text-3xl text-2xl font-bold text-white pt-24">
+      Website & Web Design
+    </h3>
+  </div>
+
+  <!-- Hover Content (Gradient Overlay Slide/Fade In) -->
+  <div class="absolute inset-0 bg-gradient-to-br from-[#DFE81D] to-[#0CFEDD] p-6 2xl:p-10  opacity-0 translate-y-10 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+    <div class="flex justify-between">
+      <div>
+        <!-- <img src="./assets/img/convince.png" alt="" class="w-10 h-10"> -->
+      </div>
+      <div>
+        <img src="./assets/img/errow.png" alt="" class="transition-transform duration-300 group-hover:translate-x-1">
+      </div>
+    </div>
+    <h3 class="2xl:text-4xl md:text-3xl text-2xl font-bold text-[#0F0F0F] pt-6">
+      Website & Web Design
+    </h3>
+    <p class="text-[#0F0F0F] mt-4">
+      Wir gestalten Websites, die überzeugen – ästhetisch, funktional und auf Conversion ausgerichtet. Ihre digitale Visitenkarte in Bestform.
+    </p>
+  </div>
+
+</div>
+</a>
+
+<a href="./comingsoon.html">
+    <div class="relative group border border-[#414141] 2xl:p-10 p-6  overflow-hidden cursor-pointer">
+
+  <!-- Normal Content -->
+  <div class="transition-all duration-500 ease-in-out group-hover:opacity-0 group-hover:translate-y-[-20px]">
+    <div class="flex justify-between">
+      <div>
+        <img src="./assets/img/block1.png" alt="" class="">
+      </div>
+      <div>
+        <img src="./assets/img/errow.png" alt="" class="">
+      </div>
+    </div>
+    <h3 class="2xl:text-4xl md:text-3xl text-2xl font-bold text-white pt-24">
+      UI/UX Design
+    </h3>
+  </div>
+
+  <!-- Hover Content (Gradient Overlay Slide/Fade In) -->
+  <div class="absolute inset-0 bg-gradient-to-br from-[#09E156] to-[#01BCDD] p-6 2xl:p-10  opacity-0 translate-y-10 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+    <div class="flex justify-between">
+      <div>
+        <!-- <img src="./assets/img/convince.png" alt="" class="w-10 h-10"> -->
+      </div>
+      <div>
+        <img src="./assets/img/errow.png" alt="" class="transition-transform duration-300 group-hover:translate-x-1">
+      </div>
+    </div>
+    <h3 class="2xl:text-4xl md:text-3xl text-2xl font-bold text-[#0F0F0F] pt-4">
+      UI/UX Design
+    </h3>
+    <p class="text-[#0F0F0F] mt-4">
+      Wir gestalten Benutzeroberflächen, die nicht nur visuell überzeugen, sondern strategisch auf höchste Nutzerfreundlichkeit ausgelegt sind. Unser UI/UX-Ansatz sorgt für klare Strukturen, intuitive Bedienung und ein nahtloses Nutzererlebnis – damit aus Ideen wirkungsvolle digitale Erlebnisse werden.
+    </p>
+  </div>
+
+</div>
+</a>
+
+<a href="./comingsoon.html">
+  <div class="relative group border border-[#414141] 2xl:p-10 p-6  overflow-hidden cursor-pointer">
+
+  <!-- Normal Content -->
+  <div class="transition-all duration-500 ease-in-out group-hover:opacity-0 group-hover:translate-y-[-20px]">
+    <div class="flex justify-between">
+      <div>
+        <img src="./assets/img/block2.png" alt="" class="">
+      </div>
+      <div>
+        <img src="./assets/img/errow.png" alt="" class="">
+      </div>
+    </div>
+    <h3 class="2xl:text-4xl md:text-3xl text-2xl font-bold text-white pt-24">
+      Mobile App Entwicklung
+    </h3>
+  </div>
+
+  <!-- Hover Content (Gradient Overlay Slide/Fade In) -->
+  <div class="absolute inset-0 bg-gradient-to-br from-[#FF66E1] to-[#FFE438] p-6 2xl:p-10  opacity-0 translate-y-10 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+    <div class="flex justify-between">
+      <div>
+        <!-- <img src="./assets/img/convince.png" alt="" class="w-10 h-10"> -->
+      </div>
+      <div>
+        <img src="./assets/img/errow.png" alt="" class="transition-transform duration-300 group-hover:translate-x-1">
+      </div>
+    </div>
+    <h3 class="2xl:text-4xl md:text-3xl text-2xl font-bold text-[#0F0F0F] pt-6">
+      Mobile App Entwicklung
+    </h3>
+    <p class="text-[#0F0F0F] mt-4">
+      Wir entwickeln leistungsstarke und benutzerfreundliche Mobile Apps, die Ihre Ideen zum Leben erwecken.
+ Unser Expertenteam legt besonderen Wert auf Funktionalität, Design und Performance – für Anwendungen, die auf jedem Gerät begeistern, Nutzer binden und Ergebnisse liefern.
+    </p>
+  </div>
+
+</div>
+</a>
+
+<a href="./comingsoon.html">
+ <div class="relative group border border-[#414141] 2xl:p-10 p-6  overflow-hidden cursor-pointer">
+
+  <!-- Normal Content -->
+  <div class="transition-all duration-500 ease-in-out group-hover:opacity-0 group-hover:translate-y-[-20px]">
+    <div class="flex justify-between">
+      <div>
+        <img src="./assets/img/block3.png" alt="" class="">
+      </div>
+      <div>
+        <img src="./assets/img/errow.png" alt="" class="">
+      </div>
+    </div>
+    <h3 class="2xl:text-4xl md:text-3xl text-2xl font-bold text-white pt-24">
+      CMS Design & Entwicklung
+    </h3>
+  </div>
+
+  <!-- Hover Content (Gradient Overlay Slide/Fade In) -->
+  <div class="absolute inset-0 bg-gradient-to-br from-[#33CAD7] to-[#FFD675] p-6 2xl:p-10  opacity-0 translate-y-10 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+    <div class="flex justify-between">
+      <div>
+        <!-- <img src="./assets/img/convince.png" alt="" class="w-10 h-10"> -->
+      </div>
+      <div>
+        <img src="./assets/img/errow.png" alt="" class="transition-transform duration-300 group-hover:translate-x-1">
+      </div>
+    </div>
+    <h3 class="2xl:text-4xl md:text-3xl text-2xl font-bold text-[#0F0F0F] pt-6">
+      CMS Design & Entwicklung
+
+    </h3>
+    <p class="text-[#0F0F0F] mt-4">
+      Unsere CMS-Lösungen ermöglichen es Ihnen, Ihre Website einfach, effizient und flexibel zu verwalten.
+Wir erstellen maßgeschneiderte, intuitive Systeme, die Content-Updates vereinfachen, Zusammenarbeit fördern und Ihre Geschäftsziele optimal unterstützen.
+    </p>
+  </div>
+
+</div>
+</a>
+
+  </div>
+ </section>
+
+<!-- about us  -->
+<section class="2xl:px-24 lg:px-10 px-5 2xl:pt-52 lg:pt-36 pt-20">
+  <div>
+    <h2 class="xl:text-7xl lg:text-5xl md:text-[40px] text-4xl xl:leading-[85px] lg:leading-[60px] md:leading-[45px] leading-[45px] font-semibold text-white text-center">Stimmen unserer <br><span class="text-[#F5F5F5]/80"> Partner</span></h2>
+  </div>
+
+  <div class="swiper mySwiper 2xl:mt-20 xl:mt-14 mt-10">
+  <div class="swiper-wrapper">
+
+    <!-- Slide 1 -->
+    <div class="swiper-slide">
+      <div class="bg-cover bg-center bg-no-repeat 2xl:py-10 2xl:px-16 px-8 py-6 text-white flex flex-col gap-20 justify-between" style="background-image: url(./assets/img/slidecardbg.png);">
+        <div>
+          <h3 class="xl:text-3xl lg:text-xl text-lg font-semibold 2xl:leading-[64px] xl:leading-[54px] leading-10">
+            “Kreativ-Kampagnen & Videoproduktion....
+          </h3>
+          <p class="italic 2xl:text-lg xl:text-base text-sm 2xl:leading-10 xl:leading-7 leading-6 font-medium pt-4">
+            ...Das Team von convince me. hat unsere Marke mit einer außergewöhnlichen Kampagne zum Leben erweckt. Das Ergebnis war kreativ, emotional und perfekt auf unsere Zielgruppe abgestimmt – ein echter Wow-Effekt.”
+          </p>
+        </div>
+        <div>
+        <hr class="border-2 border-[#000000] mb-6">
+        <div class="flex gap-5">
+          <div><img src="" alt=""></div>
+          <div>
+            <h4 class="2xl:text-lg text-base">Laura Neumann</h4>
+            <p class="2xl:text-sm text-xs">Marketing Managerin </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="swiper-slide">
+      <div class="bg-cover bg-center bg-no-repeat 2xl:py-10 2xl:px-16 px-8 py-6 text-white flex flex-col gap-20 justify-between" style="background-image: url(./assets/img/slidecardbg.png);">
+        <div>
+          <h3 class="xl:text-3xl lg:text-xl text-lg font-semibold 2xl:leading-[64px] xl:leading-[54px] leading-10">
+            “Performance Recruiting....
+          </h3>
+          <p class="italic 2xl:text-lg xl:text-base text-sm 2xl:leading-10 xl:leading-7 leading-6 font-medium pt-4">
+            ...Wir konnten offene Stellen in Rekordzeit besetzen. Die KI-gestützte Targetierung war beeindruckend präzise – endlich Bewerbungen von Kandidaten, die wirklich zu uns passen.”
+          </p>
+        </div>
+        <div>
+        <hr class="border-2 border-[#000000] mb-6">
+        <div class="flex gap-5">
+          <div><img src="" alt=""></div>
+          <div>
+            <h4 class="2xl:text-lg text-base">Thomas Becker</h4>
+            <p class="2xl:text-sm text-xs">HR-Leiter</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="swiper-slide">
+      <div class="bg-cover bg-center bg-no-repeat 2xl:py-10 2xl:px-16 px-8 py-6 text-white flex flex-col gap-20 justify-between" style="background-image: url(./assets/img/slidecardbg.png);">
+        <div>
+          <h3 class="xl:text-3xl lg:text-xl text-lg font-semibold 2xl:leading-[64px] xl:leading-[54px] leading-10">
+            “Performance Marketing....
+          </h3>
+          <p class="italic 2xl:text-lg xl:text-base text-sm 2xl:leading-10 xl:leading-7 leading-6 font-medium pt-4">
+            ...convince me. liefert messbare Ergebnisse. Unsere Umsätze haben sich dank der datenbasierten Kampagnen deutlich gesteigert – absolute Empfehlung für Performance-getriebenes Marketing.”
+          </p>
+        </div>
+        <div>
+        <hr class="border-2 border-[#000000] mb-6">
+        <div class="flex gap-5">
+          <div><img src="" alt=""></div>
+          <div>
+            <h4 class="2xl:text-lg text-base">Julia Wagner</h4>
+            <p class="2xl:text-sm text-xs">Geschäftsführerin</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Slide 4 -->
+    <div class="swiper-slide">
+      <div class="bg-cover bg-center bg-no-repeat 2xl:py-10 2xl:px-16 px-8 py-6 text-white flex flex-col gap-20 justify-between" style="background-image: url(./assets/img/slidecardbg.png);">
+        <div>
+          <h3 class="xl:text-3xl lg:text-xl text-lg font-semibold 2xl:leading-[64px] xl:leading-[54px] leading-10">
+            “Social Media....
+          </h3>
+          <p class="italic 2xl:text-lg xl:text-base text-sm 2xl:leading-10 xl:leading-7 leading-6 font-medium pt-4">
+            ...Endlich eine Agentur, die Social Media strategisch versteht. Unsere Reichweite, Interaktionsraten und Markenwahrnehmung sind spürbar gestiegen – und das mit authentischem Content.”
+          </p>
+        </div>
+        <div>
+        <hr class="border-2 border-[#000000] mb-6">
+        <div class="flex gap-5">
+          <div><img src="" alt=""></div>
+          <div>
+            <h4 class="2xl:text-lg text-base">Sebastian Krüger</h4>
+            <p class="2xl:text-sm text-xs">Brand Director</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Slide 5 -->
+    <div class="swiper-slide">
+      <div class="bg-cover bg-center bg-no-repeat 2xl:py-10 2xl:px-16 px-8 py-6 text-white flex flex-col gap-20 justify-between" style="background-image: url(./assets/img/slidecardbg.png);">
+        <div>
+          <h3 class="xl:text-3xl lg:text-xl text-lg font-semibold 2xl:leading-[64px] xl:leading-[54px] leading-10">
+            “Branding....
+          </h3>
+          <p class="italic 2xl:text-lg xl:text-base text-sm 2xl:leading-10 xl:leading-7 leading-6 font-medium pt-4">
+            ...Das neue Markenbild trifft genau den Kern unseres Unternehmens. Hochwertig, modern und wiedererkennbar – wir erhalten regelmäßig Komplimente für unser Rebranding.”
+          </p>
+        </div>
+        <div>
+        <hr class="border-2 border-[#000000] mb-6">
+        <div class="flex gap-5">
+          <div><img src="" alt=""></div>
+          <div>
+            <h4 class="2xl:text-lg text-base">Miriam Hoffmann</h4>
+            <p class="2xl:text-sm text-xs">Inhaberin</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Slide 6 -->
+    <div class="swiper-slide">
+      <div class="bg-cover bg-center bg-no-repeat 2xl:py-10 2xl:px-16 px-8 py-6 text-white flex flex-col gap-20 justify-between" style="background-image: url(./assets/img/slidecardbg.png);">
+        <div>
+          <h3 class="xl:text-3xl lg:text-xl text-lg font-semibold 2xl:leading-[64px] xl:leading-[54px] leading-10">
+            “Website & Web Design....
+          </h3>
+          <p class="italic 2xl:text-lg xl:text-base text-sm 2xl:leading-10 xl:leading-7 leading-6 font-medium pt-4">
+            ...Unsere neue Website ist nicht nur optisch ein Highlight, sondern auch technisch perfekt umgesetzt. Schnell, nutzerfreundlich und messbar erfolgreicher in der Leadgenerierung.”
+          </p>
+        </div>
+        <div>
+        <hr class="border-2 border-[#000000] mb-6">
+        <div class="flex gap-5">
+          <div><img src="" alt=""></div>
+          <div>
+            <h4 class="2xl:text-lg text-base">Andreas Scholz</h4>
+            <p class="2xl:text-sm text-xs">Geschäftsführer</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+</section>
+
+<!-- stand conviction  -->
+<section class="2xl:px-24 lg:px-10 px-5 2xl:pt-52 lg:pt-36 pt-20">
+  <div class="flex md:flex-row flex-col justify-between">
+    <h2 class="md:w-1/2 w-full text-center md:text-start xl:text-7xl lg:text-5xl md:text-[40px] text-4xl font-semibold text-white xl:leading-[85px] lg:leading-[60px] md:leading-[45px] leading-[45px]">We Stand For <br class="md:block hidden"><span class="text-[#D2B94E]">Conviction.</span></h2>
+
+    <p class="md:w-1/2 w-full 2xl:text-lg lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-end text-white pt-8 md:pt-0">Wir helfen Ihnen, die Einzigartigkeit Ihres Unternehmens sichtbar zu machen.
+Statt auf veraltete Werbemethoden und überdimensionierte Budgets zu setzen, entwickeln wir kreative, datenbasierte und automatisierte Strategien, die Wirkung zeigen – effizient, innovativ und messbar erfolgreich.</p>
+  </div>
+
+  <div class="2xl:pt-16 pt-12">
+     <!-- Tabs -->
+    <div class="flex justify-between border-b border-[#41414166] mb-12 space-x-8">
+      <button class="tab-btn relative px-6 py-3 2xl:text-xl xl:text-lg md:text-base text-sm text-white w-full"
+              data-tab="tab1" data-gradient="from-pink-500 to-purple-500">
+        Who We Are
+        <span class="active-line absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-[#6E35EF] via-[#EF4444] to-[#ffffff] 
+                     before:content-[''] before:absolute before:-top-6 before:left-0 before:w-full before:h-4 
+                     before:bg-gradient-to-r before:from-pink-500 before:to-purple-500 before:blur-xl before:opacity-70">
+        </span>
+      </button>
+
+      <button class="tab-btn relative px-6 py-3 2xl:text-xl xl:text-lg md:text-base text-sm text-white w-full"
+              data-tab="tab2" data-gradient="from-cyan-400 to-blue-500">
+        How We Work
+        <span class="active-line hidden absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-cyan-400 to-blue-500 
+                     before:content-[''] before:absolute before:-top-6 before:left-0 before:w-full before:h-4 
+                     before:bg-gradient-to-r before:from-cyan-400 before:to-blue-500 before:blur-xl before:opacity-70">
+        </span>
+      </button>
+
+      <button class="tab-btn relative px-6 py-3 2xl:text-xl xl:text-lg md:text-base text-sm text-white w-full"
+              data-tab="tab3" data-gradient="from-orange-400 to-yellow-500">
+        Our Philosophy.
+        <span class="active-line hidden absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-orange-400 to-yellow-500 
+                     before:content-[''] before:absolute before:-top-6 before:left-0 before:w-full before:h-4 
+                     before:bg-gradient-to-r before:from-orange-400 before:to-yellow-500 before:blur-xl before:opacity-70">
+        </span>
+      </button>
+    </div>
+
+   <!-- Tab Content -->
+<div id="tab1" class="tab-content bg-gradient-to-tr from-[#6E35EF]/10 via-[#EF4444]/10 to-[#ffffff]/10 2xl:py-28 2xl:px-40 xl:p-20 md:p-10 p-6">
+    <div class="flex md:flex-row flex-col justify-center 2xl:gap-10 gap-8">
+        <div class="xl:pt-6 md:pt-4">
+            <img src="./assets/img/misc_7.png" class="md:w-auto w-20"  alt="">
+        </div>
+        <div>
+            <h3 class="2xl:text-9xl xl:text-8xl lg:text-7xl md:text-6xl text-4xl font-bold text-white">WERTE, DIE WIR <br class="md:block hidden">  LEBEN </h3>
+            <p class="text-white 2xl:text-2xl lg:text-lg text-sm 2xl:leading-[45px] lg:leading-9 leading-6 pt-10">
+    convince me. ist eine inhabergeführte Full-Service-Agentur aus Hamburg.
+Wir verbinden Strategie, Design und Technologie zu einem ganzheitlichen Marketingansatz, der Marken stärkt, Prozesse vereinfacht und Ergebnisse messbar macht. Unser Ziel: Ein verlässlicher Partner an Ihrer Seite zu sein – für nachhaltigen Erfolg in einer digitalen Welt.
+             </p>
+     </div>
+  </div>
+</div>
+
+<div id="tab2" class="tab-content hidden bg-gradient-to-tr from-[#6E35EF]/10 via-[#EF4444]/10 to-[#ffffff]/10 2xl:p-28 xl:p-20 md:p-10 p-6">
+    <div class="flex md:flex-row flex-col justify-center 2xl:gap-10 gap-8">
+        <div class="xl:pt-6 md:pt-4">
+            <img src="./assets/img/misc_7.png" class="md:w-auto w-20" alt="">
+        </div>
+        <div>
+            <h3 class="2xl:text-9xl xl:text-8xl lg:text-7xl md:text-6xl text-4xl font-bold text-white">PARTNERSCHAFT <br class="md:block hidden">STATT <br class="md:block hidden">  AGENTURDENKEN</h3>
+            <p class="text-white 2xl:text-2xl lg:text-lg text-sm 2xl:leading-[45px] lg:leading-9 leading-6 pt-10">
+    Wir arbeiten nicht für Sie – wir arbeiten mit Ihnen.
+Gemeinsam analysieren wir Ihre Markenpräsenz, identifizieren ungenutztes Potenzial und entwickeln Lösungen, die exakt auf Ihre Ziele abgestimmt sind.
+Durch präzises Online-Marketing und intelligente Automatisierung machen wir Kundengewinnung planbar, effizient und nachhaltig.
+             </p>
+     </div>
+  </div>
+</div>
+
+<div id="tab3" class="tab-content hidden bg-gradient-to-tr from-[#6E35EF]/10 via-[#EF4444]/10 to-[#ffffff]/10 2xl:p-28 xl:p-20 md:p-10 p-6">
+    <div class="flex md:flex-row flex-col justify-center 2xl:gap-10 gap-8">
+        <div class="xl:pt-6 md:pt-4">
+            <img src="./assets/img/misc_7.png" class="md:w-auto w-20" alt="">
+        </div>
+        <div>
+            <h3 class="2xl:text-9xl xl:text-8xl lg:text-7xl md:text-6xl text-4xl font-bold text-white">DIGITALE STRATEGIE <br class="md:block hidden"> MIT  HERZ UND VERSTAND</h3>
+            <p class="text-white 2xl:text-2xl lg:text-lg text-sm 2xl:leading-[45px] lg:leading-9 leading-6 pt-10">
+   Marketing verändert sich – die Grundidee bleibt: Menschen erreichen.
+Früher über Zeitung, Radio oder TV. Heute digital, personalisiert und in Echtzeit.
+Wir sorgen dafür, dass Ihre Botschaft genau dort ankommt, wo Ihre Zielgruppe ist – sichtbar, relevant und zur richtigen Zeit.
+             </p>
+     </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+<!-- network section  -->
+ <section class="2xl:pt-52 lg:pt-36 pt-20">
+
+  <div class="px-5 text-center text-white">
+    <h2 class=" xl:text-7xl lg:text-5xl md:text-[40px] text-4xl font-semibold">Eine Auswahl unserer Partner</h2>
+    <p class="2xl:text-xl xl:text-lg lg:text-base text-sm pt-5">Über 450 Partnerunternehmen vertrauen bereits den Experten von convince me.</p>
+  </div>
+  
+    <!-- grid  -->
+  <div class="xl:pt-10 pt-6">
+     <div class="grid xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-3 grid-cols-2">
+
+      <div class="group flex items-center py-7 px-4 justify-center border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/KRIEGERgry.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/KRIEGERpink.png" class="hidden group-hover:block" alt="">
+</div>
+      <div class="group flex items-center justify-center border py-7 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/tipicogrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/tipicored.png" class="hidden group-hover:block" alt="">
+</div>
+      <div class="group flex items-center justify-center border py-7 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/boschgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/boschred.png" class="hidden group-hover:block" alt="">
+</div>
+      <div class="group flex items-center justify-center border py-7 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/marangonigrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/marangoniblue.png" class="hidden group-hover:block" alt="">
+</div>
+      <div class="group flex items-center justify-center border py-7 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/biaxgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/biaxgree.png" class="hidden group-hover:block" alt="">
+</div>
+      <div class="group flex items-center justify-center border py-7 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/ksbgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/ksbblue.png" class="hidden group-hover:block" alt="">
+</div>
+
+    <div class="group flex items-center justify-center border py-8 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/vermetergry.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/vertmet.png" class="hidden group-hover:block" alt="">
+</div>
+      <div class="group flex items-center justify-center border py-8 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/bossard2.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/bossared2blue.png" class="hidden group-hover:block" alt="">
+</div>
+      <div class="group flex items-center justify-center border py-8 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/pflgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/pfl.png" class="hidden group-hover:block" alt="">
+</div>
+      <div class="group flex items-center justify-center border py-8 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/subwaygrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/subway.png" class="hidden group-hover:block" alt="">
+</div>
+      <div class="group flex items-center justify-center border py-8 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/greenhillgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/greenhill.png" class="hidden group-hover:block" alt="">
+</div>
+      <div class="group flex items-center justify-center border py-8 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/cchgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/ccn.png" class="hidden group-hover:block" alt="">
+</div>
+
+ <div class="group flex items-center justify-center border py-7 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/sarpigrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/sarpi.png" class="hidden group-hover:block" alt="">
+</div>
+      <div class="group flex items-center justify-center border py-7 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/lottogrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/lotto.png" class="hidden group-hover:block" alt="">
+</div>
+      <div class="group flex items-center justify-center border py-7 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/dorfernergrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/dorfner.png" class="hidden group-hover:block" alt="">
+</div>
+      <div class="group flex items-center justify-center border py-7 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/sfsgry.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/sfs.png" class="hidden group-hover:block" alt="">
+</div>
+      <div class="group flex items-center justify-center border py-7 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/gorillaweargrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/gorillawear.png" class="hidden group-hover:block" alt="">
+</div>
+      <!-- <div class="group flex items-center justify-center border py-7 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  
+  <img src="./assets/img/boliergrey.png" class="block group-hover:hidden" alt="">
+
+
+  <img src="./assets/img/boliergrey.png" class="hidden group-hover:block" alt="">
+</div> -->
+
+ <div class="group flex items-center justify-center border py-4 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/deingrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/dmmc.png" class="hidden group-hover:block" alt="">
+</div>
+      <div class="group flex items-center justify-center border py-4 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/hellofreshgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/hellofries.png" class="hidden group-hover:block" alt="">
+</div>
+      <div class="group flex items-center justify-center border py-4 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/mmaon-logo 2.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/mmaonyellow.png" class="hidden group-hover:block" alt="">
+</div>
+      <div class="group flex items-center justify-center border py-4 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/edekagry.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/edeka.png" class="hidden group-hover:block" alt="">
+</div>
+      <div class="group flex items-center justify-center border py-4 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/Envy.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/Envygreen.png" class="hidden group-hover:block" alt="">
+</div>
+      <div class="group flex items-center justify-center border py-4 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+  <!-- Default Image -->
+  <img src="./assets/img/usfgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/usfgrey.png" class="hidden group-hover:block" alt="">
+</div>  
+
+     <div class="group flex flex-col justify-center items-center md:px-20 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+         <!-- Default Image -->
+  <img src="./assets/img/lorchgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/lorch.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center md:px-20 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+        <!-- Default Image -->
+  <img src="./assets/img/werner.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/wernerred.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-2 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+       <!-- Default Image -->
+  <img src="./assets/img/mecdonalgrey.png" class="block group-hover:hidden md:w-1/3 w-1/2 xl:w-1/2 2xl:w-1/3" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/mecdonal.png" class="hidden group-hover:block md:w-1/3 w-1/2 xl:w-1/2 2xl:w-1/3" alt="">
+      </div>
+       <div class="group flex flex-col justify-center items-center px-12 md:py-2 py-10 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+          <!-- Default Image -->
+  <img src="./assets/img/wenchgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/wenck.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-6 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+          <!-- Default Image -->
+  <img src="./assets/img/dussmangrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/dussman.png" class="hidden group-hover:block" alt="">
+      </div>
+       <div class="group flex flex-col justify-center items-center px-12 py-6 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+        <!-- Default Image -->
+  <img src="./assets/img/kalmargrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/kalmar.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 md:py-2 2xl:py-4 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+       <!-- Default Image -->
+  <img src="./assets/img/tchibe.png" class="block group-hover:hidden 2xl:w-1/2 " alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/techbirwhite.png" class="hidden group-hover:block 2xl:w-1/2" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center">
+  <button class="text-lg font-semibold px-8 py-4 mt-12 text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E] transition">
+  Explore All &nbsp;&nbsp;<i class="fa-solid fa-chevron-right"></i>
+</button>
+</div>
+
+ </section>
+
+<!-- marketing section  -->
+<section class="2xl:px-24 lg:px-10 px-5 2xl:pt-52 lg:pt-36 pt-20">
+  <div class="flex lg:flex-row flex-col xl:gap-20 gap-10">
+    <div class="lg:w-2/5 w-full">
+      <h2 class="md:text-start text-center 2xl:text-7xl xl:text-6xl lg:text-[43px] md:text-[40px] text-4xl text-white 2xl:leading-[85px] xl:leading-[70px] lg:leading-[54px] md:leading-[48px] leading-[45px]">
+        Unveiling Trends
+and Strategies in <span class="text-[#D2B94E]">Modern Marketing</span>
+      </h2>
+      <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-white pt-6 md:text-start text-center">Explore our enriching blog filled with expert perspectives, timely industry updates, and actionable tips. Immerse yourself in a wealth of knowledge to navigate the dynamic landscape of modern marketing and empower your brand’s journey towards sustained success.</p>
+
+       <div class="md:text-start text-center">
+  <button class="text-lg font-semibold px-8 py-4 mt-8 text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E] transition">
+  Explore All &nbsp;&nbsp;<i class="fa-solid fa-chevron-right"></i>
+</button>
+</div>
+
+
+    </div>
+
+    <div class="lg:w-3/5 w-full pt-10 lg:pt-0">
+      <a href="./job.html">
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/branding.svg" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">Branding</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+      </a>
+      <hr class="border border-[#414141] 2xl:my-20 md:my-10 my-6">
+      
+      <a href="./job.html">
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/concept.png" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">Strategy & Concept</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+      </a>
+      <hr class="border border-[#414141] 2xl:my-20 md:my-10 my-6">
+
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/websiteuiux.png" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">Website & Web design</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- faqs  -->
+<section class="2xl:px-24 lg:px-10 px-5 2xl:pt-52 lg:pt-36 pt-20">
+  <div class="text-center ">
+    <h2 class="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-[40px] text-4xl font-bold text-white" >FAQ – Ihre Fragen. <br>Unsere Antworten.</h2>
+    <p class="2xl:text-xl xl:text-lg lg:text-base text-sm pt-6 text-[#DFDFDF]">Sie möchten wissen, wie wir arbeiten, was unsere Leistungen beinhalten oder welchen Mehrwert <br class="md:block hidden"> Sie durch  convince me. erzielen?
+Hier finden Sie Antworten auf die häufigsten Fragen <br class="md:block hidden"> rund um Performance Marketing, Recruiting, Branding und mehr.
+</p>
+  </div>
+
+
+   <div class="bg-center bg-cover bg-no-repeat" style="background-image: url(./assets/img/lines.png);">
+     <!-- faqs  -->
+    <div class="w-full 2xl:px-72 lg:px-56 2xl:mt-24 lg:mt-16 mt-10">
+       
+        <div class="space-y-4">
+          <div>
+                <hr class=" border-[#333333]">
+             </div>
+            <!-- FAQ 1 -->
+            <div class="" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000">
+                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+                    <span>01
+Was versteht convince me. unter Performance Recruiting?</span>
+                    <span class="icon text-white">+</span>
+                </button>
+                <div class="faq-content text-[#C1C1C1]">
+                    <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Performance Recruiting bedeutet, dass wir Ihre Stellenbesetzungen durch KI-gestützte Systeme und präzise Zielgruppen-Targetierung automatisieren.
+Mit der convince me. Methode finden wir die passenden Kandidaten dort, wo sie sich online bewegen, und führen sie gezielt zu Ihrer offenen Position – effizient, planbar und mit Erfolgsgarantie.</p>
+                   
+                </div>
+            </div>
+            <div>
+                <hr class=" border-[#333333]">
+             </div>
+
+            <!-- FAQ 2 -->
+            <div class="" data-aos="fade-down"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000">
+                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+                    <span>02
+LWie unterscheidet sich Performance Marketing von klassischer Werbung?</span>
+                    <span class="icon text-white">+</span>
+                </button>
+                <div class="faq-content text-[#C1C1C1]">
+                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Im Gegensatz zu herkömmlicher Werbung basiert Performance Marketing auf datengetriebener Analyse und kontinuierlicher Optimierung.
+Jede Kampagne wird in Echtzeit ausgewertet, um Ihr Budget optimal einzusetzen und die höchste Conversion Rate zu erzielen – egal ob für Umsatzsteigerung, Markenbekanntheit oder Leadgenerierung.</p>
+                </div>
+            </div>
+            <div>
+                <hr class=" border-[#333333]">
+             </div>
+
+            <!-- FAQ 3 -->
+            <div class="" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000">
+                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+                    <span>03
+Welche Vorteile bietet professionelles Branding für mein Unternehmen?</span>
+                    <span class="icon text-white">+</span>
+                </button>
+                <div class="faq-content text-[#C1C1C1]">
+                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Ein starkes Branding schafft Vertrauen, Wiedererkennung und emotionale Bindung. <br>
+Wir entwickeln Markenidentitäten, die Ihr Unternehmen visuell und strategisch perfekt repräsentieren – vom Logo bis zur Tonalität Ihrer Kommunikation.
+Das Ergebnis: eine Marke, die bleibt.</p>
+                </div>
+            </div>
+            <div>
+                <hr class=" border-[#333333]">
+             </div>
+
+    <!-- FAQ 4 -->
+           <div class="" data-aos="fade-down"
+           data-aos-anchor-placement="top-bottom"
+           data-aos-duration="2000">
+                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+                    <span>04
+Wie unterstützt convince me. beim Social Media Marketing?</span>
+                    <span class="icon text-white">+</span>
+                </button>
+                <div class="faq-content text-[#C1C1C1]">
+                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Wir übernehmen die strategische Planung, Content-Erstellung und Kampagnensteuerung Ihrer Social-Media-Auftritte.
+Unsere Mission: Ihre Marke auf den relevanten Plattformen sichtbar, nahbar und erfolgreich zu positionieren – mit authentischem Content, aktivem Community-Aufbau und präzisem Targeting.</p>
+                </div>
+            </div>
+            <div>
+                <hr class=" border-[#333333]">
+             </div>
+
+    <!-- FAQ 5 -->
+
+          <div class="" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="2000">
+                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+                    <span>05
+Was beinhaltet das Website- & Webdesign-Angebot?</span>
+                    <span class="icon text-white">+</span>
+                </button>
+                <div class="faq-content text-[#C1C1C1]">
+                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Unsere Webdesign-Leistungen umfassen Konzeption, Design, Entwicklung und Optimierung.
+Wir gestalten Websites, die optisch überzeugen, technisch performen und für Suchmaschinen optimiert sind – damit Ihr digitaler Auftritt nicht nur schön aussieht, sondern Ergebnisse liefert.</p>
+                </div>
+            </div>
+            <div>
+                <hr class=" border-[#333333]">
+             </div>
+
+    <!-- FAQ 6 -->
+          <div class="" data-aos="fade-down"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="2000">
+                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+                    <span>06
+Wie läuft eine Videoproduktion bei convince me. ab?</span>
+                    <span class="icon text-white">+</span>
+                </button>
+                <div class="faq-content text-[#C1C1C1]">
+                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Von der Idee bis zum fertigen Film – alles aus einer Hand.
+Wir konzipieren, produzieren und schneiden hochwertige Bewegtbilder, die Aufmerksamkeit erzeugen und Ihre Marke erlebbar machen.
+Ob Imagefilm, Social-Media-Clip oder Kampagnenvideo – wir erzählen Geschichten, die wirken.</p>
+                </div>
+            </div>
+            <div>
+                <hr class=" border-[#333333]">
+             </div>
+
+              <!-- FAQ 7 -->
+          <div class="" data-aos="fade-down"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="2000">
+                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+                    <span>07
+Für wen sind die Leistungen von convince me. geeignet?</span>
+                    <span class="icon text-white">+</span>
+                </button>
+                <div class="faq-content text-[#C1C1C1]">
+                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">VUnsere Leistungen richten sich an mittelständische Unternehmen, Konzerne und lokale Betriebe, die Wert auf Qualität, Effizienz und Markenaufbau legen.
+Wir passen jede Strategie individuell an Ihre Branche, Zielgruppe und Unternehmensgröße an – für nachhaltigen Erfolg auf allen Kanälen.</p>
+                </div>
+            </div>
+            <div>
+                <hr class=" border-[#333333]">
+             </div>
+
+
+              <!-- FAQ 8 -->
+          <div class="" data-aos="fade-down"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="2000">
+                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+                    <span>08
+Wie kann ich mit convince me. zusammenarbeiten?</span>
+                    <span class="icon text-white">+</span>
+                </button>
+                <div class="faq-content text-[#C1C1C1]">
+                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Ganz einfach: Vereinbaren Sie ein unverbindliches Erstgespräch.
+Gemeinsam analysieren wir Ihre aktuelle Situation, identifizieren Potenziale und zeigen Ihnen, wie wir mit gezieltem Marketing Ihre Ziele erreichen können.</p>
+                </div>
+            </div>
+            <div>
+                <hr class=" border-[#333333]">
+             </div>
+
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- digital marketing  -->
+<section class="2xl:mt-52 lg:mt-36 mt-20 bg-center bg-cover bg-no-repeat border-t border-[#262626]" style="background-image: url(./assets/img/marketingbg.png);">
+  <div class="2xl:py-36 lg:py-20 py-10 2xl:px-32 lg:px-16 px-6 text-center">
+    <h2 class=" 2xl:text-7xl xl:text-6xl lg:text-[43px] md:text-[40px] text-4xl font-semibold text-white 2xl:leading-[85px] xl:leading-[70px] lg:leading-[54px] md:leading-[48px] leading-[45px]">DIGITALES MARKETING <br> FÜR UNTERNEHMEN MIT ANSPRUCH.</h2>
+<p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-white pt-6 ">Aus Hamburg. Für den Mittelstand, der mehr will. Wir sind keine klassische Werbeagentur – wir sind convince me.
+Ein Partner für Unternehmen, die die Chancen der Digitalisierung nutzen wollen, um sichtbarer zu werden, effizienter zu arbeiten und nachhaltig zu wachsen.
+Wir kombinieren Strategie, Technologie und kreative Kommunikation, um Ergebnisse zu erzielen, die zählen: mehr Reichweite, mehr Bewerbungen, mehr Umsatz. Statt auf kostspielige Massenwerbung zu setzen, schaffen wir digitale Lösungen, die präzise auf Ihre Zielgruppe und Ihre Unternehmensziele abgestimmt sind. Ob Marketingstrategie, Recruiting oder Markenaufbau – wir entwickeln individuelle Konzepte, die Wirkung zeigen und echten Mehrwert schaffen. Unser Ziel: Ihr Erfolg. Planbar, messbar und langfristig.</p>
+
+ <div class="text-center">
+  <button data-open="projectModal" class="text-lg font-semibold px-8 py-4 xl:mt-16 mt-8 text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E] transition">
+  Jetzt Fachkräfte einstellen &nbsp;&nbsp;<i class="fa-solid fa-chevron-right"></i>
+</button>
+</div>
+<div class="flex items-center justify-center pt-8 gap-2 flex-wrap">
+          <div class="stars text-white text-lg">
+            <span>★ </span>Trustpilot <span>★ ★ ★ ★ ★</span>
+          </div>
+          <div class="flex items-center gap-2 flex-wrap">
+            <img src="./assets/img/white line.png" alt="">
+            <p class="text-white text-lg font-bold">Hervorragend</p>
+          </div>
+        </div>
+  </div>
+</section>
+
+
+   <!-- Footer -->
+  <footer class="text-white px-6 lg:px-12 xl:px-20 2xl:px-28 py-12 xl:py-20">
+
+    <!-- mobile div only  -->
+    <div class="pb-10 block md:hidden">
+    <div class="flex justify-center pb-6">
+      <img src="./assets/img/footer.png" alt="">
+    </div>
+     <p class="text-white/70 2xl:text-lg text-sm leading-relaxed text-center">
+         Ein Kollektiv engagierter Köpfe, das Unternehmen <br> dabei unterstützt, digital zu wachsen.
+        </p>
+        </div>
+
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7  gap-8 text-center md:text-start">
+      
+      <!-- Left Content -->
+      <div class="lg:col-span-2 hidden md:block">
+        <div class="">
+        <img src="./assets/img/footer.png" class="md:block hidden" alt="">
+        </div>
+        <p class="text-white/70 md:mt-4 2xl:text-lg text-sm leading-relaxed md:block hidden">
+         Ein Kollektiv engagierter Köpfe, das Unternehmen<br class="xl:block hidden"> dabei unterstützt, digital zu wachsen.
+        </p>
+
+        <div class="lg:block hidden">
+         <div class="flex md:justify-start justify-center gap-2 pt-6 ">
+          <a href="https://www.kununu.com/de/convince-me1">
+      <img src="./assets/img/company1.png" alt="">
+      </a>
+      <a href="">
+      <img src="./assets/img/company2.png" alt="">
+      </a>
+        </div>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Quick Links</h3>
+        <ul class="space-y-2 text-white/70 2xl:text-base text-sm ">
+          <li class="hover:underline"><a href="./index.html"  >Home</a></li>
+          <li class="hover:underline"><a href="./comingsoon.html">Our Works</a></li>
+          <li class="hover:underline"><a href="./comingsoon.html">Network</a></li>
+          <li class="hover:underline"><a href="./job.html">Jobs</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div>
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Support</h3>
+        <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
+          <!-- <li><a href="#">Blog</a></li> -->
+          <li class="hover:underline"><a href="./contact.html">Contact Us</a></li>
+          <!-- <li><a href="#">Online Chat</a></li> -->
+          <li class="hover:underline"><a href="#">Whatsapp</a></li>
+          <li class="hover:underline"><a href="#">Telegram</a></li>
+          <!-- <li class="hover:underline"><a href="#">Help Center</a></li> -->
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Services</h3>
+        <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
+          <li class="hover:underline"><a href="./comingsoon.html">Job</a></li>
+          <li class="hover:underline"><a href="./comingsoon.html">Web Design & Development</a></li>
+          <li class="hover:underline"><a href="./comingsoon.html">SEO Optimization</a></li>
+          <li class="hover:underline"><a href="./comingsoon.html">E-Commerce Development</a></li>
+          <li class="hover:underline"><a href="./comingsoon.html">Brand Identity Creation</a></li>
+           <li class="hover:underline"><a href="./comingsoon.html">Strategy for Business Development</a></li>
+          <li class="hover:underline"><a href="./comingsoon.html">Social Media Management & Post Creation</a></li>
+          <li class="hover:underline"><a href="./comingsoon.html">CMS design</a></li>
+          <li class="hover:underline"><a href="./comingsoon.html">Mobile App Design and Development</a></li>
+          <li class="hover:underline"><a href="./comingsoon.html">UI/UX Design</a></li>
+        </ul>
+      </div>
+
+         <!-- Resources -->
+      <div>
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Privacy</h3>
+        <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
+          <li class="hover:underline"><a href="./privacypoliciy.html">Privacy Policies</a></li>
+          <li class="hover:underline"><a href="./termandcondition.html">Terms And Condition</a></li>
+         
+        </ul>
+
+        <!-- for mobile only   -->
+        <div class="md:hidden block pt-6">
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Company</h3>
+        <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
+          <li class="hover:underline"><a href="./impressum.html">Impressum</a></li>
+          <li class="hover:underline"><a href="./Datenschutz.html">Datenschutz</a></li>
+        </ul>
+        <div class="flex justify-center">
+        <img src="./assets/img/attachment.png" class="mt-6" alt="">
+        </div>
+      </div>
+
+
+      </div>
+
+
+        <!-- Resources -->
+      <div class="md:block hidden">
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Company</h3>
+        <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
+        <li class="hover:underline"><a href="./impressum.html">Impressum</a></li>
+          <li class="hover:underline"><a href="./Datenschutz.html">Datenschutz</a></li>
+        </ul>
+        <div class="md:block hidden">
+        <img src="./assets/img/attachment.png" class="mt-6 " alt="">
+        </div>
+      </div>
+
+    </div>
+  <div class="flex md:justify-start justify-center gap-2 pt-6 lg:hidden block">
+          <a href="https://www.kununu.com/de/convince-me1">
+      <img src="./assets/img/company1.png" alt="">
+      </a>
+      <a href="">
+      <img src="./assets/img/company2.png" alt="">
+      </a>
+        </div>
+       
+    <!-- Bottom Bar -->
+    <div class="border-t border-[#414141] mt-10 flex justify-between items-center">
+       <!-- Copyright -->
+        <div>© 2025, convince me.</div>
+
+      <div class="py-4 flex flex-col md:flex-row justify-between items-center text-sm text-white/70 space-y-3 md:space-y-0">
+        <!-- Social Icons -->
+        <div class="flex justify-center md:justify-start space-x-4">
+          <a href="#" class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#D2B94E]">
+            <i class="fab fa-instagram "></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#D2B94E]">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#D2B94E]">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- contact popup form  -->
+<div id="contactModal" 
+     class="fixed inset-0 bg-black/70 z-50 hidden overflow-y-auto">
+  
+  <!-- Center Content with Spacing -->
+  <div class="min-h-screen flex items-center justify-center py-6 px-4">
+    
+    <!-- Modal Card -->
+    <div class="bg-[#1a1a1a] rounded-2xl shadow-xl w-full max-w-5xl 2xl:max-w-7xl
+                flex flex-col md:flex-row relative animate-fadeIn">
+      
+      <!-- Close Button -->
+      <button id="closeModal" 
+              class="absolute top-2 right-4 text-[#A4A7AE] text-xl">
+        ✕
+      </button>
+
+      <!-- Left: Form -->
+      <div class="w-full md:w-1/2 px-6 md:px-0 md:pl-8 sm:py-8 py-6 flex flex-col justify-center text-white">
+        <h2 class="2xl:text-3xl text-2xl font-semibold mb-3">Lass uns Sternbilder verbinden</h2>
+        <p class="2xl:text-lg text-sm text-white mb-6">
+          Lass uns unsere Sternbilder ausrichten! Melde dich, und lass die Magie der Zusammenarbeit unseren Himmel erleuchten.
+        </p>
+
+        <form action="#" method="POST" class="space-y-4">
+          <div class="flex flex-col sm:flex-row gap-4">
+            <input type="text" placeholder="Vorname" 
+                   class="w-full sm:w-1/2 p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none" />
+            <input type="text" placeholder="Nachname" 
+                   class="w-full sm:w-1/2 p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none" />
+          </div>
+          <input type="email" placeholder="E-Mail" 
+                 class="w-full p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none" />
+          <input type="tel" placeholder="Telefonnummer" 
+                 class="w-full p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none" />
+          <textarea placeholder="Nachricht" rows="4" 
+                    class="w-full p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none"></textarea>
+
+          <button type="Senden" 
+                  class="w-full bg-[#D2B94E] text-[#040404] font-medium py-3 rounded-md flex items-center justify-center gap-2 transition">
+            Senden 🚀
+          </button>
+        </form>
+      </div>
+
+      <!-- Right: Astronaut Image -->
+      <div class="w-full md:w-1/2 flex items-center justify-center px-6 py-10">
+        <img src="./assets/img/contactimg.png" 
+             alt="Astronaut" 
+             class="w-full max-h-[600px] object-contain rounded-lg" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Questioning popup  Modal  Overrlay -->
+<div id="projectModal"
+  class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50 overflow-y-auto p-4">
+  
+  <!-- Modal Box -->
+  <div
+    class="relative bg-[#0F0F0F] border border-[#D2B94E] rounded-2xl shadow-xl w-full max-w-5xl my-auto p-6 sm:p-8 overflow-y-auto max-h-[90vh]">
+    
+    <!-- Close Button -->
+    <button id="closeProjectModal"
+      class="absolute top-4 right-4 text-[#D2B94E] text-2xl font-bold">&times;</button>
+
+    <!-- Page Counter -->
+    <div id="pageIndicator" class="text-[#D2B94E] text-lg font-semibold text-center mb-4">
+      Seite 1 von 5
+    </div>
+
+    <!-- Steps -->
+    <div id="projectStepsContainer" class="space-y-10 lg:py-10 py-5">
+      
+      <!-- Page 1 -->
+      <div class="project-step">
+        <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">Du bist...?</h2>
+        <div class="grid md:grid-cols-4 gap-5 pt-6">
+          <div class="md:block hidden"></div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img1.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Geschäftsführer</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img2.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Mitarbeiter</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 2 -->
+      <div class="project-step hidden">
+        <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">Wie viele Mitarbeiter sind in Deinem Betrieb?</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 pt-6">
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img3.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">1 bis 4</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img4.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">5 bis 10</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img5.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">11 bis 30</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img6.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Über 30</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 3 -->
+      <div class="project-step hidden">
+        <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">Wie viele Fachkräfte möchtest Du in den nächsten 30 Tagen einstellen?</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 pt-6">
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img7.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">1 Fachkraft</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img8.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">2 bis 3</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img9.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">4 bis 5</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img10.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">6 oder mehr</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 4 -->
+      <div class="project-step hidden">
+        <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">Wie schnell möchtest Du neue Fachkräfte einstellen?</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 pt-6">
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img11.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Sofort</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img12.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">2 bis 4 Wochen</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img13.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">1 bis 2 Monate</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img14.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Weiß noch nicht</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 5 (Form Page) -->
+      <div class="project-step hidden">
+        <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">
+          Bitte fülle das Formular aus
+        </h2>
+        
+        <form id="projectForm" class="max-w-2xl mx-auto space-y-5 pt-6">
+          <!-- Name -->
+          <div>
+            <label for="name" class="block text-[#D2B94E] text-lg mb-2">Name</label>
+            <input type="text" id="name" name="name" required
+              class="w-full px-4 py-3 rounded-lg bg-[#1A1A1A] border border-[#D2B94E] text-white focus:outline-none focus:ring-2 focus:ring-[#D2B94E]" />
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label for="email" class="block text-[#D2B94E] text-lg mb-2">E-Mail</label>
+            <input type="email" id="email" name="email" required
+              class="w-full px-4 py-3 rounded-lg bg-[#1A1A1A] border border-[#D2B94E] text-white focus:outline-none focus:ring-2 focus:ring-[#D2B94E]" />
+          </div>
+
+          <!-- Phone -->
+          <div>
+            <label for="phone" class="block text-[#D2B94E] text-lg mb-2">Telefonnummer</label>
+            <input type="tel" id="phone" name="phone"
+              class="w-full px-4 py-3 rounded-lg bg-[#1A1A1A] border border-[#D2B94E] text-white focus:outline-none focus:ring-2 focus:ring-[#D2B94E]" />
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit"
+            class="w-full bg-[#D2B94E] text-[#0F0F0F] font-semibold text-xl py-3 rounded-lg hover:bg-[#C0A83E] transition duration-300">
+            Abschicken
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- questioning popup js -->
+<script>
+  const openProjectButtons = document.querySelectorAll('[data-open="projectModal"]');
+  const closeProjectModal = document.getElementById('closeProjectModal');
+  const projectModal = document.getElementById('projectModal');
+  const projectSteps = document.querySelectorAll('.project-step');
+  const pageIndicator = document.getElementById('pageIndicator');
+  let projectCurrentStep = 0;
+
+  const showProjectStep = (index) => {
+    projectSteps.forEach((s, i) => s.classList.toggle('hidden', i !== index));
+    pageIndicator.textContent = `Seite ${index + 1} von ${projectSteps.length}`;
+  };
+
+  // ✅ Open modal on any button click
+  openProjectButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      projectModal.classList.remove('hidden');
+      projectModal.classList.add('flex');
+      document.body.classList.add('no-scroll');
+      projectCurrentStep = 0;
+      showProjectStep(projectCurrentStep);
+    });
+  });
+
+  // ✅ Close modal
+  closeProjectModal.addEventListener('click', () => {
+    projectModal.classList.add('hidden');
+    projectModal.classList.remove('flex');
+    document.body.classList.remove('no-scroll');
+    projectCurrentStep = 0;
+  });
+
+  // ✅ Click outside modal to close
+  projectModal.addEventListener('click', (e) => {
+    if (e.target === projectModal) {
+      projectModal.classList.add('hidden');
+      projectModal.classList.remove('flex');
+      document.body.classList.remove('no-scroll');
+      projectCurrentStep = 0;
+    }
+  });
+
+  // ✅ Handle step images click
+  document.querySelectorAll('.project-step img').forEach(img => {
+    img.addEventListener('click', () => {
+      if (projectCurrentStep < projectSteps.length - 1) {
+        projectCurrentStep++;
+        showProjectStep(projectCurrentStep);
+      }
+    });
+  });
+
+  // ✅ Handle final form submit
+  document.getElementById('projectForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('✅ Formular erfolgreich abgeschickt!');
+    projectModal.classList.add('hidden');
+    projectModal.classList.remove('flex');
+    document.body.classList.remove('no-scroll');
+    projectCurrentStep = 0;
+  });
+</script>
+
+<!--contact us Script -->
+<script>
+  const openModalButtons = document.querySelectorAll("#openModal"); // Saare "Contact Us" buttons select karo
+  const closeModal = document.getElementById("closeModal");
+  const modal = document.getElementById("contactModal");
+
+  // Har ek Contact Us button pe listener lagao
+  openModalButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      modal.classList.remove("hidden");
+    });
+  });
+
+  // Close button
+  closeModal.addEventListener("click", () => {
+    modal.classList.add("hidden");
+  });
+
+  // Background click par close
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.add("hidden");
+    }
+  });
+</script>
+
+    <!-- faqs js -->
+ <script>
+    document.querySelectorAll('.faq-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.icon');
+            const heading = button.querySelector('span:first-child');
+
+            if (content.classList.contains('open')) {
+                // Close current
+                content.style.maxHeight = null;
+                content.classList.remove('open');
+                icon.textContent = '+';
+                icon.classList.remove('faq-active');
+                heading.classList.remove('faq-active');
+            } else {
+                // Close all others
+                document.querySelectorAll('.faq-content').forEach(item => {
+                    item.style.maxHeight = null;
+                    item.classList.remove('open');
+                });
+                document.querySelectorAll('.icon').forEach(i => {
+                    i.textContent = '+';
+                    i.classList.remove('faq-active');
+                });
+                document.querySelectorAll('.faq-btn span:first-child').forEach(h => {
+                    h.classList.remove('faq-active');
+                });
+
+                // Open clicked one
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.classList.add('open');
+                icon.textContent = '-';
+                icon.classList.add('faq-active');  // Yellow + bigger size
+                heading.classList.add('faq-active'); // Yellow + bigger size
+            }
+        });
+    });
+</script>
+
+<!-- tabs switches js  -->
+<script>
+  const tabButtons = document.querySelectorAll(".tab-btn");
+  const tabContents = document.querySelectorAll(".tab-content");
+
+  tabButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      // Reset all tabs
+      tabButtons.forEach(b => {
+        b.classList.remove("text-white");
+        b.classList.add("text-white");
+        b.querySelector(".active-line").classList.add("hidden");
+      });
+      tabContents.forEach(c => c.classList.add("hidden"));
+
+      // Activate clicked tab
+      btn.classList.add("text-white");
+      btn.classList.remove("text-gray-400");
+      btn.querySelector(".active-line").classList.remove("hidden");
+
+      const tabId = btn.getAttribute("data-tab");
+      document.getElementById(tabId).classList.remove("hidden");
+    });
+  });
+</script>
+
+<!-- Navbar js  -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const fullscreenMenu = document.getElementById('fullscreen-menu');
+  const servicesBtn = document.getElementById('services-btn');
+  const servicesDropdown = document.getElementById('services-dropdown');
+  const svgArrow = servicesBtn.querySelector('svg');
+  let isOpen = false;
+  let scrollPosition = 0; // store current scroll position
+
+  // Fullscreen menu toggle
+  menuBtn.addEventListener('click', () => {
+    isOpen = !isOpen;
+    const [line1, line2, line3] = menuBtn.children;
+
+    if (isOpen) {
+      // Store current scroll position and lock scroll visually
+      scrollPosition = window.scrollY;
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollPosition}px`;
+      document.body.style.left = '0';
+      document.body.style.right = '0';
+      document.body.style.overflow = 'hidden';
+      fullscreenMenu.style.overflowY = 'auto';
+
+      // Animate hamburger -> X
+      line1.style.transform = 'rotate(45deg) translateY(10px)';
+      line2.style.opacity = '0';
+      line3.style.transform = 'rotate(-45deg) translateY(-10px)';
+
+      fullscreenMenu.classList.remove('pointer-events-none');
+      fullscreenMenu.classList.add('opacity-100', 'scale-100');
+      fullscreenMenu.classList.remove('opacity-0', 'scale-95');
+      
+      // Force scroll to top (menu starts from top)
+      window.scrollTo(0, 0);
+    } else {
+      // Animate X -> hamburger
+      line1.style.transform = 'rotate(0) translateY(0)';
+      line2.style.opacity = '1';
+      line3.style.transform = 'rotate(0) translateY(0)';
+
+      fullscreenMenu.classList.add('opacity-0', 'scale-95');
+      fullscreenMenu.classList.remove('opacity-100', 'scale-100');
+      setTimeout(() => fullscreenMenu.classList.add('pointer-events-none'), 500);
+
+      // Restore scroll position
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      document.body.style.overflow = '';
+      fullscreenMenu.style.overflowY = 'hidden';
+      window.scrollTo(0, scrollPosition);
+    }
+  });
+
+  // Detect mobile
+  const isMobile = () => window.innerWidth < 1024;
+
+  // Toggle dropdown on click (mobile)
+  servicesBtn.addEventListener('click', (e) => {
+    if (isMobile()) {
+      e.stopPropagation();
+      toggleDropdown();
+    }
+  });
+
+  // Hover dropdown (desktop)
+  servicesBtn.addEventListener('mouseenter', () => {
+    if (!isMobile()) openDropdown();
+  });
+  servicesBtn.addEventListener('mouseleave', () => {
+    if (!isMobile()) closeDropdown();
+  });
+  servicesDropdown.addEventListener('mouseenter', () => {
+    if (!isMobile()) openDropdown();
+  });
+  servicesDropdown.addEventListener('mouseleave', () => {
+    if (!isMobile()) closeDropdown();
+  });
+
+  // Dropdown logic
+  function toggleDropdown() {
+    const isDropdownOpen = !servicesDropdown.classList.contains('hidden');
+    if (isDropdownOpen) closeDropdown();
+    else openDropdown();
+  }
+
+  function openDropdown() {
+    servicesDropdown.classList.remove('hidden');
+    setTimeout(() => {
+      servicesDropdown.classList.add('opacity-100', 'scale-y-100');
+      servicesDropdown.classList.remove('opacity-0', 'scale-y-0');
+    }, 10);
+    svgArrow.style.transform = 'rotate(180deg)';
+  }
+
+  function closeDropdown() {
+    servicesDropdown.classList.add('opacity-0', 'scale-y-0');
+    servicesDropdown.classList.remove('scale-y-100');
+    setTimeout(() => servicesDropdown.classList.add('hidden'), 300);
+    svgArrow.style.transform = 'rotate(0deg)';
+  }
+
+  // Close dropdown when clicking outside (mobile)
+  document.addEventListener('click', (e) => {
+    if (isMobile()) {
+      if (!servicesBtn.contains(e.target) && !servicesDropdown.contains(e.target)) {
+        closeDropdown();
+      }
+    }
+  });
+
+  // Update behavior on resize
+  window.addEventListener('resize', () => {
+    closeDropdown();
+  });
+</script>
+
+<!-- navbar bg js  -->
+  <script>
+  window.addEventListener("scroll", function() {
+    const navbar = document.getElementById("navbar");
+    if (window.scrollY > 50) { 
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+</script>
+
+  
+<!-- befor after effect js  -->
+<script>
+  const sliderHandle = document.querySelector("#sliderHandle");
+const sliderLine = document.querySelector(".slider-line");
+const beforeImage = document.querySelector(".before-image");
+const afterImage = document.querySelector(".after-image");
+const sliderContainer = document.querySelector(".slider-container");
+
+let isDragging = false;
+
+// Function to initialize the slider at the center position
+const initializeSlider = () => {
+  const containerWidth = sliderContainer.offsetWidth;
+
+  // Set slider handle and line at center with a transition for initialization
+  sliderHandle.style.transition = "left 0.3s ease";
+  sliderLine.style.transition = "left 0.3s ease";
+
+  sliderHandle.style.left = "50%";
+  sliderLine.style.left = "50%";
+
+  // Set both images' clip-path to 50% (center)
+  beforeImage.style.clipPath = `inset(0 50% 0 0)`;
+  afterImage.style.clipPath = `inset(0 0 0 50%)`;
+};
+
+// Function to move the slider based on user interaction
+const moveSlider = (clientX) => {
+  const containerRect = sliderContainer.getBoundingClientRect();
+  let offsetX = clientX - containerRect.left;
+
+  // Limit the slider movement within the full container width (0% to 100%)
+  if (offsetX < 0) offsetX = 0; // Prevent overflow on the left
+  if (offsetX > containerRect.width) offsetX = containerRect.width; // Prevent overflow on the right
+
+  const percentage = Math.round((offsetX / containerRect.width) * 100);
+
+  // Update the slider handle position and image clipping
+  sliderHandle.style.left = `${percentage}%`;
+  sliderLine.style.left = `${percentage}%`;
+
+  // Adjust the clip-path for both images
+  beforeImage.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`;
+  afterImage.style.clipPath = `inset(0 0 0 ${percentage}%)`;
+};
+
+// Add event listeners for both the handle and the line (including the SVG)
+const startDragging = () => {
+  isDragging = true;
+
+  // Remove transitions while dragging for instant feedback
+  sliderHandle.style.transition = "none";
+  sliderLine.style.transition = "none";
+};
+
+const stopDragging = () => {
+  isDragging = false;
+
+  // Reapply transitions after dragging ends
+  sliderHandle.style.transition = "left 0.3s ease";
+  sliderLine.style.transition = "left 0.3s ease";
+};
+
+sliderHandle.addEventListener("mousedown", startDragging);
+sliderLine.addEventListener("mousedown", startDragging); // Make SVG and line draggable
+
+window.addEventListener("mousemove", (event) => {
+  if (isDragging) {
+    moveSlider(event.clientX);
+  }
+});
+
+window.addEventListener("mouseup", stopDragging);
+
+// For touch events on mobile
+sliderHandle.addEventListener("touchstart", startDragging);
+sliderLine.addEventListener("touchstart", startDragging); // Make SVG and line draggable
+
+window.addEventListener("touchmove", (event) => {
+  if (isDragging) {
+    moveSlider(event.touches[0].clientX);
+  }
+});
+
+window.addEventListener("touchend", stopDragging);
+
+// Initialize the slider on page load
+window.addEventListener("load", initializeSlider);
+
+</script>
+
+
+<!-- swiper js  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    autoplay: {
+      delay: 3000, // 3 second delay between slides
+      disableOnInteraction: false, // keep autoplay after user interaction
+    },
+    speed: 800, // smooth transition speed
+    allowTouchMove: false, // optional: disable manual swipe
+    breakpoints: {
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+      1280: { slidesPerView: 3 }
+    },
+    on: {
+      init: function () {
+        setEqualHeight();
+      },
+      resize: function () {
+        setEqualHeight();
+      },
+      slideChangeTransitionEnd: function () {
+        setEqualHeight();
+      }
+    }
+  });
+
+  // ✅ Function to make all slides equal height
+  function setEqualHeight() {
+    const slides = document.querySelectorAll('.mySwiper .swiper-slide > div');
+    let maxHeight = 0;
+
+    // Reset heights first
+    slides.forEach(slide => {
+      slide.style.height = 'auto';
+    });
+
+    // Find tallest slide
+    slides.forEach(slide => {
+      const slideHeight = slide.offsetHeight;
+      if (slideHeight > maxHeight) {
+        maxHeight = slideHeight;
+      }
+    });
+
+    // Set all slides to same height
+    slides.forEach(slide => {
+      slide.style.height = maxHeight + 'px';
+    });
+  }
+</script>
+
+
+
+<script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,2772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-[#0F0F0F]">
+    
+<!-- NAVBAR -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-transparent transition-all duration-500">
+    <div class="flex justify-between items-center 2xl:px-24 lg:px-10 px-5 2xl:py-10 py-6">
+      <!-- Logo -->
+      <a href="./index.html">
+        <img src="./assets/img/logo.png" alt="Logo" class="w-48">
+      </a>
+
+      <!-- Hamburger -->
+      <button id="menu-btn" class="relative w-10 h-5 flex flex-col justify-between focus:outline-none z-[60]">
+        <span class="w-full h-[3px] bg-white transition-all duration-500 origin-center"></span>
+        <span class="w-full h-[3px] bg-white transition-all duration-500 origin-center"></span>
+        <span class="w-full h-[3px] bg-white transition-all duration-500 origin-center"></span>
+      </button>
+    </div>
+
+    <!-- FULLSCREEN MENU -->
+    <div
+      id="fullscreen-menu"
+      class="fixed inset-0 backdrop-blur-3xl scale-95 opacity-0 pointer-events-none transition-all duration-500 ease-in-out flex flex-col justify-center items-center text-white"
+    >
+      <ul class="lg:space-y-8 space-y-6 2xl:text-4xl lg:text-3xl text-xl font-light text-center transform transition-all duration-700 pt-24">
+        <li><a href="./index.html" class="hover:text-[#D2B94E] transition">Home</a></li>
+
+        <!-- Services Dropdown -->
+        <li class="relative group w-full flex flex-col items-center">
+          <button id="services-btn" class="flex items-center justify-center space-x-2 hover:text-[#D2B94E]">
+            <span>Services</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <!-- Dropdown -->
+          <ul
+            id="services-dropdown"
+            class="absolute bg-[#0F0F0F] top-full w-64 left-1/2 -translate-x-1/2 flex-col space-y-3 text-lg transition-all duration-300 ease-in-out transform origin-top opacity-0 scale-y-0 py-3 px-3 rounded-lg"
+          >
+            <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] ">Web Design & Development</a></li>
+            <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] ">UI/UX Design</a></li>
+             <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] ">CMS design</a></li>
+            <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] ">Mobile App Design and Development</a></li>
+            <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] ">SEO Optimization</a></li>
+            <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] ">E-Commerce Development</a></li>
+            <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] ">Brand Identity Creation</a></li>
+            <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] ">Strategy for Business Development</a></li>
+            <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] ">Social Media Management & Post Creation</a></li>
+          </ul>
+        </li>
+
+        <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] transition">Works</a></li>
+        <li><a href="./comingsoon.html" class="hover:text-[#D2B94E] transition">Network</a></li>
+        <li><a href="./job.html" class="hover:text-[#D2B94E] transition">Jobs</a></li>
+        
+      </ul>
+
+      <div class="mt-12 flex flex-col space-y-4">
+        <button class="px-8 py-3 2xl:text-2xl lg:text-xl text-lg bg-[#D2B94E] text-[#0F0F0F] rounded-sm font-medium hover:bg-[#c0a840] transition">
+          Dashboard Login
+        </button>
+        <button id="openModal"
+          class="px-8 py-3 2xl:text-2xl lg:text-xl text-lg border border-[#D2B94E] hover:bg-[#D2B94E] hover:text-[#0F0F0F] transition rounded-sm"
+        >
+          Contact Us
+        </button>
+      </div>
+    </div>
+
+    <hr class="border border-[#41414166]">
+  </nav>
+
+    <!-- hero section  -->
+<section class="2xl:px-24 lg:px-10 px-5">
+    <div class="flex lg:flex-row flex-col justify-center gap-20 xl:gap-6 2xl:pt-48 pt-36">
+      <div class="lg:w-2/5 w-full">
+        <div>
+        <h1 class="text-[#F5F5F5] 2xl:text-[80px] xl:text-6xl lg:text-[40px] md:text-5xl text-4xl 2xl:leading-[90px] xl:leading-[64px] md:leading-[49px] font-semibold">
+          Fachkräfte in   <br> 30 Tagen mit <br> <span class="bg-[#D2B94E] bg-clip-text text-transparent">Einstellungsgarantie. 
+  </span>
+</h1>
+
+<p class="2xl:text-[22px] lg:text-base text-sm 2xl:leading-10 lg:leading-7 leading-6 text-white pt-5 "><span class="font-bold"> 500+ </span>Partnerbetriebe besetzten ohne Zeitaufwand ihre Stellen  – &nbsp; &nbsp; &nbsp; &nbsp;<span class="font-bold">wir erledigen alles</span>  
+
+ bis zum Vorstellungsgespräch.
+</p>
+</div>
+<div>
+<button data-open="projectModal" class="items-center xl:text-xl text-base text-start font-semibold px-8 py-4 mt-12 text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E] transition">
+  Recruiting-Analyse starten &nbsp; &nbsp; →
+</button>
+</div>
+<p class="2xl:text-[22px] lg:text-base text-sm 2xl:leading-10 lg:leading-7 leading-6 text-white pt-5">Kostenlos & unverbindlich · 60 Sek. &nbsp;  <i class="fa-solid fa-check text-green-600"></i></p>
+</div>
+
+<div class="lg:w-3/5 w-full relative  rounded-xl border-[4px] border-[#41414166] 2xl:h-[400px] xl:h-[370px] lg:h-[250px] object-cover">
+  <!-- Video -->
+  <video
+    id="customVideo"
+    class=" xl:px-20 px-10 w-full 2xl:h-[397px] xl:h-[362px] lg:h-[247px] object-cover"
+    loop
+    autoplay
+    muted
+    preload="metadata"
+  >
+    <source src="./assets/img/jobpages video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 flex items-center justify-center xl:px-20 px-10 w-full 2xl:h-[397px] xl:h-[362px] lg:h-[247px] object-cover">
+    <div class="w-full h-full bg-[#D2B94E] opacity-10 z-10"></div>
+  </div>
+</div>
+
+
+  <!-- Custom Play Button -->
+  <!-- <button id="playButton"
+          class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 xl:-mt-24 lg:-mt-48">
+    <div class="bg-[#D2B94E] rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+      <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="32" height="32">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+      <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="32" height="32" class="hidden">
+        <path d="M6 19h4V5H6zm8-14v14h4V5h-4z"/>
+      </svg>
+    </div>
+  </button> -->
+    </div>
+
+    <div class="flex md:flex-row flex-col justify-between items-center pt-20">
+      <div class="xl:w-2/5 w-full flex justify-center md:justify-start gap-5">
+        <a href="https://www.kununu.com/de/convince-me1">
+      <img src="./assets/img/company1.png" alt="">
+      </a>
+      <a href="">
+      <img src="./assets/img/company2.png" alt="">
+      </a>
+      </div>
+
+      <div class="xl:w-3/5 w-full flex flex-wrap justify-center md:justify-start items-center gap-6 2xl:gap-10 pt-10 md:pt-0">
+      <a href="https://share.google/fkvIBMRUES4mFLnnb">
+      <img src="./assets/img/google-reviews.png" class="w-28 md:w-auto" alt="">
+    </a>
+      <img src="./assets/img/Line 35.png" alt="">
+      <a href="">
+      <img src="./assets/img/meta.png" class="w-28 md:w-auto" alt="">
+      </a>
+      <img src="./assets/img/Line 35.png" alt="">
+      <a href="">
+      <img src="./assets/img/tiktok.png" class="w-28 md:w-auto" alt="">
+      </a>
+      <img src="./assets/img/Line 35.png" alt="">
+      <a href="">
+      <img src="./assets/img/google-partner.png" class="w-28 md:w-auto" alt="">
+      </a>
+      <img src="./assets/img/Line 35.png" alt="">
+      <a href="">
+      <img src="./assets/img/der.png" class="w-28 md:w-auto" alt="">
+      </a>
+      </div>
+    </div>
+</section>
+
+<!-- Slider marquee section  -->
+<section class="xl:pt-24 pt-14">
+
+  <div class="flex lg:flex-row flex-col items-center">
+  <div class="lg:w-2/5 w-full 2xl:pl-24 lg:pl-10 lg:pr-4 lg:text-start text-center px-5 lg:px-0">
+  <p class="text-[#D0D0D0] xl:text-lg text-base">convince me. steht für Qualität und Wachstum im 
+Recruiting für über 400 Partner im DACH-Raum.</p>
+</div>
+
+ <div class="relative overflow-hidden w-full mt-6 lg:mt-0">
+  <!-- Marquee Wrapper -->
+  <div class="flex animate-marquee">
+    <!-- Content Wrap (1st copy) -->
+    <div class="flex">
+
+   <div class="group flex flex-col justify-center items-center px-20 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+         <!-- Default Image -->
+  <img src="./assets/img/lorchgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/lorch.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-20 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+        <!-- Default Image -->
+  <img src="./assets/img/werner.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/wernerred.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center  px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+       <!-- Default Image -->
+  <img src="./assets/img/mecdonalgrey.png" class="block group-hover:hidden w-2/3" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/mecdonal.png" class="hidden group-hover:block w-2/3" alt="">
+      </div>
+       <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+          <!-- Default Image -->
+  <img src="./assets/img/wenchgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/wenck.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+          <!-- Default Image -->
+  <img src="./assets/img/dussmangrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/dussman.png" class="hidden group-hover:block" alt="">
+      </div>
+       <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+        <!-- Default Image -->
+  <img src="./assets/img/kalmargrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/kalmar.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+       <!-- Default Image -->
+  <img src="./assets/img/tchibe.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/techbirwhite.png" class="hidden group-hover:block" alt="">
+      </div>
+   <div class="group flex flex-col justify-center items-center px-20 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+         <!-- Default Image -->
+  <img src="./assets/img/hellofreshgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/hellofries.png" class="hidden group-hover:block" alt="">
+    </div>
+      <div class="group flex flex-col justify-center items-center px-20 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+        <!-- Default Image -->
+  <img src="./assets/img/edekagry.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/edeka.png" class="hidden group-hover:block" alt="">
+      </div>
+  <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+       <!-- Default Image -->
+   <img src="./assets/img/subwaygrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/subway.png" class="hidden group-hover:block" alt="">
+    </div>
+     <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+          <!-- Default Image -->
+  <img src="./assets/img/boschgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/boschred.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+          <!-- Default Image -->
+  <img src="./assets/img/tipicogrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/tipicored.png" class="hidden group-hover:block" alt="">
+      </div>
+       <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+        <!-- Default Image -->
+  <img src="./assets/img/lottogrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/lotto.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+       <!-- Default Image -->
+  <img src="./assets/img/sarpigrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/sarpi.png" class="hidden group-hover:block" alt="">
+      </div>
+
+    </div>
+
+    <!-- Duplicate Content (2nd copy for seamless effect) -->
+    <div class="flex">
+    <div class="group flex flex-col justify-center items-center px-20 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+         <!-- Default Image -->
+  <img src="./assets/img/lorchgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/lorch.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-20 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+        <!-- Default Image -->
+  <img src="./assets/img/werner.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/wernerred.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center  px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+       <!-- Default Image -->
+  <img src="./assets/img/mecdonalgrey.png" class="block group-hover:hidden w-2/3" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/mecdonal.png" class="hidden group-hover:block w-2/3" alt="">
+      </div>
+       <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+          <!-- Default Image -->
+  <img src="./assets/img/wenchgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/wenck.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+          <!-- Default Image -->
+  <img src="./assets/img/dussmangrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/dussman.png" class="hidden group-hover:block" alt="">
+      </div>
+       <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+        <!-- Default Image -->
+  <img src="./assets/img/kalmargrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/kalmar.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+       <!-- Default Image -->
+  <img src="./assets/img/tchibe.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/techbirwhite.png" class="hidden group-hover:block" alt="">
+      </div>
+   <div class="group flex flex-col justify-center items-center px-20 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+         <!-- Default Image -->
+  <img src="./assets/img/hellofreshgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/hellofries.png" class="hidden group-hover:block" alt="">
+    </div>
+      <div class="group flex flex-col justify-center items-center px-20 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+        <!-- Default Image -->
+  <img src="./assets/img/edekagry.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/edeka.png" class="hidden group-hover:block" alt="">
+      </div>
+  <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+       <!-- Default Image -->
+   <img src="./assets/img/subwaygrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/subway.png" class="hidden group-hover:block" alt="">
+    </div>
+     <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+          <!-- Default Image -->
+  <img src="./assets/img/boschgrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/boschred.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+          <!-- Default Image -->
+  <img src="./assets/img/tipicogrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/tipicored.png" class="hidden group-hover:block" alt="">
+      </div>
+       <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+        <!-- Default Image -->
+  <img src="./assets/img/lottogrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/lotto.png" class="hidden group-hover:block" alt="">
+      </div>
+      <div class="group flex flex-col justify-center items-center px-12 py-4 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500">
+       <!-- Default Image -->
+  <img src="./assets/img/sarpigrey.png" class="block group-hover:hidden" alt="">
+
+  <!-- Hover Image -->
+  <img src="./assets/img/sarpi.png" class="hidden group-hover:block" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+</section>
+
+<!-- slider  -->
+<section class="2xl:px-24 lg:px-10 px-5 pt-20 xl:pt-36">
+  <div class="flex flex-col justify-center items-center">
+ <!-- SLIDER WRAPPER -->
+  <div class="relative w-full max-w-5xl 2xl:max-w-6xl overflow-hidden ">
+    <div id="slider" class="flex transition-transform duration-500">
+
+      <!-- CARD 1 -->
+      <div class="slide">
+        <div class="card 2xl:h-[380px] h-[320px]">
+          <div>
+            <div class="stars mb-4"><span>★ ★ ★ ★ ★</span></div>
+            <p class="text-base xl:text-xl 2xl:leading-10 leading-relaxed mb-6">
+              5 neue Mitarbeiter konnten wir bereits seit Beginn unserer Zusammenarbeit einstellen – 
+              und wir wachsen weiter – während unser Tagesgeschäft spürbar erleichtert wird.
+            </p>
+          </div>
+          <div class="flex items-center gap-4">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" class="w-12 h-12 rounded-full" alt="">
+            <div>
+              <p class="text-white font-semibold text-base 2xl:text-lg">Daniel Oppelt</p>
+              <!-- <p class="text-sm 2xl:text-base text-[#D0D0D0]">Manfred Domm GmbH</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="slide">
+        <div class="card 2xl:h-[380px] h-[320px]">
+          <div>
+            <div class="stars mb-4"><span>★ ★ ★ ★ ★</span></div>
+            <p class="text-base xl:text-xl 2xl:leading-10 leading-relaxed mb-6">
+              Das Team hat unsere Website komplett neu gestaltet – schnell, professionell und mit großartigem Ergebnis. Wir sind mehr als zufrieden!
+            </p>
+          </div>
+          <div class="flex items-center gap-4">
+            <img src="https://randomuser.me/api/portraits/men/46.jpg" class="w-12 h-12 rounded-full" alt="">
+            <div>
+              <p class="text-white font-semibold text-base 2xl:text-lg">Leon Becker</p>
+              <!-- <p class="text-sm 2xl:text-base text-[#D0D0D0]">Marketing Managerin</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- CARD 3 -->
+      <div class="slide">
+        <div class="card 2xl:h-[380px] h-[320px]">
+          <div>
+            <div class="stars mb-4"><span>★ ★ ★ ★ ★</span></div>
+            <p class="text-base xl:text-xl 2xl:leading-10 leading-relaxed mb-6">
+              Ausgezeichneter IT-Support! Jede Anfrage wurde sofort bearbeitet, und alle Probleme waren im Handumdrehen gelöst.
+            </p>
+          </div>
+          <div class="flex items-center gap-4">
+            <img src="https://randomuser.me/api/portraits/men/47.jpg" class="w-12 h-12 rounded-full" alt="">
+            <div>
+              <p class="text-white font-semibold text-base 2xl:text-lg">Lukas Schneider</p>
+              <!-- <p class="text-sm 2xl:text-base text-[#D0D0D0]">Geschäftsführer</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="slide">
+        <div class="card 2xl:h-[380px] h-[320px]">
+          <div>
+            <div class="stars mb-4"><span>★ ★ ★ ★ ★</span></div>
+            <p class="text-base xl:text-xl 2xl:leading-10 leading-relaxed mb-6">
+              Sehr kompetent und zuverlässig. Die Softwarelösung, die sie für uns entwickelt haben, läuft absolut stabil und effizient.
+            </p>
+          </div>
+          <div class="flex items-center gap-4">
+            <img src="https://randomuser.me/api/portraits/men/48.jpg" class="w-12 h-12 rounded-full" alt="">
+            <div>
+              <p class="text-white font-semibold text-base 2xl:text-lg">Jonas Fischer</p>
+              <!-- <p class="text-sm 2xl:text-base text-[#D0D0D0]">Manfred Domm GmbH</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="flex justify-center gap-6 mt-8">
+      <div id="prev" class="arrow-btn">❮</div>
+      <div id="next" class="arrow-btn">❯</div>
+    </div>
+  </div>
+</div>
+  <!-- CTA Button -->
+  <div class=" text-center">
+    <button class="items-center xl:text-xl text-base text-start font-semibold px-8 py-4 mt-12 text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E] transition">
+      Recruiting-Analyse starten &nbsp; &nbsp; →
+    </button>
+    <p class="2xl:text-[22px] lg:text-base text-sm 2xl:leading-10 lg:leading-7 leading-6 text-white pt-5">Kostenlos & unverbindlich · 60 Sek. &nbsp;  <i class="fa-solid fa-check text-green-600"></i></p>
+  </div>
+  </section>
+
+<!-- Convince me® Methode  -->
+  <section class="2xl:px-24 lg:px-10 px-5 pt-20 xl:pt-32">
+    <div class="text-center">
+        <h3 class="text-[#D2B94E] xl:text-xl text-lg font-normal uppercase tracking-widest">Convince me® Methode</h3>
+       <h2 class="xl:text-6xl lg:text-5xl md:text-[40px] text-3xl xl:leading-[75px] lg:leading-[54px] md:leading-[49px] leading-10 font-semibold text-white pt-6">
+  Wie Du garantiert Fachkräfte in 30 <br class="md:block hidden">
+Tagen einstellst - ohne Zeitaufwand?
+</h2>
+    </div>
+
+    <div class="flex md:flex-row flex-col xl:gap-10 gap-6 xl:pt-24 pt-16">
+      <!-- ist card 1  -->
+      <div class="md:w-1/3 w-full bg-[#181818] rounded-xl pt-4">
+          <div>
+            <img src="./assets/img/attachment1.png" class="w-full" alt="">
+          </div>
+          <div class="px-5 py-10">
+            <h3 class="text-white xl:text-3xl lg:text-xl text-lg font-semibold 2xl:leading-[64px] xl:leading-[54px]">1. Platzhirsch Positionierung</h3>
+            <p class="text-[#D0D0D0] pt-6 2xl:text-lg xl:text-base text-sm 2xl:leading-10 xl:leading-7 leading-6 font-medium">Du wirst zur sichtbaren Anlaufstelle Nr.1 für Fachkräfte aus
+Deiner Region und erhältst zusätzlich hochwertige
+Bewerbungen von Fachkräften aus unserem Netzwerk mit
+170.000 Bewerbern, welche bei Dir arbeiten wollen.</p>
+          </div>
+      </div>
+
+<!-- card 2  -->
+      <div class="md:w-1/3 w-full bg-[#181818] rounded-xl pt-4">
+          <div>
+            <img src="./assets/img/attachment3.png" class="w-full" alt="">
+          </div>
+          <div class="px-5 py-10">
+            <h3 class="text-white xl:text-3xl lg:text-xl text-lg font-semibold 2xl:leading-[64px] xl:leading-[54px]">2. A-Fachkräfte einstellen</h3>
+            <p class="text-[#D0D0D0] pt-6 2xl:text-lg xl:text-base text-sm 2xl:leading-10 xl:leading-7 leading-6 font-medium">Du erhältst direkt Vorstellungsgespräche in Deinen
+Kalender durch unsere telefonische Qualifizierung nach
+Deinen Anforderungen. Einfach die besten Fachkräfte
+auswählen und einstellen - ohne Zeitaufwand.</p>
+          </div>
+      </div>
+
+<!-- card 3  -->
+      <div class="md:w-1/3 w-full bg-[#181818] rounded-xl pt-4">
+          <div>
+            <img src="./assets/img/attachment2.png" class="w-full" alt="">
+          </div>
+          <div class="px-5 py-10">
+            <h3 class="text-white xl:text-3xl lg:text-xl text-lg font-semibold 2xl:leading-[64px] xl:leading-[54px]">3. Planungssicherheit</h3>
+            <p class="text-[#D0D0D0] pt-6 2xl:text-lg xl:text-base text-sm 2xl:leading-10 xl:leading-7 leading-6 font-medium">Aufbau Deiner eigenen Bewerberdatenbank mit der
+Convince me® Bewerber-Management Software und
+langfristige Bindung Deiner Mitarbeiter durch einfache
+Optimierungen, welche 95% der Unternehmen nicht
+nutzen.</p>
+          </div>
+      </div>
+
+    </div>
+
+    <div class="text-center">
+<button class="items-center xl:text-xl text-base text-start font-semibold px-8 py-4 mt-12 text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E] transition">
+  Recruiting-Analyse starten &nbsp; &nbsp; →
+</button>
+</div>
+
+<div class="flex items-center justify-center pt-8 gap-2 flex-wrap">
+  <div class="stars text-white text-lg">
+    <span>★ </span>Trustpilot <span>★ ★ ★ ★ ★</span>
+  </div>
+  <div class="flex items-center gap-2 flex-wrap">
+    <img src="./assets/img/white line.png" alt="">
+    <p class="text-white text-lg font-bold">Hervorragend</p>
+     <img src="./assets/img/white line.png" alt="">
+     <p class="text-white text-lg"><span class="font-bold">386</span> Bewertungen</p>
+  </div>
+</div>
+  </section>
+
+  <!-- partner section  -->
+  <section  class="2xl:px-24 lg:px-10 px-5 pt-20 xl:pt-32">
+     <div class="text-center">
+        <h3 class="text-[#D2B94E] xl:text-xl text-lg font-normal uppercase tracking-widest">Unsere Recruiting Ergebnisse</h3>
+       <h2 class="xl:text-6xl lg:text-5xl md:text-[40px] text-3xl xl:leading-[75px] lg:leading-[54px] md:leading-[49px] leading-10 font-semibold text-white pt-6">
+  Welche Erfolge erzielen unsere <br class="md:block hidden">
+400+ Partnerbetriebe?
+</h2>
+    </div>
+
+
+    <div class="relative overflow-hidden xl:mt-20 mt-10">
+    <!-- Slider container -->
+    <div id="caseSlider2" class="flex transition-transform duration-700">
+
+
+<!-- SLIDE 1 -->
+      <div class="slide2 w-full flex md:flex-row flex-col xl:gap-20 gap-10 bg-[#181818] rounded-3xl shrink-0 py-6 px-6 md:py-10 md:px-12 xl:py-12 xl:px-16">
+        <!-- Left -->
+        <div class="md:w-1/2 w-full">
+          <h3 class="2xl:text-3xl xl:text-2xl text-lg text-white pt-4 font-semibold">
+            Aufträge ablehnen, weil Fachkräfte <br class="md:block hidden"> fehlen?
+          </h3>
+          <div class="pt-4">
+             <video id="customVideo"
+       class="rounded-xl object-cover h-full"
+       loop
+       autoplay
+       muted
+       preload="metadata">
+  <source src="./assets/img/jobpages video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+          </div>
+
+          <div class="pt-6">
+            <p class="text-white xl:text-2xl text-lg">Wir liefern keine Bewerbungen – wir liefern Mitarbeiter.</p>
+            <p class="text-[#D0D0D0] xl:text-lg text-base py-2">Fachkräfte in 30 Tagen – mit <br> Einstellungsgarantie und System.</p>
+            <div class="stars text-[#D2B94E] text-lg">★ ★ ★ ★ ★</div>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="md:w-1/2 w-full">
+          <div>
+            <h3 class="2xl:text-3xl xl:text-2xl text-lg text-white pt-4 font-semibold">Ausgangssituation</h3>
+            <div class="flex items-center gap-2 pt-6 2xl:pt-8">
+              <img src="./assets/img/thumb.png" alt="">
+              <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm">Aufträge mussten wegen Personalmangel abgesagt werden; akuter
+Fachkräftemangel im GaLa-Bau</p>
+            </div>
+            <div class="flex items-center gap-2 pt-2">
+              <img src="./assets/img/thumb.png" alt="">
+              <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm">Arbeitsamt sowie Facebook / Instagram-Eigenversuche brachten
+kaum passende Bewerbungen</p>
+            </div>
+             <div class="flex items-center gap-2 pt-2">
+              <img src="./assets/img/thumb.png" alt="">
+              <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm">Erfahrene Mitarbeiter gingen in Rente; Team geschrumpft und
+geplantes Wachstum blockiert</p>
+            </div>
+          </div>
+
+          <div class="xl:pt-10 pt-6">
+            <h3 class="2xl:text-3xl xl:text-2xl text-lg text-white pt-4 font-semibold">Ergebnis</h3>
+            <div class="flex items-center gap-2 pt-6 2xl:pt-8">
+              <img src="./assets/img/thumb.png" alt="">
+              <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm">7 neue Fachkräfte eingestellt und 10 Vorstellungsgespräche in 53
+Tagen erfolgreich geführt</p>
+            </div>
+            <div class="flex items-center gap-2 pt-2">
+              <img src="./assets/img/thumb.png" alt="">
+              <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm">Mehr Planbarkeit: flexiblere Termine, kaum noch Einspringen auf
+Baustellen, Aufträge ruhiger abwickeln</p>
+            </div>
+             <div class="flex items-center gap-2 pt-2">
+              <img src="./assets/img/thumb.png" alt="">
+              <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm">Sehr gute Kandidatenqualität; Vorauswahl durch Convince me</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="slide2 w-full flex md:flex-row flex-col xl:gap-20 gap-10 bg-[#181818] rounded-3xl shrink-0 py-6 px-6 md:py-10 md:px-12 xl:py-12 xl:px-16">
+        <!-- Left -->
+        <div class="md:w-1/2 w-full">
+          <h3 class="2xl:text-3xl xl:text-2xl text-lg text-white pt-4 font-semibold">
+            Aufträge ablehnen, weil Fachkräfte <br class="md:block hidden"> fehlen?
+          </h3>
+          <div class="pt-4">
+            <img src="./assets/img/img slider video.png" class="w-full" alt="">
+          </div>
+
+          <div class="pt-6">
+            <p class="text-white xl:text-2xl text-lg">Max Gockeln</p>
+            <p class="text-[#D0D0D0] xl:text-lg text-base py-2">Gockeln GaLaBau</p>
+            <div class="stars text-[#D2B94E] text-lg">★ ★ ★ ★ ★</div>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="md:w-1/2 w-full">
+          <div>
+            <h3 class="2xl:text-3xl xl:text-2xl text-lg text-white pt-4 font-semibold">Ausgangssituation</h3>
+            <div class="flex items-center gap-2 pt-6 2xl:pt-8">
+              <img src="./assets/img/thumb.png" alt="">
+              <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm">Kaum Bewerbungen über klassische Portale</p>
+            </div>
+            <div class="flex items-center gap-2 pt-2">
+              <img src="./assets/img/thumb.png" alt="">
+              <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm">Zeitmangel im Recruiting</p>
+            </div>
+          </div>
+
+          <div class="xl:pt-10 pt-6">
+            <h3 class="2xl:text-3xl xl:text-2xl text-lg text-white pt-4 font-semibold">Ergebnis</h3>
+            <div class="flex items-center gap-2 pt-6 2xl:pt-8">
+              <img src="./assets/img/thumb.png" alt="">
+              <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm">5 Fachkräfte eingestellt in 40 Tagen</p>
+            </div>
+            <div class="flex items-center gap-2 pt-2">
+              <img src="./assets/img/thumb.png" alt="">
+              <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm">Bewerber kamen direkt über Social Recruiting</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- SLIDE 3 -->
+      <div class="slide2 w-full flex md:flex-row flex-col xl:gap-20 gap-10 bg-[#181818] rounded-3xl shrink-0 py-6 px-6 md:py-10 md:px-12 xl:py-12 xl:px-16">
+        <!-- Left -->
+        <div class="md:w-1/2 w-full">
+          <h3 class="2xl:text-3xl xl:text-2xl text-lg text-white pt-4 font-semibold">
+            Aufträge ablehnen, weil Fachkräfte <br class="md:block hidden"> fehlen?
+          </h3>
+          <div class="pt-4">
+            <img src="./assets/img/img slider video.png" class="w-full" alt="">
+          </div>
+
+          <div class="pt-6">
+            <p class="text-white xl:text-2xl text-lg">Max Gockeln</p>
+            <p class="text-[#D0D0D0] xl:text-lg text-base py-2">Gockeln GaLaBau</p>
+            <div class="stars text-[#D2B94E] text-lg">★ ★ ★ ★ ★</div>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="md:w-1/2 w-full">
+          <div>
+            <h3 class="2xl:text-3xl xl:text-2xl text-lg text-white pt-4 font-semibold">Ausgangssituation</h3>
+            <div class="flex items-center gap-2 pt-6 2xl:pt-8">
+              <img src="./assets/img/thumb.png" alt="">
+              <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm">Kaum Bewerbungen über klassische Portale</p>
+            </div>
+            <div class="flex items-center gap-2 pt-2">
+              <img src="./assets/img/thumb.png" alt="">
+              <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm">Zeitmangel im Recruiting</p>
+            </div>
+          </div>
+
+          <div class="xl:pt-10 pt-6">
+            <h3 class="2xl:text-3xl xl:text-2xl text-lg text-white pt-4 font-semibold">Ergebnis</h3>
+            <div class="flex items-center gap-2 pt-6 2xl:pt-8">
+              <img src="./assets/img/thumb.png" alt="">
+              <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm">5 Fachkräfte eingestellt in 40 Tagen</p>
+            </div>
+            <div class="flex items-center gap-2 pt-2">
+              <img src="./assets/img/thumb.png" alt="">
+              <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm">Bewerber kamen direkt über Social Recruiting</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="flex justify-center items-center gap-4 mt-8">
+      <button id="prevSlide2" class="w-12 h-12 text-xl flex items-center justify-center rounded-full bg-[#1E1E1E] text-white hover:bg-[#D2B94E]">❮</button>
+      <div class="flex gap-2" id="pagination2"></div>
+      <button id="nextSlide2" class="w-12 h-12 text-xl flex items-center justify-center rounded-full bg-[#1E1E1E] text-white hover:bg-[#D2B94E]">❯</button>
+    </div>
+  </div>
+
+
+    <div class="text-center md:space-x-2 pt-12 space-y-4 md:space-y-0">
+<button class="items-center xl:text-xl text-base text-start font-semibold px-8 py-4  text-white rounded-xl border border-white ">
+  Hunderte weitere Ergebnisse ansehen
+</button>
+<button class="items-center xl:text-xl text-base text-start font-semibold px-8 py-4  text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E] transition">
+  Recruiting-Analyse starten &nbsp; &nbsp; →
+</button>
+</div>
+  </section>
+
+
+    <!-- counter section  -->
+  <section  class="2xl:px-24 lg:px-10 px-5 pt-20 xl:pt-36">
+     <div class="text-center">
+        <h3 class="text-[#D2B94E] xl:text-xl text-lg font-normal uppercase tracking-widest">Über Convince me®</h3>
+       <h2 class="xl:text-6xl lg:text-5xl md:text-[40px] text-3xl xl:leading-[75px] lg:leading-[54px] md:leading-[49px] leading-10 font-semibold text-white pt-6">
+Fakten über <span class="text-[#D2B94E]">convince me.
+</h2>
+    </div>
+
+    <div id="stats" class="bg-[#181818] py-6 xl:mt-20 mt-10">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 divide-y md:divide-y-0 md:divide-x divide-[#41414166] text-center items-center">
+    
+    <!-- Box 1 -->
+    <div class="py-6 px-2">
+      <h2 class="text-4xl font-semibold text-white">
+        <span class="counter" data-target="400">0</span><span class="text-[#D2B94E]">+</span>
+      </h2>
+      <p class="text-[#D0D0D0] xl:text-base text-sm mt-3">
+        Partnerbetriebe in Deutschland,<br>Österreich und der Schweiz
+      </p>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="py-6 px-2">
+      <h2 class="text-4xl font-semibold text-white">
+        <span class="counter" data-target="374">0</span><span class="text-[#D2B94E]">+</span>
+      </h2>
+      <p class="text-[#D0D0D0] xl:text-base text-sm mt-3">Einstellungen pro <br> Monat</p>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="py-6 px-2">
+      <h2 class="text-4xl font-semibold text-white">
+        <span class="counter" data-target="200">0</span><span class="text-[#D2B94E]">+</span>
+      </h2>
+      <p class="text-[#D0D0D0] xl:text-base text-sm mt-3">
+        5-Sterne Bewertungen auf <br> zahlreichen Plattformen
+      </p>
+    </div>
+
+    <!-- Box 4 -->
+    <div class="py-6 px-2">
+      <h2 class="text-4xl font-semibold text-white">
+        <span class="counter" data-target="14">0</span>
+      </h2>
+      <p class="text-[#D0D0D0] xl:text-base text-sm mt-3">
+        motivierte Mitarbeiter <br> in Festanstellung
+      </p>
+    </div>
+
+    <!-- Box 5 -->
+    <div class="py-6 px-2">
+      <h2 class="text-4xl font-semibold text-white">
+        <span class="text-[#D2B94E]">Ø</span><span class="counter" data-target="23">0</span>
+      </h2>
+      <p class="text-[#D0D0D0] xl:text-base text-sm mt-3">
+        bis zur ersten qualifizierten Einstellung<br>für unsere Partner
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+  </section>
+
+  <!-- yellow card section  -->
+<section class="2xl:mx-60 xl:mx-48 lg:mx-20 mx-5 mt-20 xl:mt-36 bg-gradient-to-l from-[#D2B94E] to-[#6C5F28] rounded-3xl overflow-hidden relative">
+  <div class="flex md:flex-row flex-col">
+    <!-- LEFT CONTENT -->
+    <div class="md:w-3/4 w-full xl:py-12 py-8 xl:pl-12 md:pl-8 relative z-10">
+      <div class="px-5 md:px-0 text-center md:text-start">
+        <h3 class="text-white xl:text-xl text-lg font-normal uppercase tracking-widest">
+          Worauf wartest Du noch?
+        </h3>
+        <h2 class="2xl:text-6xl lg:text-4xl text-3xl 2xl:leading-[75px] lg:leading-[50px] leading-10 font-semibold text-white pt-6">
+          Jetzt in 60 Sekunden erfahren, wie <br class="md:block hidden"> 
+          wir Fachkräfte in 30 Tagen für Dich <br class="md:block hidden">
+          einstellen mit 100% Erfolgsgarantie. <br class="md:block hidden">
+        </h2>
+      </div>
+
+      <div class="md:w-2/3 w-full">
+        <div class="text-center pt-10">
+          <button class="items-center xl:text-xl text-base text-start font-semibold px-8 py-4 text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E] transition">
+            Recruiting-Analyse starten &nbsp; &nbsp; →
+          </button>
+        </div>
+        <p class="2xl:text-[22px] lg:text-base text-sm 2xl:leading-10 lg:leading-7 leading-6 text-white pt-5 text-center">
+          Kostenlos & unverbindlich · 60 Sek. &nbsp;  
+          <i class="fa-solid fa-check text-green-600"></i>
+        </p>
+
+        <div class="flex items-center justify-center pt-8 gap-2 flex-wrap">
+          <div class="stars text-white text-lg">
+            <span>★ </span>Trustpilot <span>★ ★ ★ ★ ★</span>
+          </div>
+          <div class="flex items-center gap-2 flex-wrap">
+            <img src="./assets/img/white line.png" alt="">
+            <p class="text-white text-lg font-bold">Hervorragend</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- 🌟 RIGHT SIDE (PERFECT RESPONSIVE MARQUEE) -->
+<div class="md:w-3/12 w-full flex justify-center relative overflow-hidden md:h-auto h-[400px] bg-transparent">
+
+  <!-- Scroll Up -->
+  <div class="marquee-up">
+    <div class="marquee-group">
+      <img src="./assets/img/industries1.png" alt="">
+      <img src="./assets/img/industries2.png" alt="">
+      <img src="./assets/img/industries3.png" alt="">
+      <img src="./assets/img/industries4.png" alt="">
+      <img src="./assets/img/industries1.png" alt="">
+      <img src="./assets/img/industries2.png" alt="">
+      <img src="./assets/img/industries3.png" alt="">
+      <img src="./assets/img/industries4.png" alt="">
+    </div>
+    <div class="marquee-group">
+      <img src="./assets/img/industries1.png" alt="">
+      <img src="./assets/img/industries2.png" alt="">
+      <img src="./assets/img/industries3.png" alt="">
+      <img src="./assets/img/industries4.png" alt="">
+      <img src="./assets/img/industries1.png" alt="">
+      <img src="./assets/img/industries2.png" alt="">
+      <img src="./assets/img/industries3.png" alt="">
+      <img src="./assets/img/industries4.png" alt="">
+    </div>
+  </div>
+
+  <!-- Scroll Down -->
+  <div class="marquee-down">
+    <div class="marquee-group">
+      <img src="./assets/img/industries5.png" alt="">
+      <img src="./assets/img/industries6.png" alt="">
+      <img src="./assets/img/industries7.png" alt="">
+      <img src="./assets/img/industries8.png" alt="">
+      <img src="./assets/img/industries5.png" alt="">
+      <img src="./assets/img/industries6.png" alt="">
+      <img src="./assets/img/industries7.png" alt="">
+      <img src="./assets/img/industries8.png" alt="">
+    </div>
+    <div class="marquee-group">
+      <img src="./assets/img/industries5.png" alt="">
+      <img src="./assets/img/industries6.png" alt="">
+      <img src="./assets/img/industries7.png" alt="">
+      <img src="./assets/img/industries8.png" alt="">
+      <img src="./assets/img/industries5.png" alt="">
+      <img src="./assets/img/industries6.png" alt="">
+      <img src="./assets/img/industries7.png" alt="">
+      <img src="./assets/img/industries8.png" alt="">
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+<!-- Deine Abkürzung  -->
+  <section class="2xl:px-24 lg:px-10 px-5 pt-20 xl:pt-36">
+    <div class="text-center">
+        <h3 class="text-[#D2B94E] xl:text-xl text-lg font-normal uppercase tracking-widest">Deine Abkürzung zu neuen Fachkräften</h3>
+       <h2 class="xl:text-6xl lg:text-5xl md:text-[40px] text-3xl xl:leading-[75px] lg:leading-[54px] md:leading-[49px] leading-10 font-semibold text-white pt-6">
+ Was ist Dein nächster Schritt?
+</h2>
+    </div>
+
+    <div class="flex md:flex-row flex-col gap-5 xl:pt-20 pt-10 divide-y md:divide-y-0 md:divide-x divide-[#41414166] ">
+
+      <div class="md:w-1/3 w-full">
+        <h6 class="text-[#282828] text-[160px] font-bold">01</h6>
+        <div class="flex gap-4 items-center">
+          <img src="./assets/img/unver.png" alt="">
+          <h4 class="2xl:text-3xl xl:text-xl text-lg text-white font-semibold">Unverbindlich anfragen</h4>
+        </div>
+        <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm pt-4">Jetzt Button klicken: Unverbindliche <br>
+Anfrage in 60 Sekunden</p>
+      </div>
+
+      <div class="md:w-1/3 w-full xl:pl-10 md:pl-4">
+        <h6 class="text-[#282828] text-[160px] font-bold ">02</h6>
+        <div class="flex gap-4 items-center">
+          <img src="./assets/img/unver.png" alt="">
+          <h4 class="2xl:text-3xl xl:text-xl text-lg text-white font-semibold">Recruiting-Analyse</h4>
+        </div>
+        <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm pt-4">Komplett kostenlos: Maßgeschneiderte <br>
+Planung und Beratung bekommen</p>
+      </div>
+
+      <div class="md:w-1/3 w-full xl:pl-10 md:pl-4">
+        <h6 class="text-[#282828] text-[160px] font-bold">03</h6>
+        <div class="flex gap-4 items-center">
+          <img src="./assets/img/unver.png" alt="">
+          <h4 class="2xl:text-3xl xl:text-xl text-lg text-white font-semibold">Strategie­erstellung</h4>
+        </div>
+        <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm pt-4">Recruiting-Strategie zur Einstellung <br>
+in 30 Tagen mit Garantie</p>
+      </div>
+    </div>
+
+      <div class="text-center xl:pt-10 pt-6">
+<button class="items-center xl:text-xl text-base text-start font-semibold px-8 py-4 mt-12 text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E] transition">
+  Recruiting-Analyse starten &nbsp; &nbsp; →
+</button>
+</div>
+<p class="2xl:text-[22px] lg:text-base text-sm 2xl:leading-10 lg:leading-7 leading-6 text-white pt-5 text-center">Kostenlos & unverbindlich · 60 Sek. &nbsp;  <i class="fa-solid fa-check text-green-600"></i></p>
+
+<div class="flex items-center justify-center pt-8 gap-2 flex-wrap">
+  <div class="stars text-white text-lg">
+    <span>★ </span>Trustpilot <span>★ ★ ★ ★ ★</span>
+  </div>
+  <div class="flex items-center gap-2 flex-wrap">
+    <img src="./assets/img/white line.png" alt="">
+    <p class="text-white text-lg font-bold">Hervorragend</p>
+     <!-- <img src="./assets/img/white line.png" alt="">
+     <p class="text-white text-lg"><span class="font-bold">386</span> Bewertungen</p> -->
+  </div>
+</div>
+  </section>
+
+  <!-- Über 400  -->
+   <section class="2xl:px-24 lg:px-10 px-5 pt-20 xl:pt-36">
+    <div>
+      <h2 class="text-white font-semibold xl:text-6xl lg:text-5xl md:text-[40px] text-3xl">Über 400 Partner im DACH-Raum.</h2>
+    </div>
+
+     <div
+    class="flex lg:flex-row flex-col xl:gap-10 gap-5 xl:pt-20 pt-10"
+  >
+    <!-- LEFT GRID -->
+    <div
+      id="partner-logos"
+      class="lg:w-3/5 w-full grid md:grid-cols-3 grid-cols-2"
+    >
+      <!-- Partner 1 -->
+      <div
+        class="partner group flex flex-col justify-center items-center 2xl:px-14 px-12 md:py-4 2xl:py-0 py-2 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500 cursor-pointer active-partner"
+        data-title="HelloFresh"
+        data-sub="Positionen: Produktionsleiter & Maschinenführer"
+        data-desc="
+Herausforderung: Hoher Personalbedarf in kurzer Zeit durch saisonale Spitzenproduktion.
+Lösung: Durch gezieltes Performance Recruiting in der Region und KI-gestützte Zielgruppenanalyse erreichten wir innerhalb weniger Tage hunderte Fachkräfte mit Erfahrung in Lebensmittelproduktion.
+Ergebnis: Beide Positionen wurden innerhalb von 30 Tagen besetzt, zusätzlich entstanden über 40 qualifizierte Bewerberkontakte für zukünftige Einstellungen."
+      >
+        <img
+          src="./assets/img/hellofreshgrey.png"
+          class="block group-hover:hidden md:w-1/2"
+          alt=""
+        />
+        <img
+          src="./assets/img/hellofries.png"
+          class="hidden group-hover:block md:w-1/2"
+          alt=""
+        />
+      </div>
+
+      <!-- Partner 2 -->
+      <div
+        class="partner group flex flex-col justify-center items-center 2xl:px-20 px-12 md:py-4 2xl:py-0 py-2 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500 cursor-pointer"
+        data-title="EDEKA"
+        data-sub="Positionen: Marktleiter, Verkäufer & Kassierer"
+        data-desc="Herausforderung: Mehrere Standorte mit akuten Engpässen und hoher Fluktuation.
+Lösung: Entwicklung einer zentralen Arbeitgeberkampagne mit individuellem Standort-Targeting und Social Media Ads.
+Ergebnis: 3 Standorte konnten innerhalb von 6 Wochen vollständig besetzt werden – über 120 qualifizierte Bewerbungen in 45 Tagen."
+      >
+        <img
+          src="./assets/img/edekagry.png"
+          class="block group-hover:hidden w-1/2 2xl:w-2/5 "
+          alt=""
+        />
+        <img
+          src="./assets/img/edeka.png"
+          class="hidden group-hover:block w-1/2 2xl:w-2/5"
+          alt=""
+        />
+      </div>
+
+      <!-- Partner 3 -->
+      <div
+        class="partner group flex flex-col justify-center items-center 2xl:px-20 px-12 md:py-8 py-10 2xl:py-0 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500 cursor-pointer"
+        data-title="Subway"
+        data-sub="Positionen: Filialleiter & Teammitarbeiter"
+        data-desc="Herausforderung: Schwierige Bewerberlage in Nebenzeiten und hoher Wettbewerb in der Gastrobranche.
+Lösung: Einsatz kurzer Videoanzeigen und authentischer Einblicke ins Team – kombiniert mit regionalem Targeting rund um stark frequentierte Subway-Filialen.
+Ergebnis: 90 % der offenen Stellen wurden in 6 Wochen besetzt, über 60 Bewerbungen innerhalb von 30 Tagen."
+      >
+        <img
+          src="./assets/img/subwaygrey.png"
+          class="block group-hover:hidden 2xl:w-3/4"
+          alt=""
+        />
+        <img
+          src="./assets/img/subway.png"
+          class="hidden group-hover:block 2xl:w-3/4"
+          alt=""
+        />
+      </div>
+
+      <!-- Partner 4 -->
+      <div
+        class="partner group flex flex-col justify-center items-center 2xl:px-20 px-12 md:py-10 py-10 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500 cursor-pointer"
+        data-title="Bosch"
+        data-sub="Positionen: Servicetechniker & Elektroniker
+"
+        data-desc="Herausforderung: Technische Fachkräfte in einem umkämpften Markt zu finden, besonders außerhalb der Großstädte.
+Lösung: Präzise Zielgruppenanalyse mit technologischem Keyword-Targeting und direkter Ansprache über LinkedIn & Meta.
+Ergebnis: 2 qualifizierte Einstellungen nach 42 Tagen, 15 weitere Kandidaten im Talentpool."
+      >
+        <img
+          src="./assets/img/boschgrey.png"
+          class="block group-hover:hidden 2xl:w-3/4"
+          alt=""
+        />
+        <img
+          src="./assets/img/boschred.png"
+          class="hidden group-hover:block 2xl:w-3/4"
+          alt=""
+        />
+      </div>
+
+      <!-- Partner 5 -->
+      <div
+        class="partner group flex flex-col justify-center items-center 2xl:px-20 px-12 py-8 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500 cursor-pointer"
+        data-title="Tipico"
+        data-sub="Positionen: IT-Support & Store Manager"
+        data-desc="Herausforderung: Unterschiedliche Profile – von Tech bis Einzelhandel – unter einer Marke zu vereinen.
+Lösung: Zwei separate Kampagnen mit KI-optimierten Zielgruppen und individuellen Anzeigenlayouts.
+Ergebnis: 3 Einstellungen in 45 Tagen, plus über 100 Bewerbungen mit hoher Matching-Quote."
+      >
+        <img
+          src="./assets/img/tipicogrey.png"
+          class="block group-hover:hidden 2xl:w-3/4"
+          alt=""
+        />
+        <img
+          src="./assets/img/tipicored.png"
+          class="hidden group-hover:block 2xl:w-3/4"
+          alt=""
+        />
+      </div>
+
+      <!-- Partner 6 -->
+      <div
+        class="partner group flex flex-col justify-center items-center 2xl:px-20 px-12 py-8 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500 cursor-pointer"
+        data-title="Lotto"
+        data-sub="Positionen: Vertriebsmitarbeiter & Innendienst"
+        data-desc="Herausforderung: Kombination aus Außendienst und administrativen Tätigkeiten – schwer zu besetzen.
+Lösung: Storytelling-Kampagne mit Fokus auf regionale Verbundenheit und Arbeitsplatzsicherheit.
+Ergebnis: Beide Positionen innerhalb von 60 Tagen besetzt, Bewerberquote +220 % gegenüber Vorjahr."
+      >
+        <img
+          src="./assets/img/lottogrey.png"
+          class="block group-hover:hidden 2xl:w-3/4"
+          alt=""
+        />
+        <img
+          src="./assets/img/lotto.png"
+          class="hidden group-hover:block 2xl:w-3/4"
+          alt=""
+        />
+      </div>
+
+      <!-- Partner 7 -->
+      <div
+        class="partner group flex flex-col justify-center items-center px-12 py-12 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500 cursor-pointer"
+        data-title="Sarpi Veolia"
+        data-sub="Positionen: Anlagenfahrer & Chemielaborant"
+        data-desc="Herausforderung: Enger Bewerbermarkt und hohe Sicherheitsanforderungen in der Entsorgungsbranche.
+Lösung: Zielgruppenoptimierte Kampagne mit Fokus auf Stabilität, Umweltverantwortung und langfristige Perspektive.
+Ergebnis: 3 Fachkräfte in 45 Tagen eingestellt, über 25 qualifizierte Bewerbungen."
+      >
+        <img
+          src="./assets/img/sarpigrey.png"
+          class="block group-hover:hidden"
+          alt=""
+        />
+        <img
+          src="./assets/img/sarpi.png"
+          class="hidden group-hover:block"
+          alt=""
+        />
+      </div>
+
+      <!-- Partner 8 -->
+      <div
+        class="partner group flex items-center justify-center  border py-10 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500 cursor-pointer"
+        data-title="Vermeer"
+        data-sub="Positionen: Servicetechniker & Lagerleiter"
+        data-desc="Herausforderung: Hochspezialisierte Maschinenkenntnisse, geringer regionaler Bewerberpool.
+Lösung: Kampagnen mit Videoinhalten und technischem Keyword-Targeting über Meta & Google Ads.
+Ergebnis: 2 passgenaue Einstellungen in 60 Tagen, Bewerbungsquote 7x höher als im Branchendurchschnitt."
+      >
+        <img
+          src="./assets/img/vermetergry.png"
+          class="block group-hover:hidden"
+          alt=""
+        />
+        <img
+          src="./assets/img/vertmet.png"
+          class="hidden group-hover:block"
+          alt=""
+        />
+      </div>
+
+      <!-- Partner 9 -->
+      <div
+        class="partner group flex items-center justify-center border py-10 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500 cursor-pointer"
+        data-title="Marangoni"
+        data-sub="Positionen: Industriemechaniker & Qualitätsprüfer"
+        data-desc="Herausforderung: Mangel an erfahrenen Technikern im Werkstattumfeld.
+Lösung: Social Recruiting-Kampagne mit authentischem Video aus der Produktion und Mitarbeiterstatements.
+Ergebnis: 2 qualifizierte Neueinstellungen nach 38 Tagen, plus 12 Bewerber für spätere Positionen."
+      >
+        <img
+          src="./assets/img/marangonigrey.png"
+          class="block group-hover:hidden"
+          alt=""
+        />
+        <img
+          src="./assets/img/marangoniblue.png"
+          class="hidden group-hover:block"
+          alt=""
+        />
+      </div>
+
+      <!-- Partner 10 -->
+      <div
+        class="partner group flex items-center justify-center border py-4 px-4 border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500 cursor-pointer"
+        data-title="Dorfner"
+        data-sub="Positionen: Reinigungskräfte & Objektleiter"
+        data-desc="Herausforderung: Große Anzahl an offenen Stellen mit hoher Fluktuation.
+Lösung: Automatisiertes Bewerberportal mit einfacher 1-Klick-Bewerbung und regionalem Targeting.
+Ergebnis: 47 Bewerbungen in 30 Tagen, 9 direkte Einstellungen."
+      >
+        <img
+          src="./assets/img/dorfernergrey.png"
+          class="block group-hover:hidden"
+          alt=""
+        />
+        <img
+          src="./assets/img/dorfner.png"
+          class="hidden group-hover:block"
+          alt=""
+        />
+      </div>
+
+      <!-- Partner 11 -->
+      <div
+        class="partner group flex flex-col justify-center items-center px-12 py-6  border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500 cursor-pointer"
+        data-title="McDonald’s"
+        data-sub="Positionen: Restaurantleiter & Servicepersonal"
+        data-desc="Herausforderung: Hoher Bedarf an motivierten Mitarbeitern in Schichtsystemen.
+Lösung: KI-gestützte Anzeigen mit Fokus auf Benefits, Aufstiegschancen und Teamkultur.
+Ergebnis: 5 Filialen in 6 Wochen vollständig besetzt, 160 qualifizierte Bewerbungen."
+      >
+        <img
+          src="./assets/img/mecdonalgrey.png"
+          class="block group-hover:hidden 2xl:w-1/3 w-1/2"
+          alt=""
+        />
+        <img
+          src="./assets/img/mecdonal.png"
+          class="hidden group-hover:block 2xl:w-1/3 w-1/2"
+          alt=""
+        />
+      </div>
+
+      <!-- Partner 12 -->
+      <div
+        class="partner group flex flex-col justify-center items-center px-12 py-2 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500 cursor-pointer"
+        data-title="Dussmann"
+        data-sub="Positionen: Facility Manager & Reinigungskräfte"
+        data-desc="Herausforderung: Unterschiedliche Anforderungsprofile und dezentrale Standorte.
+Lösung: Performance Recruiting Kampagne mit Standort-Filtern, klarer Segmentierung und flexibler Bewerbungsstrecke.
+Ergebnis: 4 Fachkräfte in 45 Tagen eingestellt, Bewerbungsquote verdreifacht."
+      >
+        <img
+          src="./assets/img/dussmangrey.png"
+          class="block group-hover:hidden"
+          alt=""
+        />
+        <img
+          src="./assets/img/dussman.png"
+          class="hidden group-hover:block"
+          alt=""
+        />
+      </div>
+
+       <!-- Partner 13 -->
+      <div
+        class="partner group flex flex-col justify-center items-center px-12 md:py-2 py-4 2xl:py-6 border border-[#4141414D] rounded-sm hover:bg-[#D2B94E] transition-all duration-500 cursor-pointer"
+        data-title="Tchibo"
+        data-sub="Positionen: Verkäufer & Logistikmitarbeiter"
+        data-desc="Herausforderung: Saisonale Personalspitzen und starker Wettbewerbsdruck im Handel.
+Lösung: Social-Media-Kampagne mit Fokus auf Teamspirit und Mitarbeiter-Benefits.
+Ergebnis: 3 Standorte in 50 Tagen besetzt, 85 qualifizierte Bewerbungen."
+      >
+        <img
+          src="./assets/img/tchibe.png"
+          class="block group-hover:hidden 2xl:w-1/2"
+          alt=""
+        />
+        <img
+          src="./assets/img/techbirwhite.png"
+          class="hidden group-hover:block 2xl:w-1/2"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- RIGHT INFO BOX -->
+    <div
+      class="lg:w-2/5 w-full flex flex-col  bg-[#181818] xl:py-12 xl:px-12 py-6 px-6 rounded-3xl relative"
+    >
+      <div id="partner-info">
+        <h3
+          id="partner-title"
+          class="2xl:text-4xl xl:text-2xl text-lg text-white pt-4 font-semibold"
+        >
+          HelloFresh
+        </h3>
+        <p
+          id="partner-sub"
+          class="text-[#D0D0D0] 2xl:text-2xl xl:text-base text-sm pt-2"
+        >
+          Positionen: Produktionsleiter & Maschinenführer
+        </p>
+        <p
+          id="partner-desc"
+          class="2xl:text-2xl text-base 2xl:leading-10 leading-7 text-[#D0D0D0] pt-6"
+        >
+          Herausforderung: Hoher Personalbedarf in kurzer Zeit durch saisonale Spitzenproduktion.
+Lösung: Durch gezieltes Performance Recruiting in der Region und KI-gestützte Zielgruppenanalyse erreichten wir innerhalb weniger Tage hunderte Fachkräfte mit Erfahrung in Lebensmittelproduktion.
+Ergebnis: Beide Positionen wurden innerhalb von 30 Tagen besetzt, zusätzlich entstanden über 40 qualifizierte Bewerberkontakte für zukünftige Einstellungen.
+        </p>
+      </div>
+
+      <!-- Arrows -->
+      <div class="flex gap-6 mt-10">
+        <button
+          id="prev-btn"
+          class=" text-white font-bold"
+        >
+          ←
+        </button>
+        <button
+          id="next-btn"
+          class=" text-white font-bold"
+        >
+          →
+        </button>
+      </div>
+    </div>
+  </div>
+   </section>
+
+  <!-- Erkennst Du  -->
+  <section class="2xl:px-24 lg:px-10 px-5 pt-20 xl:pt-36">
+
+    <div>
+      <h2 class="xl:text-6xl lg:text-5xl md:text-[40px] text-3xl xl:leading-[75px] lg:leading-[54px] md:leading-[49px] leading-10 font-semibold text-white pt-6 text-center">
+Erkennst Du Dich hier wieder? Diese Kosten <br class="md:block hidden">
+verursacht der Fachkräftemangel – jeden Tag.
+</h2>
+    </div>
+
+    <div class="flex md:flex-row flex-col xl:gap-10 gap-6 xl:pt-20 pt-10">
+
+      <div class="md:w-1/2 w-full bg-[#181818] 2xl:py-16 2xl:px-20 xl:py-12 xl:px-16 px-8 py-6 rounded-2xl">
+        <div class="">
+          <div class="flex justify-center">
+          <img src="./assets/img/auftra.png" alt="">
+          </div>
+          <h3 class="2xl:text-3xl xl:text-xl text-lg text-white text-center pt-4 font-semibold">
+            Aufträge ablehnen, weil Fachkräfte fehlen?
+          </h3>
+        </div>
+        <div class="flex items-center gap-2 pt-6 2xl:pt-10">
+          <img src="./assets/img/thumb.png" alt="">
+          <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm">61 % aller Geschäftsführer müssen gewinnbringende Aufträge
+ablehnen, weil ihnen qualifizierte Fachkräfte fehlen.</p>
+        </div>
+        <div class="flex items-center gap-2 2xl:pt-6 pt-4">
+          <img src="./assets/img/thumb.png" alt="">
+          <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm">Jede unbesetzte Stelle kostet Dich Ø 1.650 € Umsatz pro Woche.</p>
+        </div>
+        <div class="flex items-center gap-2 2xl:pt-6 pt-4">
+          <img src="./assets/img/thumb.png" alt="">
+          <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm">Während Du Aufträge ablehnst, übernimmt die Konkurrenz Deine
+Kunden.</p>
+        </div>
+      </div>
+
+      <div class="md:w-1/2 w-full bg-[#181818] 2xl:py-16 2xl:px-20 xl:py-12 xl:px-16 px-8 py-6 rounded-2xl">
+        <div class="">
+          <div class="flex justify-center">
+          <img src="./assets/img/team.png" alt="">
+          </div>
+          <h3 class="2xl:text-3xl xl:text-xl text-lg text-white text-center pt-4 font-semibold">
+            Team am Limit – Krankenstand steigt?
+          </h3>
+        </div>
+        <div class="flex items-center gap-2 pt-6 2xl:pt-10">
+          <img src="./assets/img/thumb.png" alt="">
+          <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm">Überstunden & schlechte Stimmung bremsen Produktivität.</p>
+        </div>
+        <div class="flex items-center gap-2 2xl:pt-6 pt-4">
+          <img src="./assets/img/thumb.png" alt="">
+          <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm">Krankenstand + 28 % in Handwerksbetrieben ohne volle Teams.</p>
+        </div>
+        <div class="flex items-center gap-2 2xl:pt-6 pt-4">
+          <img src="./assets/img/thumb.png" alt="">
+          <p class="text-[#D0D0D0] 2xl:text-xl lg:text-base text-sm">Top-Leute suchen sich spätestens nach 3 Monaten Überlastung eine
+neue Firma – Know-how geht verloren.</p>
+        </div>
+      </div>
+
+    </div>
+
+      <div class="text-center xl:pt-10 pt-6">
+<button class="items-center xl:text-xl text-base text-start font-semibold px-8 py-5 mt-12 text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E] transition">
+  Recruiting-Analyse starten &nbsp; &nbsp; →
+</button>
+</div>
+<p class="2xl:text-[22px] lg:text-base text-sm 2xl:leading-10 lg:leading-7 leading-6 text-white pt-5 text-center">Kostenlos & unverbindlich · 60 Sek. &nbsp;  <i class="fa-solid fa-check text-green-600"></i></p>
+
+<div class="flex items-center justify-center pt-8 gap-2 flex-wrap">
+  <div class="stars text-white text-lg">
+    <span>★ </span>Trustpilot <span>★ ★ ★ ★ ★</span>
+  </div>
+  <div class="flex items-center gap-2 flex-wrap">
+    <img src="./assets/img/white line.png" alt="">
+    <p class="text-white text-lg font-bold">Hervorragend</p>
+     <img src="./assets/img/white line.png" alt="">
+     <p class="text-white text-lg"><span class="font-bold">386</span> Bewertungen</p>
+  </div>
+</div>
+  </section>
+
+  <!-- marketing section  -->
+<section class="2xl:px-24 lg:px-10 px-5 2xl:pt-52 lg:pt-36 pt-20">
+  
+    <div class="w-full text-center">
+      <h2 class="2xl:text-7xl xl:text-6xl lg:text-[43px] md:text-[40px] text-4xl text-white 2xl:leading-[85px] xl:leading-[70px] lg:leading-[54px] md:leading-[48px] leading-[45px]">
+       BRANCHEN, DIE WIR <br> <span class="text-[#D2B94E]">ERFOLGREICH REKRUTIEREN</span>
+      </h2>
+      <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-white pt-6 ">Unser Performance Recruiting funktioniert branchenübergreifend – präzise,  datenbasiert und<br class="md:block hidden"> individuell auf jede Zielgruppe abgestimmt. <br>
+
+Wählen Sie Ihre Branche und entdecken Sie, wie wir qualifizierte Bewerber finden, die wirklich passen:</p>
+
+    </div>
+
+      <div class="flex md:flex-row flex-col xl:gap-20 gap-10 xl:pt-20 pt-10">
+    <div class="md:w-1/2 w-full pt-10 lg:pt-0">
+
+      <a href="#">
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/branding.svg" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">Mittelständische Unternehmen</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+      </a>
+      <hr class="border border-[#414141] 2xl:my-20 md:my-10 my-6">
+
+      <a href="#">
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/branding.svg" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">Industrieunternehmen</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+      </a>
+      <hr class="border border-[#414141] 2xl:my-20 md:my-10 my-6">
+
+      <a href="#">
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/branding.svg" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">Baugewerbe</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+      </a>
+      <hr class="border border-[#414141] 2xl:my-20 md:my-10 my-6">
+
+            <a href="#">
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/branding.svg" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">Bodenleger</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+      </a>
+          <hr class="border border-[#414141] 2xl:my-20 md:my-10 my-6">
+
+       <a href="#">
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/branding.svg" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">Kälte- und Klimatechnik</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+      </a>
+      <hr class="border border-[#414141] 2xl:my-20 md:my-10 my-6">
+
+      <a href="#">
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/branding.svg" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">Metallbaubetriebe</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+      </a>
+      <hr class="border border-[#414141] 2xl:my-20 md:my-10 my-6">
+
+      <a href="#">
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/branding.svg" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">Tischlerei / Schreinerei</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+      </a>
+      <hr class="border border-[#414141] 2xl:my-20 md:my-10 my-6">
+
+            <a href="#">
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/branding.svg" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">Dachdecker</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+      </a>
+          <hr class="border border-[#414141] 2xl:my-20 md:my-10 my-6">
+
+        <a href="#">
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/branding.svg" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">Dentallabore
+</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+      </a>
+      <hr class="border border-[#414141] 2xl:my-20 md:my-10 my-6">
+
+            <a href="#">
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/branding.svg" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">Physiotherapiepraxen</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+      </a>
+  
+
+    </div>
+
+    <div class="md:w-1/2 w-full pt-10 lg:pt-0">
+      <a href="#">
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/branding.svg" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">KFZ Betriebe / Autohäuser</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+      </a>
+      <hr class="border border-[#414141] 2xl:my-20 md:my-10 my-6">
+
+      <a href="#">
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/branding.svg" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">Photovoltaikbetriebe</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+      </a>
+      <hr class="border border-[#414141] 2xl:my-20 md:my-10 my-6">
+
+      <a href="#">
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/branding.svg" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">Elektrobetriebe
+</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+      </a>
+      <hr class="border border-[#414141] 2xl:my-20 md:my-10 my-6">
+
+            <a href="#">
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/branding.svg" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">Sanitär- und Heizungsbetriebe</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+      </a>
+          <hr class="border border-[#414141] 2xl:my-20 md:my-10 my-6">
+
+      <a href="#">
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/branding.svg" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">Garten- und Landschaftsbaubetriebe</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+      </a>
+      <hr class="border border-[#414141] 2xl:my-20 md:my-10 my-6">
+
+      <a href="#">
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/branding.svg" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">Maler- und Lackierbetriebe</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+      </a>
+      <hr class="border border-[#414141] 2xl:my-20 md:my-10 my-6">
+
+      <a href="#">
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/branding.svg" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">Agrar- und Landwirtschaftsbetriebe
+</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+      </a>
+      <hr class="border border-[#414141] 2xl:my-20 md:my-10 my-6">
+
+            <a href="#">
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/branding.svg" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">Ärzte - Krankenhäuser / Praxen</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+      </a>
+          <hr class="border border-[#414141] 2xl:my-20 md:my-10 my-6">
+
+             <a href="#">
+      <div class="flex justify-between">
+        <div class="flex gap-6 items-center">
+          <img src="./assets/img/branding.svg" alt="">
+          <p class="2xl:text-[26px] xl:text-2xl md:text-lg text-base text-white">Bäckerei / Konditorei</p>
+        </div>
+        <div>
+          <img src="./assets/img/uperrow.png" alt="">
+        </div>
+      </div>
+      </a>
+  
+  
+    </div>
+    </div>
+
+      <div class="text-center ">
+  <button class="text-lg font-semibold px-8 py-4 mt-20 text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E] transition">
+  Explore All &nbsp;&nbsp;<i class="fa-solid fa-chevron-right"></i>
+</button>
+</div>
+</section>
+
+<!-- faqs  -->
+<section class="2xl:px-24 lg:px-10 px-5 2xl:pt-52 lg:pt-36 pt-20">
+  <div class="text-center ">
+    <h2 class="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-[40px] text-4xl font-bold text-white" >FAQ – Performance Recruiting</h2>
+    <p class="2xl:text-xl xl:text-lg lg:text-base text-sm pt-6 text-[#DFDFDF]">Entering The Super Hero Society means joining an family full of people who believe <br>
+in the future of Cryptocurrencies and the Blockchain technology.</p>
+  </div>
+
+
+   <div class="bg-center bg-cover bg-no-repeat" style="background-image: url(./assets/img/lines.png);">
+     <!-- faqs  -->
+    <div class="w-full 2xl:px-72 lg:px-56 2xl:mt-24 lg:mt-16 mt-10">
+       
+        <div class="space-y-4">
+          <div>
+                <hr class=" border-[#333333]">
+             </div>
+            <!-- FAQ 1 -->
+            <div class="" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000">
+                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+                    <span>01
+Seid ihr Personalvermittler, ein Stellenportal oder eine Social-Recruiting-Agentur?</span>
+                    <span class="icon text-white">+</span>
+                </button>
+                <div class="faq-content text-[#C1C1C1]">
+                    <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Weder noch. convince me. ist eine ganzheitliche Recruiting-Lösung, die datenbasiertes Marketing mit moderner Technologie verbindet.
+Wir liefern qualifizierte Bewerbungen von Fachkräften, die exakt zu Ihrem Unternehmen passen – ohne Streuverluste, ohne Zeitverschwendung.</p>
+                   
+                </div>
+            </div>
+            <div>
+                <hr class=" border-[#333333]">
+             </div>
+
+            <!-- FAQ 2 -->
+            <div class="" data-aos="fade-down"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000">
+                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+                    <span>02
+Ist die Recruiting-Analyse wirklich kostenlos?</span>
+                    <span class="icon text-white">+</span>
+                </button>
+                <div class="faq-content text-[#C1C1C1]">
+                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Ja, unsere Recruiting-Analyse ist komplett kostenlos und unverbindlich.
+Dabei prüfen wir das Potenzial in Ihrer Region, analysieren Ihren Online-Auftritt und zeigen, wie Sie mit Performance Recruiting qualifizierte Mitarbeiter gewinnen können – effizient, planbar und mit Erfolgsgarantie.</p>
+                </div>
+            </div>
+            <div>
+                <hr class=" border-[#333333]">
+             </div>
+
+            <!-- FAQ 3 -->
+            <div class="" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000">
+                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+                    <span>03
+Ich habe wenig Zeit – wie viel Aufwand habe ich wirklich?</span>
+                    <span class="icon text-white">+</span>
+                </button>
+                <div class="faq-content text-[#C1C1C1]">
+                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Minimal. Wir übernehmen den gesamten Prozess – von der Strategie über die Kampagnensteuerung bis zur Bewerberkommunikation.
+Sie führen nur noch die finalen Gespräche mit Kandidaten, die wirklich passen. So sparen unsere Partnerbetriebe im Schnitt über 80 % Zeit im Recruiting.</p>
+                </div>
+            </div>
+            <div>
+                <hr class=" border-[#333333]">
+             </div>
+
+    <!-- FAQ 4 -->
+           <div class="" data-aos="fade-down"
+           data-aos-anchor-placement="top-bottom"
+           data-aos-duration="2000">
+                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+                    <span>04
+Der Arbeitsmarkt ist leer – wie wollt ihr mir helfen?</span>
+                    <span class="icon text-white">+</span>
+                </button>
+                <div class="faq-content text-[#C1C1C1]">
+                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Mit gezieltem Online-Marketing erreichen wir Fachkräfte dort, wo sie täglich aktiv sind: in sozialen Netzwerken und auf digitalen Plattformen.
+Anstatt auf Bewerbungen zu warten, sprechen wir passende Kandidaten aktiv an – präzise, automatisiert und messbar erfolgreich.</p>
+                </div>
+            </div>
+            <div>
+                <hr class=" border-[#333333]">
+             </div>
+
+    <!-- FAQ 5 -->
+
+          <div class="" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="2000">
+                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+                    <span>05
+Was macht die convince me. Methode einzigartig?</span>
+                    <span class="icon text-white">+</span>
+                </button>
+                <div class="faq-content text-[#C1C1C1]">
+                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Unsere Methode vereint Strategie, Technologie und Expertenwissen zu einem klaren, effizienten Prozess.
+Mit KI-gestützter Zielgruppenanalyse, modernen Kampagnen und persönlicher Betreuung entlasten wir Sie vollständig – und liefern Ergebnisse, die überzeugen</p>
+                </div>
+            </div>
+            <div>
+                <hr class=" border-[#333333]">
+             </div>
+
+    <!-- FAQ 6 -->
+          <div class="" data-aos="fade-down"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="2000">
+                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+                    <span>06
+Habe ich Bindungspflichten oder lange Vertragslaufzeiten?</span>
+                    <span class="icon text-white">+</span>
+                </button>
+                <div class="faq-content text-[#C1C1C1]">
+                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Nein. Bei convince me. gibt es keine langfristige Vertragsbindung.
+Unsere Zusammenarbeit startet flexibel – meist mit einem 30-Tage-Projekt. Sie entscheiden anschließend, ob und wie Sie die Kooperation fortsetzen möchten.</p>
+                </div>
+            </div>
+            <div>
+                <hr class=" border-[#333333]">
+             </div>
+
+              <!-- FAQ 7 -->
+          <div class="" data-aos="fade-down"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="2000">
+                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+                    <span>07
+Warum arbeitet ihr so erfolgreich mit Handwerks- und Mittelstandsunternehmen zusammen?</span>
+                    <span class="icon text-white">+</span>
+                </button>
+                <div class="faq-content text-[#C1C1C1]">
+                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Weil wir deren Herausforderungen verstehen.
+Wir unterstützen Sie nicht nur bei der Mitarbeitergewinnung, sondern auch beim Aufbau einer starken Arbeitgebermarke und langfristigen Mitarbeiterbindung – für nachhaltigen Erfolg über die Kampagne hinaus.</p>
+                </div>
+            </div>
+            <div>
+                <hr class=" border-[#333333]">
+             </div>
+
+              <!-- FAQ 8 -->
+          <div class="" data-aos="fade-down"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="2000">
+                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+                    <span>08
+Wie unterscheidet sich Performance Recruiting von klassischem Recruiting?</span>
+                    <span class="icon text-white">+</span>
+                </button>
+                <div class="faq-content text-[#C1C1C1]">
+                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Klassisches Recruiting basiert meist auf Stellenanzeigen und passiver Bewerbersuche.
+Performance Recruiting dagegen nutzt datengetriebene Werbekampagnen, um gezielt passende Kandidaten dort anzusprechen, wo sie sich täglich online bewegen – auf Social Media, Suchmaschinen und Jobnetzwerken. Das führt zu deutlich mehr Reichweite und qualifizierteren Bewerbungen.</p>
+                </div>
+            </div>
+            <div>
+                <hr class=" border-[#333333]">
+             </div>
+
+              <!-- FAQ 9 -->
+          <div class="" data-aos="fade-down"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="2000">
+                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+                    <span>09
+Wie schnell sehe ich Ergebnisse mit Performance Recruiting bei convince me?</span>
+                    <span class="icon text-white">+</span>
+                </button>
+                <div class="faq-content text-[#C1C1C1]">
+                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Ja – und das sogar besonders gut.
+Mit gezielter, regionaler Zielgruppenansprache erreichen wir Fachkräfte, die nicht aktiv auf Jobsuche sind, aber offen für attraktive Arbeitgeber in ihrer Nähe. So finden auch kleinere Betriebe qualifizierte Mitarbeiter, die langfristig bleiben.</p>
+                </div>
+            </div>
+            <div>
+                <hr class=" border-[#333333]">
+             </div>
+
+                  <!-- FAQ 10 -->
+          <div class="" data-aos="fade-down"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="2000">
+                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+                    <span>10
+Kann Performance Recruiting auch im ländlichen Raum funktionieren?</span>
+                    <span class="icon text-white">+</span>
+                </button>
+                <div class="faq-content text-[#C1C1C1]">
+                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Ja – und das sogar besonders gut.
+Mit gezielter, regionaler Zielgruppenansprache erreichen wir Fachkräfte, die nicht aktiv auf Jobsuche sind, aber offen für attraktive Arbeitgeber in ihrer Nähe. So finden auch kleinere Betriebe qualifizierte Mitarbeiter, die langfristig bleiben.</p>
+                </div>
+            </div>
+            <div>
+                <hr class=" border-[#333333]">
+             </div>
+
+                  <!-- FAQ 11 -->
+          <div class="" data-aos="fade-down"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="2000">
+                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+                    <span>11
+Wie funktioniert die Zielgruppen-Analyse bei convince me.?</span>
+                    <span class="icon text-white">+</span>
+                </button>
+                <div class="faq-content text-[#C1C1C1]">
+                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Unsere KI-gestützte Analyse ermittelt, wo sich potenzielle Bewerber online aufhalten, welche Interessen sie haben und über welche Kanäle sie am besten erreichbar sind.
+So werden Ihre Anzeigen nur den Personen ausgespielt, die wirklich relevant sind – effizient, messbar und ohne Streuverluste.</p>
+                </div>
+            </div>
+            <div>
+                <hr class=" border-[#333333]">
+             </div>
+
+                  <!-- FAQ 12 -->
+          <div class="" data-aos="fade-down"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="2000">
+                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+                    <span>12
+Welche Unterlagen oder Informationen benötigt ihr von uns für den Start?</span>
+                    <span class="icon text-white">+</span>
+                </button>
+                <div class="faq-content text-[#C1C1C1]">
+                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Lediglich eine Stellenbeschreibung und einige Informationen zu Ihrem Unternehmen.
+Alles Weitere – von der Strategie bis zur Erstellung der Kampagnen – übernehmen wir. Auf Wunsch gestalten wir auch Texte, Bilder und Videos für Ihre Arbeitgeberkampagne.</p>
+                </div>
+            </div>
+            <div>
+                <hr class=" border-[#333333]">
+             </div>
+
+                  <!-- FAQ 13 -->
+          <div class="" data-aos="fade-down"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="2000">
+                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+                    <span>13
+Was passiert nach der Kampagne?</span>
+                    <span class="icon text-white">+</span>
+                </button>
+                <div class="faq-content text-[#C1C1C1]">
+                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">LeNach Abschluss der Kampagne wird diese Pausiert und kann von Ihnen, auf Knopfdruck wieder online gestellt werden. Es erfordert keiner Kündigung. 
+Auf Wunsch unterstützen wir Sie auch beim Aufbau langfristiger Recruiting-Strukturen, Employer Branding oder beim Retargeting künftiger Fachkräfte.</p>
+                </div>
+            </div>
+            <div>
+                <hr class=" border-[#333333]">
+             </div>
+
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- digital marketing  -->
+<section class="2xl:mt-52 lg:mt-36 mt-20 bg-center bg-cover bg-no-repeat border-t border-[#262626]" style="background-image: url(./assets/img/marketingbg.png);">
+  <div class="2xl:py-36 lg:py-20 py-10 2xl:px-32 lg:px-16 px-6 text-center">
+    <h2 class=" 2xl:text-7xl xl:text-6xl lg:text-[43px] md:text-[40px] text-4xl font-semibold text-white 2xl:leading-[85px] xl:leading-[70px] lg:leading-[54px] md:leading-[48px] leading-[45px]">DIGITALES MARKETING <br> FÜR UNTERNEHMEN MIT ANSPRUCH.</h2>
+<p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-white pt-6 ">Aus Hamburg. Für den Mittelstand, der mehr will. Wir sind keine klassische Werbeagentur – wir sind convince me.
+Ein Partner für Unternehmen, die die Chancen der Digitalisierung nutzen wollen, um sichtbarer zu werden, effizienter zu arbeiten und nachhaltig zu wachsen.
+Wir kombinieren Strategie, Technologie und kreative Kommunikation, um Ergebnisse zu erzielen, die zählen: mehr Reichweite, mehr Bewerbungen, mehr Umsatz. Statt auf kostspielige Massenwerbung zu setzen, schaffen wir digitale Lösungen, die präzise auf Ihre Zielgruppe und Ihre Unternehmensziele abgestimmt sind. Ob Marketingstrategie, Recruiting oder Markenaufbau – wir entwickeln individuelle Konzepte, die Wirkung zeigen und echten Mehrwert schaffen. Unser Ziel: Ihr Erfolg. Planbar, messbar und langfristig.</p>
+
+ <div class="text-center">
+  <button data-open="projectModal" class="text-lg font-semibold px-8 py-4 xl:mt-16 mt-8 text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E] transition">
+  Jetzt Fachkräfte einstellen &nbsp;&nbsp;<i class="fa-solid fa-chevron-right"></i>
+</button>
+</div>
+<div class="flex items-center justify-center pt-8 gap-2 flex-wrap">
+          <div class="stars text-white text-lg">
+            <span>★ </span>Trustpilot <span>★ ★ ★ ★ ★</span>
+          </div>
+          <div class="flex items-center gap-2 flex-wrap">
+            <img src="./assets/img/white line.png" alt="">
+            <p class="text-white text-lg font-bold">Hervorragend</p>
+          </div>
+        </div>
+  </div>
+</section>
+
+   <!-- Footer -->
+  <footer class="text-white px-6 lg:px-12 xl:px-20 2xl:px-28 py-12 xl:py-20">
+
+    <!-- mobile div only  -->
+    <div class="pb-10 block md:hidden">
+    <div class="flex justify-center pb-6">
+      <img src="./assets/img/footer.png" alt="">
+    </div>
+     <p class="text-white/70 2xl:text-lg text-sm leading-relaxed text-center">
+         Ein Kollektiv engagierter Köpfe, das Unternehmen <br> dabei unterstützt, digital zu wachsen.
+        </p>
+        </div>
+
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7  gap-8 text-center md:text-start">
+      
+      <!-- Left Content -->
+      <div class="lg:col-span-2 hidden md:block">
+        <div class="">
+        <img src="./assets/img/footer.png" class="md:block hidden" alt="">
+        </div>
+        <p class="text-white/70 md:mt-4 2xl:text-lg text-sm leading-relaxed md:block hidden">
+         Ein Kollektiv engagierter Köpfe, das Unternehmen<br class="xl:block hidden"> dabei unterstützt, digital zu wachsen.
+        </p>
+
+        <div class="lg:block hidden">
+         <div class="flex md:justify-start justify-center gap-2 pt-6 ">
+          <a href="https://www.kununu.com/de/convince-me1">
+      <img src="./assets/img/company1.png" alt="">
+      </a>
+      <a href="">
+      <img src="./assets/img/company2.png" alt="">
+      </a>
+        </div>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Quick Links</h3>
+        <ul class="space-y-2 text-white/70 2xl:text-base text-sm ">
+          <li class="hover:underline"><a href="./index.html"  >Home</a></li>
+          <li class="hover:underline"><a href="./comingsoon.html">Our Works</a></li>
+          <li class="hover:underline"><a href="./comingsoon.html">Network</a></li>
+          <li class="hover:underline"><a href="./job.html">Jobs</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div>
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Support</h3>
+        <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
+          <!-- <li><a href="#">Blog</a></li> -->
+          <li class="hover:underline"><a href="./contact.html">Contact Us</a></li>
+          <!-- <li><a href="#">Online Chat</a></li> -->
+          <li class="hover:underline"><a href="#">Whatsapp</a></li>
+          <li class="hover:underline"><a href="#">Telegram</a></li>
+          <!-- <li class="hover:underline"><a href="#">Help Center</a></li> -->
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Services</h3>
+        <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
+          <li class="hover:underline"><a href="./comingsoon.html">Job</a></li>
+          <li class="hover:underline"><a href="./comingsoon.html">Web Design & Development</a></li>
+          <li class="hover:underline"><a href="./comingsoon.html">SEO Optimization</a></li>
+          <li class="hover:underline"><a href="./comingsoon.html">E-Commerce Development</a></li>
+          <li class="hover:underline"><a href="./comingsoon.html">Brand Identity Creation</a></li>
+           <li class="hover:underline"><a href="./comingsoon.html">Strategy for Business Development</a></li>
+          <li class="hover:underline"><a href="./comingsoon.html">Social Media Management & Post Creation</a></li>
+          <li class="hover:underline"><a href="./comingsoon.html">CMS design</a></li>
+          <li class="hover:underline"><a href="./comingsoon.html">Mobile App Design and Development</a></li>
+          <li class="hover:underline"><a href="./comingsoon.html">UI/UX Design</a></li>
+        </ul>
+      </div>
+
+         <!-- Resources -->
+      <div>
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Privacy</h3>
+        <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
+          <li class="hover:underline"><a href="./privacypoliciy.html">Privacy Policies</a></li>
+          <li class="hover:underline"><a href="./termandcondition.html">Terms And Condition</a></li>
+         
+        </ul>
+
+        <!-- for mobile only   -->
+        <div class="md:hidden block pt-6">
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Company</h3>
+        <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
+          <li class="hover:underline"><a href="./impressum.html">Impressum</a></li>
+          <li class="hover:underline"><a href="./Datenschutz.html">Datenschutz</a></li>
+        </ul>
+        <div class="flex justify-center">
+        <img src="./assets/img/attachment.png" class="mt-6" alt="">
+        </div>
+      </div>
+
+
+      </div>
+
+
+        <!-- Resources -->
+      <div class="md:block hidden">
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Company</h3>
+        <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
+        <li class="hover:underline"><a href="./impressum.html">Impressum</a></li>
+          <li class="hover:underline"><a href="./Datenschutz.html">Datenschutz</a></li>
+        </ul>
+        <div class="md:block hidden">
+        <img src="./assets/img/attachment.png" class="mt-6 " alt="">
+        </div>
+      </div>
+
+    </div>
+  <div class="flex md:justify-start justify-center gap-2 pt-6 lg:hidden block">
+          <a href="https://www.kununu.com/de/convince-me1">
+      <img src="./assets/img/company1.png" alt="">
+      </a>
+      <a href="">
+      <img src="./assets/img/company2.png" alt="">
+      </a>
+        </div>
+       
+    <!-- Bottom Bar -->
+    <div class="border-t border-[#414141] mt-10 flex justify-between items-center">
+       <!-- Copyright -->
+        <div>© 2025, convince me.</div>
+
+      <div class="py-4 flex flex-col md:flex-row justify-between items-center text-sm text-white/70 space-y-3 md:space-y-0">
+        <!-- Social Icons -->
+        <div class="flex justify-center md:justify-start space-x-4">
+          <a href="#" class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#D2B94E]">
+            <i class="fab fa-instagram "></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#D2B94E]">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#D2B94E]">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- contact popup form  -->
+<div id="contactModal" 
+     class="fixed inset-0 bg-black/70 z-50 hidden overflow-y-auto">
+  
+  <!-- Center Content with Spacing -->
+  <div class="min-h-screen flex items-center justify-center py-6 px-4">
+    
+    <!-- Modal Card -->
+    <div class="bg-[#1a1a1a] rounded-2xl shadow-xl w-full max-w-5xl 2xl:max-w-7xl
+                flex flex-col md:flex-row relative animate-fadeIn">
+      
+      <!-- Close Button -->
+      <button id="closeModal" 
+              class="absolute top-2 right-4 text-[#A4A7AE] text-xl">
+        ✕
+      </button>
+
+      <!-- Left: Form -->
+      <div class="w-full md:w-1/2 px-6 md:px-0 md:pl-8 sm:py-8 py-6 flex flex-col justify-center text-white">
+        <h2 class="2xl:text-3xl text-2xl font-semibold mb-3">Let's connect constellations</h2>
+        <p class="2xl:text-lg text-sm text-white mb-6">
+          Let's align our constellations! Reach out and let the magic of collaboration illuminate our skies.
+        </p>
+
+        <form action="#" method="POST" class="space-y-4">
+          <div class="flex flex-col sm:flex-row gap-4">
+            <input type="text" placeholder="Vorname" 
+                   class="w-full sm:w-1/2 p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none" />
+            <input type="text" placeholder="Nachname" 
+                   class="w-full sm:w-1/2 p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none" />
+          </div>
+          <input type="email" placeholder="E-Mail" 
+                 class="w-full p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none" />
+          <input type="tel" placeholder="Telefonnummer" 
+                 class="w-full p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none" />
+          <textarea placeholder="Nachricht" rows="4" 
+                    class="w-full p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none"></textarea>
+
+          <button type="Senden" 
+                  class="w-full bg-[#D2B94E] text-[#040404] font-medium py-3 rounded-md flex items-center justify-center gap-2 transition">
+            Senden 🚀
+          </button>
+        </form>
+      </div>
+
+      <!-- Right: Astronaut Image -->
+      <div class="w-full md:w-1/2 flex items-center justify-center px-6 py-10">
+        <img src="./assets/img/contactimg.png" 
+             alt="Astronaut" 
+             class="w-full max-h-[600px] object-contain rounded-lg" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Questioning popup Modal Overlay -->
+<div id="projectModal"
+  class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50 overflow-y-auto p-4">
+  
+  <!-- Modal Box -->
+  <div
+    class="relative bg-[#0F0F0F] border border-[#D2B94E] rounded-2xl shadow-xl w-full max-w-5xl my-auto p-6 sm:p-8 overflow-y-auto max-h-[90vh]">
+    
+    <!-- Close Button -->
+    <button id="closeProjectModal"
+      class="absolute top-4 right-4 text-[#D2B94E] text-2xl font-bold">&times;</button>
+
+    <!-- Page Counter -->
+    <div id="pageIndicator" class="text-[#D2B94E] text-lg font-semibold text-center mb-4">
+      Seite 1 von 5
+    </div>
+
+    <!-- Steps -->
+    <div id="projectStepsContainer" class="space-y-10 lg:py-10 py-5">
+      
+      <!-- Page 1 -->
+      <div class="project-step">
+        <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">Du bist...?</h2>
+        <div class="grid md:grid-cols-4 gap-5 pt-6">
+          <div class="md:block hidden"></div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img1.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Geschäftsführer</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img2.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Mitarbeiter</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 2 -->
+      <div class="project-step hidden">
+        <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">Wie viele Mitarbeiter sind in Deinem Betrieb?</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 pt-6">
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img3.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">1 bis 4</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img4.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">5 bis 10</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img5.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">11 bis 30</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img6.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Über 30</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 3 -->
+      <div class="project-step hidden">
+        <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">Wie viele Fachkräfte möchtest Du in den nächsten 30 Tagen einstellen?</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 pt-6">
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img7.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">1 Fachkraft</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img8.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">2 bis 3</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img9.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">4 bis 5</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img10.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">6 oder mehr</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 4 -->
+      <div class="project-step hidden">
+        <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">Wie schnell möchtest Du neue Fachkräfte einstellen?</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 pt-6">
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img11.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Sofort</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img12.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">2 bis 4 Wochen</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img13.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">1 bis 2 Monate</p>
+          </div>
+          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img src="./assets/img/img14.avif" alt="">
+            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Weiß noch nicht</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 5 (Form Page) -->
+      <div class="project-step hidden">
+        <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">
+          Bitte fülle das Formular aus
+        </h2>
+        
+        <form id="projectForm" class="max-w-2xl mx-auto space-y-5 pt-6">
+          <!-- Name -->
+          <div>
+            <label for="name" class="block text-[#D2B94E] text-lg mb-2">Name</label>
+            <input type="text" id="name" name="name" required
+              class="w-full px-4 py-3 rounded-lg bg-[#1A1A1A] border border-[#D2B94E] text-white focus:outline-none focus:ring-2 focus:ring-[#D2B94E]" />
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label for="email" class="block text-[#D2B94E] text-lg mb-2">E-Mail</label>
+            <input type="email" id="email" name="email" required
+              class="w-full px-4 py-3 rounded-lg bg-[#1A1A1A] border border-[#D2B94E] text-white focus:outline-none focus:ring-2 focus:ring-[#D2B94E]" />
+          </div>
+
+          <!-- Phone -->
+          <div>
+            <label for="phone" class="block text-[#D2B94E] text-lg mb-2">Telefonnummer</label>
+            <input type="tel" id="phone" name="phone"
+              class="w-full px-4 py-3 rounded-lg bg-[#1A1A1A] border border-[#D2B94E] text-white focus:outline-none focus:ring-2 focus:ring-[#D2B94E]" />
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit"
+            class="w-full bg-[#D2B94E] text-[#0F0F0F] font-semibold text-xl py-3 rounded-lg hover:bg-[#C0A83E] transition duration-300">
+            Abschicken
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- questioning popup js -->
+<script>
+  const openProjectButtons = document.querySelectorAll('[data-open="projectModal"]');
+  const closeProjectModal = document.getElementById('closeProjectModal');
+  const projectModal = document.getElementById('projectModal');
+  const projectSteps = document.querySelectorAll('.project-step');
+  const pageIndicator = document.getElementById('pageIndicator');
+  let projectCurrentStep = 0;
+
+  const showProjectStep = (index) => {
+    projectSteps.forEach((s, i) => s.classList.toggle('hidden', i !== index));
+    pageIndicator.textContent = `Seite ${index + 1} von ${projectSteps.length}`;
+  };
+
+  // ✅ Open modal on any button click
+  openProjectButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      projectModal.classList.remove('hidden');
+      projectModal.classList.add('flex');
+      document.body.classList.add('no-scroll');
+      projectCurrentStep = 0;
+      showProjectStep(projectCurrentStep);
+    });
+  });
+
+  // ✅ Close modal
+  closeProjectModal.addEventListener('click', () => {
+    projectModal.classList.add('hidden');
+    projectModal.classList.remove('flex');
+    document.body.classList.remove('no-scroll');
+    projectCurrentStep = 0;
+  });
+
+  // ✅ Click outside modal to close
+  projectModal.addEventListener('click', (e) => {
+    if (e.target === projectModal) {
+      projectModal.classList.add('hidden');
+      projectModal.classList.remove('flex');
+      document.body.classList.remove('no-scroll');
+      projectCurrentStep = 0;
+    }
+  });
+
+  // ✅ Handle step images click
+  document.querySelectorAll('.project-step img').forEach(img => {
+    img.addEventListener('click', () => {
+      if (projectCurrentStep < projectSteps.length - 1) {
+        projectCurrentStep++;
+        showProjectStep(projectCurrentStep);
+      }
+    });
+  });
+
+  // ✅ Handle final form submit
+  document.getElementById('projectForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('✅ Formular erfolgreich abgeschickt!');
+    projectModal.classList.add('hidden');
+    projectModal.classList.remove('flex');
+    document.body.classList.remove('no-scroll');
+    projectCurrentStep = 0;
+  });
+</script>
+
+
+
+<!--contact Script -->
+<script>
+  const openModalButtons = document.querySelectorAll("#openModal"); // Saare "Contact Us" buttons select karo
+  const closeModal = document.getElementById("closeModal");
+  const modal = document.getElementById("contactModal");
+
+  // Har ek Contact Us button pe listener lagao
+  openModalButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      modal.classList.remove("hidden");
+    });
+  });
+
+  // Close button
+  closeModal.addEventListener("click", () => {
+    modal.classList.add("hidden");
+  });
+
+  // Background click par close
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.add("hidden");
+    }
+  });
+</script>
+
+<!-- ✅ Counter Animation Script -->
+<script>
+  const counters = document.querySelectorAll('.counter');
+  let started = false;
+
+  const startCounting = () => {
+    if (started) return;
+    started = true;
+    counters.forEach(counter => {
+      const update = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const speed = 50; // lower = faster
+        const increment = target / speed;
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(update, 30);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      update();
+    });
+  };
+
+  // ✅ Start when section visible
+  const section = document.getElementById('stats');
+  const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) startCounting();
+  }, { threshold: 0.4 });
+  observer.observe(section);
+</script>
+
+    <!-- faqs js -->
+ <script>
+    document.querySelectorAll('.faq-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.icon');
+            const heading = button.querySelector('span:first-child');
+
+            if (content.classList.contains('open')) {
+                // Close current
+                content.style.maxHeight = null;
+                content.classList.remove('open');
+                icon.textContent = '+';
+                icon.classList.remove('faq-active');
+                heading.classList.remove('faq-active');
+            } else {
+                // Close all others
+                document.querySelectorAll('.faq-content').forEach(item => {
+                    item.style.maxHeight = null;
+                    item.classList.remove('open');
+                });
+                document.querySelectorAll('.icon').forEach(i => {
+                    i.textContent = '+';
+                    i.classList.remove('faq-active');
+                });
+                document.querySelectorAll('.faq-btn span:first-child').forEach(h => {
+                    h.classList.remove('faq-active');
+                });
+
+                // Open clicked one
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.classList.add('open');
+                icon.textContent = '-';
+                icon.classList.add('faq-active');  // Yellow + bigger size
+                heading.classList.add('faq-active'); // Yellow + bigger size
+            }
+        });
+    });
+</script>
+  
+<!-- Navbar js  -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const fullscreenMenu = document.getElementById('fullscreen-menu');
+  const servicesBtn = document.getElementById('services-btn');
+  const servicesDropdown = document.getElementById('services-dropdown');
+  const svgArrow = servicesBtn.querySelector('svg');
+  let isOpen = false;
+  let scrollPosition = 0; // store current scroll position
+
+  // Fullscreen menu toggle
+  menuBtn.addEventListener('click', () => {
+    isOpen = !isOpen;
+    const [line1, line2, line3] = menuBtn.children;
+
+    if (isOpen) {
+      // Store current scroll position and lock scroll visually
+      scrollPosition = window.scrollY;
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollPosition}px`;
+      document.body.style.left = '0';
+      document.body.style.right = '0';
+      document.body.style.overflow = 'hidden';
+      fullscreenMenu.style.overflowY = 'auto';
+
+      // Animate hamburger -> X
+      line1.style.transform = 'rotate(45deg) translateY(10px)';
+      line2.style.opacity = '0';
+      line3.style.transform = 'rotate(-45deg) translateY(-10px)';
+
+      fullscreenMenu.classList.remove('pointer-events-none');
+      fullscreenMenu.classList.add('opacity-100', 'scale-100');
+      fullscreenMenu.classList.remove('opacity-0', 'scale-95');
+      
+      // Force scroll to top (menu starts from top)
+      window.scrollTo(0, 0);
+    } else {
+      // Animate X -> hamburger
+      line1.style.transform = 'rotate(0) translateY(0)';
+      line2.style.opacity = '1';
+      line3.style.transform = 'rotate(0) translateY(0)';
+
+      fullscreenMenu.classList.add('opacity-0', 'scale-95');
+      fullscreenMenu.classList.remove('opacity-100', 'scale-100');
+      setTimeout(() => fullscreenMenu.classList.add('pointer-events-none'), 500);
+
+      // Restore scroll position
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      document.body.style.overflow = '';
+      fullscreenMenu.style.overflowY = 'hidden';
+      window.scrollTo(0, scrollPosition);
+    }
+  });
+
+  // Detect mobile
+  const isMobile = () => window.innerWidth < 1024;
+
+  // Toggle dropdown on click (mobile)
+  servicesBtn.addEventListener('click', (e) => {
+    if (isMobile()) {
+      e.stopPropagation();
+      toggleDropdown();
+    }
+  });
+
+  // Hover dropdown (desktop)
+  servicesBtn.addEventListener('mouseenter', () => {
+    if (!isMobile()) openDropdown();
+  });
+  servicesBtn.addEventListener('mouseleave', () => {
+    if (!isMobile()) closeDropdown();
+  });
+  servicesDropdown.addEventListener('mouseenter', () => {
+    if (!isMobile()) openDropdown();
+  });
+  servicesDropdown.addEventListener('mouseleave', () => {
+    if (!isMobile()) closeDropdown();
+  });
+
+  // Dropdown logic
+  function toggleDropdown() {
+    const isDropdownOpen = !servicesDropdown.classList.contains('hidden');
+    if (isDropdownOpen) closeDropdown();
+    else openDropdown();
+  }
+
+  function openDropdown() {
+    servicesDropdown.classList.remove('hidden');
+    setTimeout(() => {
+      servicesDropdown.classList.add('opacity-100', 'scale-y-100');
+      servicesDropdown.classList.remove('opacity-0', 'scale-y-0');
+    }, 10);
+    svgArrow.style.transform = 'rotate(180deg)';
+  }
+
+  function closeDropdown() {
+    servicesDropdown.classList.add('opacity-0', 'scale-y-0');
+    servicesDropdown.classList.remove('scale-y-100');
+    setTimeout(() => servicesDropdown.classList.add('hidden'), 300);
+    svgArrow.style.transform = 'rotate(0deg)';
+  }
+
+  // Close dropdown when clicking outside (mobile)
+  document.addEventListener('click', (e) => {
+    if (isMobile()) {
+      if (!servicesBtn.contains(e.target) && !servicesDropdown.contains(e.target)) {
+        closeDropdown();
+      }
+    }
+  });
+
+  // Update behavior on resize
+  window.addEventListener('resize', () => {
+    closeDropdown();
+  });
+</script>
+
+<!-- navbar bg js  -->
+  <script>
+  window.addEventListener("scroll", function() {
+    const navbar = document.getElementById("navbar");
+    if (window.scrollY > 50) { 
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+</script>
+
+<!-- patner 2nd slider  -->
+<script>
+const slider2 = document.getElementById("caseSlider2");
+const slides2 = document.querySelectorAll(".slide2");
+const pagination2 = document.getElementById("pagination2");
+let index2 = 0;
+
+// Create pagination items
+slides2.forEach((_, i) => {
+  const dot = document.createElement("div");
+  dot.className = "w-6 h-3 rounded-full bg-[#585858] cursor-pointer transition-all duration-300";
+  dot.onclick = () => goToSlide2(i);
+  pagination2.appendChild(dot);
+});
+
+function updateSlider2() {
+  slider2.style.transform = `translateX(-${index2 * 100}%)`;
+  [...pagination2.children].forEach((dot, i) => {
+    dot.className = i === index2
+      ? "w-12 h-3 rounded-full bg-[#D2B94E] transition-all duration-300"
+      : "w-6 h-3 rounded-full bg-[#585858] cursor-pointer transition-all duration-300";
+  });
+}
+
+function goToSlide2(i) {
+  index2 = i;
+  updateSlider2();
+}
+
+document.getElementById("nextSlide2").onclick = () => {
+  index2 = (index2 + 1) % slides2.length;
+  updateSlider2();
+};
+
+document.getElementById("prevSlide2").onclick = () => {
+  index2 = (index2 - 1 + slides2.length) % slides2.length;
+  updateSlider2();
+};
+
+// Initialize
+updateSlider2();
+</script>
+
+
+
+
+<!--Job page  active Partner JS Functionality -->
+<script>
+  const partners = document.querySelectorAll('.partner');
+  const title = document.getElementById('partner-title');
+  const sub = document.getElementById('partner-sub');
+  const desc = document.getElementById('partner-desc');
+  const nextBtn = document.getElementById('next-btn');
+  const prevBtn = document.getElementById('prev-btn');
+
+  let activeIndex = 0;
+
+  function updateContent(index) {
+    partners.forEach((p) => p.classList.remove('active-partner'));
+    const partner = partners[index];
+    partner.classList.add('active-partner');
+    title.textContent = partner.dataset.title;
+    sub.textContent = partner.dataset.sub;
+    desc.textContent = partner.dataset.desc;
+  }
+
+  nextBtn.addEventListener('click', () => {
+    activeIndex = (activeIndex + 1) % partners.length;
+    updateContent(activeIndex);
+  });
+
+  prevBtn.addEventListener('click', () => {
+    activeIndex = (activeIndex - 1 + partners.length) % partners.length;
+    updateContent(activeIndex);
+  });
+
+  partners.forEach((p, i) => {
+    p.addEventListener('click', () => {
+      activeIndex = i;
+      updateContent(activeIndex);
+    });
+  });
+</script>
+
+<!-- video play button js  -->
+<!-- <script>
+  const video = document.getElementById('customVideo');
+  const playButton = document.getElementById('playButton');
+  const playIcon = document.getElementById('playIcon');
+  const pauseIcon = document.getElementById('pauseIcon');
+
+  playButton.addEventListener('click', () => {
+    if (video.paused) {
+      video.play();
+      playIcon.classList.add('hidden');
+      pauseIcon.classList.remove('hidden');
+    } else {
+      video.pause();
+      pauseIcon.classList.add('hidden');
+      playIcon.classList.remove('hidden');
+    }
+  });
+
+  // Update icon when video ends
+  video.addEventListener('ended', () => {
+    pauseIcon.classList.add('hidden');
+    playIcon.classList.remove('hidden');
+  });
+</script> -->
+
+  <!--Ist Slider  JS -->
+ <script>
+  const slider = document.getElementById('slider');
+  const slides = document.querySelectorAll('.slide');
+  let visibleSlides = window.innerWidth <= 768 ? 1 : 2; // responsive
+  const totalSlides = slides.length;
+  let index = 0;
+
+  const updateSlider = () => {
+    const moveX = (100 / visibleSlides) * index;
+    slider.style.transform = `translateX(-${moveX}%)`;
+  };
+
+  document.getElementById('next').onclick = () => {
+    if (index < totalSlides - visibleSlides) index++;
+    else index = 0;
+    updateSlider();
+  };
+
+  document.getElementById('prev').onclick = () => {
+    if (index > 0) index--;
+    else index = totalSlides - visibleSlides;
+    updateSlider();
+  };
+
+  // ✅ Update visible slides on window resize
+  window.addEventListener('resize', () => {
+    visibleSlides = window.innerWidth <= 768 ? 1 : 2;
+    index = 0;
+    updateSlider();
+  });
+</script>
+
+
+
+
+
+
+<script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
