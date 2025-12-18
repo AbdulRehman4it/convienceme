@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body class="" style="background-image: url(./assets/img/servicespagebg.png);">
-    
-<!-- NAVBAR -->
+
+  <!-- NAVBAR -->
   <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-transparent transition-all duration-500">
     <div class="flex justify-between items-center 2xl:px-24 lg:px-10 px-5 2xl:py-10 py-6">
       <!-- Logo -->
@@ -25,52 +27,51 @@
     </div>
 
     <!-- FULLSCREEN MENU -->
-    <div
-      id="fullscreen-menu"
-      class="fixed inset-0 backdrop-blur-3xl scale-95 opacity-0 pointer-events-none transition-all duration-500 ease-in-out flex flex-col justify-center items-center text-white"
-    >
-      <ul class="lg:space-y-8 space-y-6 2xl:text-4xl lg:text-3xl text-xl font-light text-center transform transition-all duration-700 pt-24">
+    <div id="fullscreen-menu"
+      class="fixed inset-0 backdrop-blur-3xl scale-95 opacity-0 pointer-events-none transition-all duration-500 ease-in-out flex flex-col justify-center items-center text-white">
+      <ul
+        class="lg:space-y-8 space-y-6 2xl:text-4xl lg:text-3xl text-xl font-light text-center transform transition-all duration-700 pt-24">
         <li><a href="./index.html" class="hover:text-[#D2B94E] transition">Home</a></li>
 
         <!-- Services Dropdown -->
         <li class="relative group w-full flex flex-col items-center">
           <button id="services-btn" class="flex items-center justify-center space-x-2 hover:text-[#D2B94E]">
             <span>Services</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition-transform duration-300" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
 
           <!-- Dropdown -->
-          <ul
-            id="services-dropdown"
-            class="absolute bg-[#0F0F0F] top-full w-64 left-1/2 -translate-x-1/2 flex-col space-y-3 text-lg transition-all duration-300 ease-in-out transform origin-top opacity-0 scale-y-0 py-3 px-3 rounded-lg"
-          >
-            <li><a href="services.html" class="hover:text-[#D2B94E] ">Web Design & Development</a></li>
+          <ul id="services-dropdown"
+            class="absolute bg-[#0F0F0F] top-full w-64 left-1/2 -translate-x-1/2 flex-col space-y-3 text-lg transition-all duration-300 ease-in-out transform origin-top opacity-0 scale-y-0 py-3 px-3 rounded-lg">
+            <li><a href="./services.html" class="hover:text-[#D2B94E] ">Web Design & Development</a></li>
             <li><a href="./uiux.html" class="hover:text-[#D2B94E] ">UI/UX Design</a></li>
-             <li><a href="./cms.html" class="hover:text-[#D2B94E] ">CMS design</a></li>
+            <li><a href="./cms.html" class="hover:text-[#D2B94E] ">CMS design</a></li>
             <li><a href="./mobileapp.html" class="hover:text-[#D2B94E] ">Mobile App Design and Development</a></li>
             <li><a href="./SEO.html" class="hover:text-[#D2B94E] ">SEO Optimization</a></li>
             <li><a href="./E-Commerce.html" class="hover:text-[#D2B94E] ">E-Commerce Development</a></li>
             <li><a href="./Brand.html" class="hover:text-[#D2B94E] ">Brand Identity Creation</a></li>
             <li><a href="./business.html" class="hover:text-[#D2B94E] ">Strategy for Business Development</a></li>
-            <li><a href="./socielmedia.html" class="hover:text-[#D2B94E] ">Social Media Management & Post Creation</a></li>
+            <li><a href="./socielmedia.html" class="hover:text-[#D2B94E] ">Social Media Management & Post Creation</a>
+            </li>
           </ul>
         </li>
 
-        <li><a href="./our work.html" class="hover:text-[#D2B94E] transition">Works</a></li>
+        <li><a href="./our work.html" class="hover:text-[#D2B94E] transition">Our Works</a></li>
         <li><a href="#" class="hover:text-[#D2B94E] transition">Network</a></li>
         <li><a href="./job.html" class="hover:text-[#D2B94E] transition">Jobs</a></li>
-        
+
       </ul>
 
       <div class="mt-12 flex flex-col space-y-4">
-        <button class="px-8 py-3 2xl:text-2xl lg:text-xl text-lg bg-[#D2B94E] text-[#0F0F0F] rounded-sm font-medium hover:bg-[#c0a840] transition">
+        <button
+          class="px-8 py-3 2xl:text-2xl lg:text-xl text-lg bg-[#D2B94E] text-[#0F0F0F] rounded-sm font-medium hover:bg-[#c0a840] transition">
           Dashboard Login
         </button>
         <button id="openModal"
-          class="px-8 py-3 2xl:text-2xl lg:text-xl text-lg border border-[#D2B94E] hover:bg-[#D2B94E] hover:text-[#0F0F0F] transition rounded-sm"
-        >
+          class="px-8 py-3 2xl:text-2xl lg:text-xl text-lg border border-[#D2B94E] hover:bg-[#D2B94E] hover:text-[#0F0F0F] transition rounded-sm">
           Contact Us
         </button>
       </div>
@@ -79,282 +80,363 @@
     <hr class="border border-[#41414166]">
   </nav>
 
-    <!-- hero section  -->
-<section class="2xl:px-24 lg:px-10 px-5 2xl:pt-36 pt-28">
-    <div class="flex lg:flex-row flex-col text-center lg:text-start items-center xl:gap-56 md:gap-24 gap-10 xl:pt-24 pt-16">
-    <div class="lg:w-1/2 w-full">
-        <h1 class="text-[#F5F5F5] 2xl:text-8xl xl:text-7xl md:text-6xl text-5xl 2xl:leading-[120px] xl:leading-[90px] md:leading-[75px] leading-[65px] font-semibold">
-   Strategy for Business 
-<span class="text-[#D2B94E]">Development  </span>
-</h1>
+  <!-- hero section  -->
+  <section class="2xl:px-24 lg:px-10 px-5 2xl:pt-36 pt-28">
+    <div
+      class="flex lg:flex-row flex-col text-center lg:text-start items-center xl:gap-56 md:gap-24 gap-10 xl:pt-24 pt-16">
+      <div class="lg:w-1/2 w-full">
+        <h1
+          class="text-[#F5F5F5] 2xl:text-8xl xl:text-7xl md:text-6xl text-5xl 2xl:leading-[120px] xl:leading-[90px] md:leading-[75px] leading-[65px] font-semibold">
+          Strategie für
+          <span class="text-[#D2B94E]">Geschäftsentwicklung </span>
+        </h1>
 
-<div class="xl:py-14 md:py-10 py-6 flex justify-center lg:justify-start">
-    <img src="./assets/img/star.png" alt="">
-</div>
+        <div class="xl:py-14 md:py-10 py-6 flex justify-center lg:justify-start">
+          <img src="./assets/img/star.png" alt="">
+        </div>
 
-<p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-white pt-5 ">In addition to growth consulting, market research, and competitor analysis, we also offer sales strategy, brand positioning, and digital transformation planning — empowering your business to scale sustainably.</p>
+        <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-white pt-5 ">
+          Zusätzlich zu Wachstumsberatung, Marktforschung und Wettbewerbsanalyse bieten wir auch Vertriebsstrategie,
+          Markenpositionierung und digitale Transformationsplanung an – damit Ihr Unternehmen nachhaltig skalieren kann.
+        </p>
 
-<button class="font-xl font-medium px-8 py-4 mt-12 text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E] transition">
-  Let’s Talk &nbsp;&nbsp;<i class="fa-solid fa-chevron-right"></i>
-</button>
+        <button
+          class="font-xl font-medium px-8 py-4 mt-12 text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E] transition">
+          Lass uns sprechen &nbsp;&nbsp;<i class="fa-solid fa-chevron-right"></i>
+        </button>
 
-    </div>
+      </div>
 
-    <div class="lg:w-1/2 w-full">
+      <div class="lg:w-1/2 w-full">
         <img src="./assets/img/servicesheroimg.png" class="" alt="">
+      </div>
     </div>
-    </div>
-</section>
+  </section>
 
-<!-- It solution  -->
-<section class="2xl:px-24 lg:px-10 px-5 2xl:pt-28 lg:pt-20 pt-10" >
+  <!-- It solution  -->
+  <section class="2xl:px-24 lg:px-10 px-5 2xl:pt-28 lg:pt-20 pt-10">
 
     <div class="flex justify-between items-center">
-        <img src="./assets/img/navi.png" class="w-10 xl:w-16" alt="">
-        <img src="./assets/img/navi2.png" class="w-28 xl:w-56" alt="">
-        <img src="./assets/img/navi.png" class="w-10 xl:w-16" alt="">
+      <img src="./assets/img/navi.png" class="w-10 xl:w-16" alt="">
+      <img src="./assets/img/navi2.png" class="w-28 xl:w-56" alt="">
+      <img src="./assets/img/navi.png" class="w-10 xl:w-16" alt="">
     </div>
 
     <div class="text-white text-center lg:pt-12 pt-6">
-        <h2 class="xl:text-6xl md:text-4xl text-3xl font-bold xl:leading-[78px] md:leading-[54px] leading-[45px]">Ensuring your Success Through<br class="md:block hidden">  Strategic Business Growth </h2>
-        <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 pt-5 ">Convince Me helps companies design and implement winning business development <br class="md:block hidden"> strategies that turn ideas into measurable growth.</p>
+      <h2 class="xl:text-6xl md:text-4xl text-3xl font-bold xl:leading-[78px] md:leading-[54px] leading-[45px]">Ihren
+        Erfolg durch<br class="md:block hidden"> Strategisches Geschäftswachstum sichern </h2>
+      <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 pt-5 ">Convince Me hilft
+        Unternehmen, erfolgreiche Geschäftsentwicklungs-<br class="md:block hidden"> Strategien zu entwerfen und
+        umzusetzen, die
+        Ideen in messbares Wachstum verwandeln.</p>
     </div>
 
     <div class="flex lg:flex-row flex-col  justify-between border border-[#D2B94E] 2xl:mt-20 mt-10">
-        <div class="lg:w-1/2 w-full 2xl:py-16 2xl:px-12 xl:py-10 xl:px-8 py-6 px-4">
-            <img src="./assets/img/itimg.png" class="w-full h-full" alt="">
-        </div>
+      <div class="lg:w-1/2 w-full 2xl:py-16 2xl:px-12 xl:py-10 xl:px-8 py-6 px-4">
+        <img src="./assets/img/itimg.png" class="w-full h-full" alt="">
+      </div>
 
-        <div class="lg:w-1/2 w-full lg:border-l border-t lg:border-t-0 border-[#D2B94E]">
+      <div class="lg:w-1/2 w-full lg:border-l border-t lg:border-t-0 border-[#D2B94E]">
 
-            <!-- 1st row  -->
-            <div class="flex md:flex-row flex-col justify-between">
-                <div class="md:w-1/2 2xl:py-16 2xl:px-12 xl:py-10 xl:px-8 py-6 px-4 md:border-r border-[#D2B94E]">
-                    <img src="./assets/img/frontend.png" class="2xl:w-24 w-16" alt="">
-                    <h3 class="2xl:text-2xl md:text-xl text-lg 2xl:pt-10 xl:pt-6 pt-2 text-white font-bold">Market Research & Analysis</h3>
-                    <p class="text-white 2xl:text-lg md:text-base text-sm 2xl:leading-7 md:leading-6 leading-5 2xl:pt-4 pt-2">We conduct in-depth research on your target audience, competitors, and trends to uncover new growth opportunities and refine your market position.</p>
-                </div>
+        <!-- 1st row  -->
+        <div class="flex md:flex-row flex-col justify-between">
+          <div class="md:w-1/2 2xl:py-16 2xl:px-12 xl:py-10 xl:px-8 py-6 px-4 md:border-r border-[#D2B94E]">
+            <img src="./assets/img/frontend.png" class="2xl:w-24 w-16" alt="">
+            <h3 class="2xl:text-2xl md:text-xl text-lg 2xl:pt-10 xl:pt-6 pt-2 text-white font-bold">Marktforschung &
+              Analyse</h3>
+            <p class="text-white 2xl:text-lg md:text-base text-sm 2xl:leading-7 md:leading-6 leading-5 2xl:pt-4 pt-2">
+              Wir
+              führen eingehende Recherchen zu Ihrer Zielgruppe, Wettbewerbern und Trends durch, um neue Wachstums-
+              chancen aufzudecken und Ihre Marktposition zu verfeinern.</p>
+          </div>
 
-                <div class="md:w-1/2 2xl:py-16 2xl:px-12 xl:py-10 xl:px-8 py-6 px-4 border-t md:border-t-0 border-[#D2B94E]">
-                    <img src="./assets/img/frontend.png" class="2xl:w-24 w-16" alt="">
-                    <h3 class="2xl:text-2xl md:text-xl text-lg 2xl:pt-10 xl:pt-6 pt-2 text-white font-bold">Sales Strategy & Lead Generation</h3>
-                    <p class="text-white 2xl:text-lg md:text-base text-sm 2xl:leading-7 md:leading-6 leading-5 2xl:pt-4 pt-2">Our team designs actionable sales plans, outreach systems, and CRM processes to increase lead quality and revenue performance.</p>
-                </div>
-
-            </div>
-
-            <!-- 2md row  -->
-            <div class="flex md:flex-row flex-col justify-between border-t border-[#D2B94E]">
-                <div class="md:w-1/2 2xl:py-16 2xl:px-12 xl:py-10 xl:px-8 py-6 px-4  border-r border-[#D2B94E]">
-                    <img src="./assets/img/frontend.png" class="2xl:w-24 w-16" alt="">
-                    <h3 class="2xl:text-2xl md:text-xl text-lg 2xl:pt-10 xl:pt-6 pt-2 text-white font-bold">Brand & Positioning Strategy</h3>
-                    <p class="text-white 2xl:text-lg md:text-base text-sm 2xl:leading-7 md:leading-6 leading-5 2xl:pt-4 pt-2">We help you define your brand value, voice, and market perception to stand out clearly and attract the right customers.</p>
-                </div>
-
-                <div class="md:w-1/2 2xl:py-16 2xl:px-12 xl:py-10 xl:px-8 py-6 px-4 border-t md:border-t-0 border-[#D2B94E]">
-                    <img src="./assets/img/frontend.png" class="2xl:w-24 w-16" alt="">
-                    <h3 class="2xl:text-2xl md:text-xl text-lg 2xl:pt-10 xl:pt-6 pt-2 text-white font-bold">Digital Transformation Planning</h3>
-                    <p class="text-white 2xl:text-lg md:text-base text-sm 2xl:leading-7 md:leading-6 leading-5 2xl:pt-4 pt-2">We align technology with your business goals — from automation tools to digital platforms — ensuring efficiency and scalability.</p>
-                </div>
-
-            </div>
+          <div class="md:w-1/2 2xl:py-16 2xl:px-12 xl:py-10 xl:px-8 py-6 px-4 border-t md:border-t-0 border-[#D2B94E]">
+            <img src="./assets/img/frontend.png" class="2xl:w-24 w-16" alt="">
+            <h3 class="2xl:text-2xl md:text-xl text-lg 2xl:pt-10 xl:pt-6 pt-2 text-white font-bold">Vertriebsstrategie &
+              Lead-Generierung</h3>
+            <p class="text-white 2xl:text-lg md:text-base text-sm 2xl:leading-7 md:leading-6 leading-5 2xl:pt-4 pt-2">
+              Unser Team entwirft umsetzbare Vertriebspläne, Outreach-Systeme und CRM-Prozesse, um die Lead-Qualität und
+              Umsatzleistung zu steigern.</p>
+          </div>
 
         </div>
+
+        <!-- 2md row  -->
+        <div class="flex md:flex-row flex-col justify-between border-t border-[#D2B94E]">
+          <div class="md:w-1/2 2xl:py-16 2xl:px-12 xl:py-10 xl:px-8 py-6 px-4  border-r border-[#D2B94E]">
+            <img src="./assets/img/frontend.png" class="2xl:w-24 w-16" alt="">
+            <h3 class="2xl:text-2xl md:text-xl text-lg 2xl:pt-10 xl:pt-6 pt-2 text-white font-bold">Marken- &
+              Positionierungs-
+              Strategie</h3>
+            <p class="text-white 2xl:text-lg md:text-base text-sm 2xl:leading-7 md:leading-6 leading-5 2xl:pt-4 pt-2">
+              Wir
+              helfen Ihnen, Ihren Markenwert, Ihre Stimme und Ihre Marktwahrnehmung zu definieren, um klar
+              herauszustechen und die richtigen
+              Kunden anzuziehen.</p>
+          </div>
+
+          <div class="md:w-1/2 2xl:py-16 2xl:px-12 xl:py-10 xl:px-8 py-6 px-4 border-t md:border-t-0 border-[#D2B94E]">
+            <img src="./assets/img/frontend.png" class="2xl:w-24 w-16" alt="">
+            <h3 class="2xl:text-2xl md:text-xl text-lg 2xl:pt-10 xl:pt-6 pt-2 text-white font-bold">Planung der
+              digitalen
+              Transformation</h3>
+            <p class="text-white 2xl:text-lg md:text-base text-sm 2xl:leading-7 md:leading-6 leading-5 2xl:pt-4 pt-2">
+              Wir
+              richten Technologie auf Ihre Geschäftsziele aus – von Automatisierungstools bis hin zu digitalen
+              Plattformen – und sorgen für
+              Effizienz und Skalierbarkeit.</p>
+          </div>
+
+        </div>
+
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Full-cycle web development -->
+  <!-- Full-cycle web development -->
 
-<section class="2xl:px-24 lg:px-10 px-5 2xl:pt-28 lg:pt-20 pt-10">
+  <section class="2xl:px-24 lg:px-10 px-5 2xl:pt-28 lg:pt-20 pt-10">
     <div class="text-white">
-        <h2 class="xl:text-6xl md:text-4xl text-3xl font-bold xl:leading-[78px] md:leading-[54px] leading-[45px]">Full-cycle Business Development Strategy<br class="md:block hidden" >
- Process by Convince Me</h2>
-        <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 pt-5 text-[#979797]">At Convince Me, we apply a data-driven, collaborative approach to business <br class="md:block hidden"> growth transforming insights into actionable strategies that deliver results.<br class="md:block hidden">
-We handle every stage from ideation to execution to build a brand that lasts.</p>
+      <h2 class="xl:text-6xl md:text-4xl text-3xl font-bold xl:leading-[78px] md:leading-[54px] leading-[45px]">
+        Full-Cycle Geschäftsentwicklungs-Strategie<br class="md:block hidden">
+        Prozess von Convince Me</h2>
+      <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 pt-5 text-[#979797]">Bei
+        Convince Me wenden wir einen datengesteuerten, kollaborativen Ansatz für Geschäfts-<br class="md:block hidden">
+        wachstum an,
+        indem wir Erkenntnisse in umsetzbare Strategien umwandeln, die Ergebnisse liefern.<br class="md:block hidden">
+        Wir kümmern uns um jede Phase von der Ideenfindung bis zur Ausführung, um eine Marke aufzubauen, die bleibt.</p>
     </div>
 
     <div class="border-b border-[#D2B94E] pb-4 xl:mt-20 mt-12">
-        <div>
-            <p class="text-[#D2B94E] font-bold xl:text-lg text-base">01</p>
-        </div>
+      <div>
+        <p class="text-[#D2B94E] font-bold xl:text-lg text-base">01</p>
+      </div>
 
-        <div class="flex lg:flex-row flex-col justify-between lg:items-center 2xl:gap-56 xl:gap-40 lg:gap-10 gap-2 pt-6 lg:pt-0">
-            <h3 class="2xl:text-3xl xl:text-xl text-lg text-white font-semibold lg:w-1/5 w-full">Discovery & Consultation</h3>
-            <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#979797] w-full lg:w-4/5">We start by understanding your business model, goals, challenges, and target market to establish a clear direction.</p>
-        </div>
+      <div
+        class="flex lg:flex-row flex-col justify-between lg:items-center 2xl:gap-56 xl:gap-40 lg:gap-10 gap-2 pt-6 lg:pt-0">
+        <h3 class="2xl:text-3xl xl:text-xl text-lg text-white font-semibold lg:w-1/5 w-full">Entdeckung & Beratung
+        </h3>
+        <p
+          class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#979797] w-full lg:w-4/5">
+          Wir beginnen damit, Ihr Geschäftsmodell, Ihre Ziele, Herausforderungen und Ihren Zielmarkt zu verstehen, um
+          eine klare
+          Richtung festzulegen.</p>
+      </div>
     </div>
 
     <div class="border-b border-[#D2B94E] pb-4">
-        <div>
-            <p class="text-[#D2B94E] font-bold xl:text-lg text-base">02</p>
-        </div>
+      <div>
+        <p class="text-[#D2B94E] font-bold xl:text-lg text-base">02</p>
+      </div>
 
-        <div class="flex lg:flex-row flex-col justify-between lg:items-center 2xl:gap-56 xl:gap-40 lg:gap-10 gap-2 xl:py-8 py-6">
-            <h3 class="2xl:text-3xl xl:text-xl text-lg text-white font-semibold lg:w-1/5 w-full">Market Research & Benchmarking</h3>
-            <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#979797] w-full lg:w-4/5">Our analysts study your competitors, industry trends, and audience behavior to identify key gaps and opportunities.</p>
-        </div>
+      <div
+        class="flex lg:flex-row flex-col justify-between lg:items-center 2xl:gap-56 xl:gap-40 lg:gap-10 gap-2 xl:py-8 py-6">
+        <h3 class="2xl:text-3xl xl:text-xl text-lg text-white font-semibold lg:w-1/5 w-full">Marktforschung &
+          Benchmarking</h3>
+        <p
+          class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#979797] w-full lg:w-4/5">
+          Unsere Analysten untersuchen Ihre Wettbewerber, Branchentrends und das Publikumsverhalten, um wichtigste
+          Lücken und
+          Chancen zu identifizieren.</p>
+      </div>
     </div>
 
     <div class="border-b border-[#D2B94E] pb-4">
-        <div>
-            <p class="text-[#D2B94E] font-bold xl:text-lg text-base">03</p>
-        </div>
+      <div>
+        <p class="text-[#D2B94E] font-bold xl:text-lg text-base">03</p>
+      </div>
 
-        <div class="flex lg:flex-row flex-col justify-between lg:items-center 2xl:gap-56 xl:gap-40 lg:gap-10 gap-2 xl:py-8 py-6">
-            <h3 class="2xl:text-3xl xl:text-xl text-lg text-white font-semibold lg:w-1/5 w-full">Strategy Formulation</h3>
-            <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#979797] w-full lg:w-4/5">Based on the insights, we build a tailored growth strategy that includes sales planning, marketing channels, and operational improvements.</p>
-        </div>
+      <div
+        class="flex lg:flex-row flex-col justify-between lg:items-center 2xl:gap-56 xl:gap-40 lg:gap-10 gap-2 xl:py-8 py-6">
+        <h3 class="2xl:text-3xl xl:text-xl text-lg text-white font-semibold lg:w-1/5 w-full">Strategieformulierung</h3>
+        <p
+          class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#979797] w-full lg:w-4/5">
+          Basierend auf den Erkenntnissen erstellen wir eine maßgeschneiderte Wachstumsstrategie, die Verkaufsplanung,
+          Marketingkanäle
+          und operative Verbesserungen umfasst.</p>
+      </div>
     </div>
 
     <div class="border-b border-[#D2B94E] pb-4">
-        <div>
-            <p class="text-[#D2B94E] font-bold xl:text-lg text-base">04</p>
-        </div>
+      <div>
+        <p class="text-[#D2B94E] font-bold xl:text-lg text-base">04</p>
+      </div>
 
-        <div class="flex lg:flex-row flex-col justify-between lg:items-center 2xl:gap-56 xl:gap-40 lg:gap-10 gap-2 xl:py-8 py-6">
-            <h3 class="2xl:text-3xl xl:text-xl text-lg text-white font-semibold lg:w-1/5 w-full">Implementation Roadmap</h3>
-            <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#979797] w-full lg:w-4/5">We create a detailed, step-by-step roadmap outlining timelines, responsibilities, and measurable KPIs for execution.</p>
-        </div>
+      <div
+        class="flex lg:flex-row flex-col justify-between lg:items-center 2xl:gap-56 xl:gap-40 lg:gap-10 gap-2 xl:py-8 py-6">
+        <h3 class="2xl:text-3xl xl:text-xl text-lg text-white font-semibold lg:w-1/5 w-full">Implementierungs-Roadmap
+        </h3>
+        <p
+          class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#979797] w-full lg:w-4/5">
+          Wir erstellen einen detaillierten Schritt-für-Schritt-Plan, der Zeitpläne, Verantwortlichkeiten und messbare
+          KPIs für die
+          Ausführung skizziert.</p>
+      </div>
     </div>
 
     <div class="border-b border-[#D2B94E] pb-4">
-        <div>
-            <p class="text-[#D2B94E] font-bold xl:text-lg text-base">05</p>
-        </div>
+      <div>
+        <p class="text-[#D2B94E] font-bold xl:text-lg text-base">05</p>
+      </div>
 
-        <div class="flex lg:flex-row flex-col justify-between lg:items-center 2xl:gap-56 xl:gap-40 lg:gap-10 gap-2 xl:py-8 py-6">
-            <h3 class="2xl:text-3xl xl:text-xl text-lg text-white font-semibold lg:w-1/5 w-full">Team Alignment & Training</h3>
-            <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#979797] w-full lg:w-4/5">Our experts ensure that your internal teams are fully equipped and aligned with the new strategy for seamless implementation.</p>
-        </div>
+      <div
+        class="flex lg:flex-row flex-col justify-between lg:items-center 2xl:gap-56 xl:gap-40 lg:gap-10 gap-2 xl:py-8 py-6">
+        <h3 class="2xl:text-3xl xl:text-xl text-lg text-white font-semibold lg:w-1/5 w-full">Teamausrichtung & Schulung
+        </h3>
+        <p
+          class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#979797] w-full lg:w-4/5">
+          Unsere Experten stellen sicher, dass Ihre internen Teams vollständig ausgestattet und auf die neue Strategie
+          für eine nahtlose
+          Implementierung ausgerichtet sind.</p>
+      </div>
     </div>
 
     <div class="border-b border-[#D2B94E] pb-4">
-        <div>
-            <p class="text-[#D2B94E] font-bold xl:text-lg text-base">06</p>
-        </div>
+      <div>
+        <p class="text-[#D2B94E] font-bold xl:text-lg text-base">06</p>
+      </div>
 
-        <div class="flex lg:flex-row flex-col justify-between lg:items-center 2xl:gap-56 xl:gap-40 lg:gap-10 gap-2 xl:py-8 py-6">
-            <h3 class="2xl:text-3xl xl:text-xl text-lg text-white font-semibold lg:w-1/5 w-full">Performance Monitoring</h3>
-            <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#979797] w-full lg:w-4/5">We track progress using analytics and reporting tools, making sure every initiative contributes to your business objectives.</p>
-        </div>
+      <div
+        class="flex lg:flex-row flex-col justify-between lg:items-center 2xl:gap-56 xl:gap-40 lg:gap-10 gap-2 xl:py-8 py-6">
+        <h3 class="2xl:text-3xl xl:text-xl text-lg text-white font-semibold lg:w-1/5 w-full">Leistungsüberwachung</h3>
+        <p
+          class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#979797] w-full lg:w-4/5">
+          Wir verfolgen den Fortschritt mithilfe von Analyse- und Berichtstools und stellen sicher, dass jede Initiative
+          zu Ihren
+          Geschäftszielen beiträgt.</p>
+      </div>
     </div>
 
     <div class="border-b border-[#D2B94E] pb-4">
-        <div>
-            <p class="text-[#D2B94E] font-bold xl:text-lg text-base">07</p>
-        </div>
+      <div>
+        <p class="text-[#D2B94E] font-bold xl:text-lg text-base">07</p>
+      </div>
 
-        <div class="flex lg:flex-row flex-col justify-between lg:items-center 2xl:gap-56 xl:gap-40 lg:gap-10 gap-2 xl:py-8 py-6">
-            <h3 class="2xl:text-3xl xl:text-xl text-lg text-white font-semibold lg:w-1/5 w-full">Optimization & Scaling</h3>
-            <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#979797] w-full lg:w-4/5">After evaluating results, we refine and scale your strategy to sustain momentum and expand growth across new markets or segments.</p>
-        </div>
+      <div
+        class="flex lg:flex-row flex-col justify-between lg:items-center 2xl:gap-56 xl:gap-40 lg:gap-10 gap-2 xl:py-8 py-6">
+        <h3 class="2xl:text-3xl xl:text-xl text-lg text-white font-semibold lg:w-1/5 w-full">Optimierung & Skalierung
+        </h3>
+        <p
+          class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-[#979797] w-full lg:w-4/5">
+          Nach der Auswertung der Ergebnisse verfeinern und skalieren wir Ihre Strategie, um den Schwung beizubehalten
+          und das Wachstum auf neue
+          Märkte oder Segmente auszudehnen.</p>
+      </div>
     </div>
-    
-</section>
 
-<!-- faqs  -->
-<section class="2xl:px-24 lg:px-10 px-5 2xl:pt-52 lg:pt-36 pt-20">
-  <div class="text-center">
-    <h2 class="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-[40px] text-4xl font-bold text-white">FAQ Strategy for Business Development</h2>
-    <p class="2xl:text-xl xl:text-lg lg:text-base text-sm pt-6 text-[#DFDFDF]">We deliver a detailed brand book with usage rules, colors, fonts, logo variations, <br class="md:block hidden"> and dos & don’ts ensuring your team and partners use your brand consistently.</p>
-  </div>
+  </section>
 
-<div class="bg-center bg-cover bg-no-repeat" style="background-image: url(./assets/img/lines.png);">
-     <!-- faqs  -->
-    <div class="w-full 2xl:px-72 lg:px-56 2xl:mt-24 lg:mt-16 mt-10">
-       
+  <!-- faqs  -->
+  <section class="2xl:px-24 lg:px-10 px-5 2xl:pt-52 lg:pt-36 pt-20">
+    <div class="text-center">
+      <h2 class="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-[40px] text-4xl font-bold text-white">FAQ Strategy for
+        Business Development</h2>
+      <p class="2xl:text-xl xl:text-lg lg:text-base text-sm pt-6 text-[#DFDFDF]">We deliver a detailed brand book with
+        usage rules, colors, fonts, logo variations, <br class="md:block hidden"> and dos & don’ts ensuring your team
+        and partners use your brand consistently.</p>
+    </div>
+
+    <div class="bg-center bg-cover bg-no-repeat" style="background-image: url(./assets/img/lines.png);">
+      <!-- faqs  -->
+      <div class="w-full 2xl:px-72 lg:px-56 2xl:mt-24 lg:mt-16 mt-10">
+
         <div class="space-y-4">
           <div>
-                <hr class=" border-[#333333]">
-             </div>
-            <!-- FAQ 1 -->
-            <div class="" data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duration="2000">
-                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
-                    <span>01
-What does a business development strategy include?</span>
-                    <span class="icon text-white">+</span>
-                </button>
-                <div class="faq-content text-[#C1C1C1]">
-                    <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">It includes market research, sales planning, partnership development, digital transformation, and growth optimization all aligned with your business goals.</p>
-                   
-                </div>
+            <hr class=" border-[#333333]">
+          </div>
+          <!-- FAQ 1 -->
+          <div class="" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+            <button
+              class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+              <span>01
+                What does a business development strategy include?</span>
+              <span class="icon text-white">+</span>
+            </button>
+            <div class="faq-content text-[#C1C1C1]">
+              <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">It
+                includes market research, sales planning, partnership development, digital transformation, and growth
+                optimization all aligned with your business goals.</p>
+
             </div>
-            <div>
-                <hr class=" border-[#333333]">
-             </div>
+          </div>
+          <div>
+            <hr class=" border-[#333333]">
+          </div>
 
-            <!-- FAQ 2 -->
-            <div class="" data-aos="fade-down"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duration="2000">
-                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
-                    <span>02
-Can you help startups as well as established businesses?</span>
-                    <span class="icon text-white">+</span>
-                </button>
-                <div class="faq-content text-[#C1C1C1]">
-                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Yes. We assist both early-stage startups looking for market entry and established businesses aiming to expand or pivot strategically.</p>
-                </div>
+          <!-- FAQ 2 -->
+          <div class="" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+            <button
+              class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+              <span>02
+                Can you help startups as well as established businesses?</span>
+              <span class="icon text-white">+</span>
+            </button>
+            <div class="faq-content text-[#C1C1C1]">
+              <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Yes.
+                We assist both early-stage startups looking for market entry and established businesses aiming to expand
+                or pivot strategically.</p>
             </div>
-            <div>
-                <hr class=" border-[#333333]">
-             </div>
+          </div>
+          <div>
+            <hr class=" border-[#333333]">
+          </div>
 
-            <!-- FAQ 3 -->
-            <div class="" data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duration="2000">
-                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
-                    <span>03
-How long does it take to develop a business strategy?</span>
-                    <span class="icon text-white">+</span>
-                </button>
-                <div class="faq-content text-[#C1C1C1]">
-                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Typically, a full strategy can take between 3 to 6 weeks depending on complexity, data collection, and consultation sessions.</p>
-                </div>
+          <!-- FAQ 3 -->
+          <div class="" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+            <button
+              class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+              <span>03
+                How long does it take to develop a business strategy?</span>
+              <span class="icon text-white">+</span>
+            </button>
+            <div class="faq-content text-[#C1C1C1]">
+              <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">
+                Typically, a full strategy can take between 3 to 6 weeks depending on complexity, data collection, and
+                consultation sessions.</p>
             </div>
-            <div>
-                <hr class=" border-[#333333]">
-             </div>
+          </div>
+          <div>
+            <hr class=" border-[#333333]">
+          </div>
 
-    <!-- FAQ 4 -->
-           <div class="" data-aos="fade-down"
-           data-aos-anchor-placement="top-bottom"
-           data-aos-duration="2000">
-                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
-                    <span>04
-Will I get a detailed action plan after the strategy session?</span>
-                    <span class="icon text-white">+</span>
-                </button>
-                <div class="faq-content text-[#C1C1C1]">
-                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Absolutely. We provide a complete roadmap with timelines, priorities, and measurable KPIs for clear execution.</p>
-                </div>
+          <!-- FAQ 4 -->
+          <div class="" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+            <button
+              class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+              <span>04
+                Will I get a detailed action plan after the strategy session?</span>
+              <span class="icon text-white">+</span>
+            </button>
+            <div class="faq-content text-[#C1C1C1]">
+              <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">
+                Absolutely. We provide a complete roadmap with timelines, priorities, and measurable KPIs for clear
+                execution.</p>
             </div>
-            <div>
-                <hr class=" border-[#333333]">
-             </div>
+          </div>
+          <div>
+            <hr class=" border-[#333333]">
+          </div>
 
-    <!-- FAQ 5 -->
+          <!-- FAQ 5 -->
 
-          <div class="" data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-duration="2000">
-                <button class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
-                    <span>05
-Do you provide ongoing support for implementation?</span>
-                    <span class="icon text-white">+</span>
-                </button>
-                <div class="faq-content text-[#C1C1C1]">
-                      <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Yes. Our experts can stay involved throughout execution to ensure alignment, track performance, and fine-tune results.</p>
-                </div>
+          <div class="" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+            <button
+              class="faq-btn flex justify-between w-full 2xl:py-5 py-2 text-left text-white font-semibold 2xl:text-2xl lg:text-lg text-base">
+              <span>05
+                Do you provide ongoing support for implementation?</span>
+              <span class="icon text-white">+</span>
+            </button>
+            <div class="faq-content text-[#C1C1C1]">
+              <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Yes.
+                Our experts can stay involved throughout execution to ensure alignment, track performance, and fine-tune
+                results.</p>
             </div>
-            <div>
-                <hr class=" border-[#333333]">
-             </div>
+          </div>
+          <div>
+            <hr class=" border-[#333333]">
+          </div>
 
-    <!-- FAQ 6 -->
+          <!-- FAQ 6 -->
           <!-- <div class="" data-aos="fade-down"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="2000">
@@ -367,238 +449,296 @@ Lorem ipsum dolor sit amet?</span>
                       <p class="2xl:text-xl lg:text-base text-sm 2xl:leading-[45px] lg:leading-7 leading-6 text-[#DFDFDF]">Fan Token is a decentralized platform that allows artists to tokenize their music as NFTs and sell them directly to fans, ensuring fair compensation and fostering a closer connection between artists and their audience.</p>
                 </div>
             </div> -->
-            <!-- <div>
+          <!-- <div>
                 <hr class=" border-[#333333]">
              </div> -->
 
         </div>
-    </div>
-</div>
-
-</section>
-
-<!-- ===================== CLIENT FEEDBACK SECTION ===================== -->
-<section class="2xl:px-24 lg:px-10 px-5 2xl:pt-52 lg:pt-36 pt-20">
-  <div class="text-center">
-    <h2 class="xl:text-6xl md:text-4xl text-3xl font-bold xl:leading-[78px] md:leading-[54px] leading-[45px] text-white">
-      Client Feedback
-    </h2>
-
-    <div class="flex justify-center xl:py-8 py-4 xl:space-x-20 space-x-10">
-      <img src="./assets/img/navi.png" class="w-10 xl:w-16" alt="">
-      <img src="./assets/img/linesimg.png" alt="">
-      <img src="./assets/img/navi.png" class="w-10 xl:w-16" alt="">
+      </div>
     </div>
 
-    <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 pt-5 text-white">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh <br>
-      euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam <br>,
-      quis nostrud exerci tation ullamcorper suscip
-    </p>
-  </div>
+  </section>
 
-  <!-- ===================== SLIDER ===================== -->
-  <div class="flex justify-center 2xl:px-28 xl:px-20 xl:pt-20 pt-10">
-    <div class="overflow-hidden">
-      <div id="feedback-slider" class="feedback-slider">
+  <!-- ===================== CLIENT FEEDBACK SECTION ===================== -->
+  <section class="2xl:px-24 lg:px-10 px-5 2xl:pt-52 lg:pt-36 pt-20">
+    <div class="text-center">
+      <h2
+        class="xl:text-6xl md:text-4xl text-3xl font-bold xl:leading-[78px] md:leading-[54px] leading-[45px] text-white">
+        Kundenfeedback
+      </h2>
 
-        <!-- SLIDE 1 -->
-        <div class="feedback-slide grid md:grid-cols-2 gap-6 xl:gap-20">
-          <div class="feedback-box text-left">
-            <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">Sarah L., Marketing Director</h3>
-            <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
-              Convince Me completely transformed our visual identity. From logo design to brand guidelines, everything was perfectly aligned with our values.
-            </p>
-            <div class="feedback-decoration">
-              <div></div><div></div><div></div><div></div>
-            </div>
-          </div>
-
-          <div class="feedback-box text-left">
-            <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">David P., Founder</h3>
-            <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
-             “They didn’t just design a logo — they built a story around our business. Highly recommended for anyone serious about branding.”
-            </p>
-            <div class="feedback-decoration">
-              <div></div><div></div><div></div><div></div>
-            </div>
-          </div>
-
-          <div class="feedback-box text-left">
-            <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">Laura T., Business Owner</h3>
-            <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
-              “Convince Me helped us go from page 3 to page 1 on Google in just a few months. The growth in organic leads has been incredible.”
-            </p>
-            <div class="feedback-decoration">
-              <div></div><div></div><div></div><div></div>
-            </div>
-          </div>
-
-          <div class="feedback-box text-left">
-            <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">Thomas K., Marketing Manager</h3>
-            <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
-              “Their SEO team is sharp, data-driven, and truly understands how search engines work. A great partner for long-term digital success.”
-            </p>
-            <div class="feedback-decoration">
-              <div></div><div></div><div></div><div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- SLIDE 2 -->
-        <div class="feedback-slide grid md:grid-cols-2 gap-6 xl:gap-20">
-          <div class="feedback-box text-left">
-            <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">MICHAEL BROWN</h3>
-            <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-            <div class="feedback-decoration">
-              <div></div><div></div><div></div><div></div>
-            </div>
-          </div>
-
-          <div class="feedback-box text-left">
-            <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">Daniel R., Founder</h3>
-            <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
-              Convince Me delivered a flawless website that not only looks great but performs even better. Our traffic and conversions improved instantly.”
-            </p>
-            <div class="feedback-decoration">
-              <div></div><div></div><div></div><div></div>
-            </div>
-          </div>
-
-          <div class="feedback-box text-left">
-            <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">Maria S., CEO</h3>
-            <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
-              “From concept to completion, the team was professional, creative, and technically brilliant. They understood our goals and exceeded expectations.”
-            </p>
-            <div class="feedback-decoration">
-              <div></div><div></div><div></div><div></div>
-            </div>
-          </div>
-
-          <div class="feedback-box text-left">
-            <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">Olivia M., Managing Director</h3>
-            <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
-              “Convince Me helped us completely redefine our business model. Their strategy gave us structure, focus, and measurable growth results.”
-            </p>
-            <div class="feedback-decoration">
-              <div></div><div></div><div></div><div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- SLIDE 3 -->
-        <div class="feedback-slide grid md:grid-cols-2 gap-6 xl:gap-20">
-          <div class="feedback-box text-left">
-            <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">Markus H., Operations Lead</h3>
-            <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
-              “They didn’t just consult — they became an extension of our team. Every suggestion was practical, data-backed, and result-oriented.”
-            </p>
-            <div class="feedback-decoration">
-              <div></div><div></div><div></div><div></div>
-            </div>
-          </div>
-
-           <div class="feedback-box text-left">
-            <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">Hannah W., Brand Manager</h3>
-            <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
-              “Convince Me completely transformed our social presence. The visuals, tone, and consistency brought our brand to life online.”
-            </p>
-            <div class="feedback-decoration">
-              <div></div><div></div><div></div><div></div>
-            </div>
-          </div>
-
-           <div class="feedback-box text-left">
-            <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">Lucas B., Marketing Executive</h3>
-            <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
-              “Their team not only designs great posts but understands strategy. We’ve seen massive engagement growth in just a few months.”
-            </p>
-            <div class="feedback-decoration">
-              <div></div><div></div><div></div><div></div>
-            </div>
-          </div>
-
-          <div class="feedback-box text-left">
-            <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">Emily R., E-Commerce Manager</h3>
-            <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
-              “Convince Me turned our basic online store into a full-scale e-commerce platform. Our sales and user engagement doubled within months.”
-            </p>
-            <div class="feedback-decoration">
-              <div></div><div></div><div></div><div></div>
-            </div>
-          </div>
-        </div>
-
+      <div class="flex justify-center xl:py-8 py-4 xl:space-x-20 space-x-10">
+        <img src="./assets/img/navi.png" class="w-10 xl:w-16" alt="">
+        <img src="./assets/img/linesimg.png" alt="">
+        <img src="./assets/img/navi.png" class="w-10 xl:w-16" alt="">
       </div>
 
-      <!-- Dots -->
-      <div id="feedback-dots" class="flex justify-center xl:mt-28 lg:mt-20 mt-10"></div>
+      <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 pt-5 text-white">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh <br>
+        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam <br>,
+        quis nostrud exerci tation ullamcorper suscip
+      </p>
     </div>
-  </div>
-</section>
 
-<!-- digital marketing  -->
-<section class="2xl:mt-52 lg:mt-36 mt-20 bg-center bg-cover bg-no-repeat border-t border-[#262626] bg-[#0E0E0E]" style="background-image: url(./assets/img/marketingbg.png);">
-  <div class="2xl:py-36 lg:py-20 py-10 2xl:px-32 lg:px-16 px-6 text-center">
-    <h2 class=" 2xl:text-7xl xl:text-6xl lg:text-[43px] md:text-[40px] text-4xl font-semibold text-white 2xl:leading-[85px] xl:leading-[70px] lg:leading-[54px] md:leading-[48px] leading-[45px]">DIGITALES MARKETING <br> FÜR UNTERNEHMEN MIT ANSPRUCH.</h2>
-<p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-white pt-6 ">Aus Hamburg. Für den Mittelstand, der mehr will. Wir sind keine klassische Werbeagentur – wir sind convince me.
-Ein Partner für Unternehmen, die die Chancen der Digitalisierung nutzen wollen, um sichtbarer zu werden, effizienter zu arbeiten und nachhaltig zu wachsen.
-Wir kombinieren Strategie, Technologie und kreative Kommunikation, um Ergebnisse zu erzielen, die zählen: mehr Reichweite, mehr Bewerbungen, mehr Umsatz. Statt auf kostspielige Massenwerbung zu setzen, schaffen wir digitale Lösungen, die präzise auf Ihre Zielgruppe und Ihre Unternehmensziele abgestimmt sind. Ob Marketingstrategie, Recruiting oder Markenaufbau – wir entwickeln individuelle Konzepte, die Wirkung zeigen und echten Mehrwert schaffen. Unser Ziel: Ihr Erfolg. Planbar, messbar und langfristig.</p>
+    <!-- ===================== SLIDER ===================== -->
+    <div class="flex justify-center 2xl:px-28 xl:px-20 xl:pt-20 pt-10">
+      <div class="overflow-hidden">
+        <div id="feedback-slider" class="feedback-slider">
 
- <div class="text-center">
-  <button data-open="projectModal" class="text-lg font-semibold px-8 py-4 xl:mt-16 mt-8 text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E] transition">
-  Jetzt Fachkräfte einstellen &nbsp;&nbsp;<i class="fa-solid fa-chevron-right"></i>
-</button>
-</div>
-<div class="flex items-center justify-center pt-8 gap-2 flex-wrap">
-          <div class="stars text-white text-lg">
-            <span>★ </span>Trustpilot <span>★ ★ ★ ★ ★</span>
+          <!-- SLIDE 1 -->
+          <div class="feedback-slide grid md:grid-cols-2 gap-6 xl:gap-20">
+            <div class="feedback-box text-left">
+              <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">Sarah L., Marketing Director</h3>
+              <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
+                Convince Me hat unsere visuelle Identität komplett verändert. Vom Logodesign bis zu den
+                Markenrichtlinien war alles perfekt auf unsere Werte abgestimmt.
+              </p>
+              <div class="feedback-decoration">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+
+            <div class="feedback-box text-left">
+              <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">David P., Founder</h3>
+              <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
+                “Sie haben nicht nur ein Logo entworfen – sie haben eine Geschichte um unser Unternehmen herum
+                aufgebaut. Sehr empfehlenswert für alle, die Branding ernst nehmen.”
+              </p>
+              <div class="feedback-decoration">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+
+            <div class="feedback-box text-left">
+              <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">Laura T., Business Owner</h3>
+              <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
+                “Convince Me hat uns geholfen, in nur wenigen Monaten von Seite 3 auf Seite 1 bei Google zu kommen. Das
+                Wachstum an organischen Leads war unglaublich.”
+              </p>
+              <div class="feedback-decoration">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+
+            <div class="feedback-box text-left">
+              <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">Thomas K., Marketing Manager</h3>
+              <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
+                “Ihr SEO-Team ist scharfsinnig, datengetrieben und versteht wirklich, wie Suchmaschinen funktionieren.
+                Ein großartiger Partner für langfristigen digitalen Erfolg.”
+              </p>
+              <div class="feedback-decoration">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
           </div>
-          <div class="flex items-center gap-2 flex-wrap">
-            <img src="./assets/img/white line.png" alt="">
-            <p class="text-white text-lg font-bold">Hervorragend</p>
+
+          <!-- SLIDE 2 -->
+          <div class="feedback-slide grid md:grid-cols-2 gap-6 xl:gap-20">
+            <div class="feedback-box text-left">
+              <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">MICHAEL BROWN</h3>
+              <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+              <div class="feedback-decoration">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+
+            <div class="feedback-box text-left">
+              <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">Daniel R., Founder</h3>
+              <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
+                Convince Me hat eine makellose Website geliefert, die nicht nur gut aussieht, sondern noch besser
+                funktioniert. Unser Traffic und unsere Conversions haben sich sofort verbessert.”
+              </p>
+              <div class="feedback-decoration">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+
+            <div class="feedback-box text-left">
+              <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">Maria S., CEO</h3>
+              <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
+                “Vom Konzept bis zur Fertigstellung war das Team professionell, kreativ und technisch brillant. Sie
+                haben unsere Ziele verstanden und die Erwartungen übertroffen.”
+              </p>
+              <div class="feedback-decoration">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+
+            <div class="feedback-box text-left">
+              <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">Olivia M., Managing Director</h3>
+              <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
+                “Convince Me hat uns geholfen, unser Geschäftsmodell komplett neu zu definieren. Ihre Strategie gab uns
+                Struktur, Fokus und messbare Wachstumsergebnisse.”
+              </p>
+              <div class="feedback-decoration">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
           </div>
+
+          <!-- SLIDE 3 -->
+          <div class="feedback-slide grid md:grid-cols-2 gap-6 xl:gap-20">
+            <div class="feedback-box text-left">
+              <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">Markus H., Operations Lead</h3>
+              <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
+                “Sie haben nicht nur beraten – sie wurden zu einer Erweiterung unseres Teams. Jeder Vorschlag war
+                praktisch, datengestützt und ergebnisorientiert.”
+              </p>
+              <div class="feedback-decoration">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+
+            <div class="feedback-box text-left">
+              <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">Hannah W., Brand Manager</h3>
+              <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
+                “Convince Me hat unsere soziale Präsenz komplett verändert. Die Visuals, der Ton und die Konsistenz
+                haben unsere Marke online zum Leben erweckt.”
+              </p>
+              <div class="feedback-decoration">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+
+            <div class="feedback-box text-left">
+              <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">Lucas B., Marketing Executive</h3>
+              <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
+                “Ihr Team entwirft nicht nur großartige Beiträge, sondern versteht auch Strategie. Wir haben in nur
+                wenigen Monaten ein massives Engagement-Wachstum gesehen.”
+              </p>
+              <div class="feedback-decoration">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+
+            <div class="feedback-box text-left">
+              <h3 class="text-[#D2B94E] 2xl:text-2xl text-xl font-bold mb-4">Emily R., E-Commerce Manager</h3>
+              <p class="text-white xl:text-base text-sm leading-relaxed pb-6">
+                “Convince Me hat unseren einfachen Online-Shop in eine umfassende E-Commerce-Plattform verwandelt.
+                Unsere Verkäufe und das Nutzerengagement haben sich innerhalb von Monaten verdoppelt.”
+              </p>
+              <div class="feedback-decoration">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+
         </div>
-  </div>
-</section>
 
-<!-- Footer -->
+        <!-- Dots -->
+        <div id="feedback-dots" class="flex justify-center xl:mt-28 lg:mt-20 mt-10"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- digital marketing  -->
+  <section class="2xl:mt-52 lg:mt-36 mt-20 bg-center bg-cover bg-no-repeat border-t border-[#262626] bg-[#0E0E0E]"
+    style="background-image: url(./assets/img/marketingbg.png);">
+    <div class="2xl:py-36 lg:py-20 py-10 2xl:px-32 lg:px-16 px-6 text-center">
+      <h2
+        class=" 2xl:text-7xl xl:text-6xl lg:text-[43px] md:text-[40px] text-4xl font-semibold text-white 2xl:leading-[85px] xl:leading-[70px] lg:leading-[54px] md:leading-[48px] leading-[45px]">
+        DIGITALES MARKETING <br> FÜR UNTERNEHMEN MIT ANSPRUCH.</h2>
+      <p class="2xl:text-2xl lg:text-lg text-base 2xl:leading-[50px] lg:leading-8 leading-7 text-white pt-6 ">Aus
+        Hamburg. Für den Mittelstand, der mehr will. Wir sind keine klassische Werbeagentur – wir sind convince me.
+        Ein Partner für Unternehmen, die die Chancen der Digitalisierung nutzen wollen, um sichtbarer zu werden,
+        effizienter zu arbeiten und nachhaltig zu wachsen.
+        Wir kombinieren Strategie, Technologie und kreative Kommunikation, um Ergebnisse zu erzielen, die zählen: mehr
+        Reichweite, mehr Bewerbungen, mehr Umsatz. Statt auf kostspielige Massenwerbung zu setzen, schaffen wir digitale
+        Lösungen, die präzise auf Ihre Zielgruppe und Ihre Unternehmensziele abgestimmt sind. Ob Marketingstrategie,
+        Recruiting oder Markenaufbau – wir entwickeln individuelle Konzepte, die Wirkung zeigen und echten Mehrwert
+        schaffen. Unser Ziel: Ihr Erfolg. Planbar, messbar und langfristig.</p>
+
+      <div class="text-center">
+        <button data-open="projectModal"
+          class="text-lg font-semibold px-8 py-4 xl:mt-16 mt-8 text-[#0F0F0F] rounded-sm border border-[#D2B94E] bg-[#D2B94E] transition">
+          Jetzt Fachkräfte einstellen &nbsp;&nbsp;<i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="flex items-center justify-center pt-8 gap-2 flex-wrap">
+        <div class="stars text-white text-lg">
+          <span>★ </span>Trustpilot <span>★ ★ ★ ★ ★</span>
+        </div>
+        <div class="flex items-center gap-2 flex-wrap">
+          <img src="./assets/img/white line.png" alt="">
+          <p class="text-white text-lg font-bold">Hervorragend</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="text-white px-6 lg:px-12 xl:px-20 2xl:px-28 py-12 xl:py-20 bg-[#0F0F0F]">
 
     <div class="md:hidden block flex justify-center pb-10">
       <img src="./assets/img/footer.png" alt="">
     </div>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7  gap-8 text-center md:text-start">
-      
+
       <!-- Left Content -->
       <div class="lg:col-span-2">
-        <div class=""
-        >
-        <img src="./assets/img/footer.png" class="md:block hidden" alt="">
+        <div class="">
+          <img src="./assets/img/footer.png" class="md:block hidden" alt="">
         </div>
         <p class="text-white/70 md:mt-4 2xl:text-lg text-sm leading-relaxed">
-         A collective of driven minds empowering companies <br class="md:block hidden"> to grow digitally.
+          Ein Kollektiv engagierter Köpfe, die Unternehmen dabei unterstützen, <br class="md:block hidden"> digital zu
+          wachsen.
         </p>
 
         <div class="lg:block hidden">
-         <div class="flex md:justify-start justify-center gap-2 pt-6 ">
-          <a href="https://www.kununu.com/de/convince-me1">
-      <img src="./assets/img/company1.png" alt="">
-      </a>
-      <a href="">
-      <img src="./assets/img/company2.png" alt="">
-      </a>
-        </div>
+          <div class="flex md:justify-start justify-center gap-2 pt-6 ">
+            <a href="https://www.kununu.com/de/convince-me1">
+              <img src="./assets/img/company1.png" alt="">
+            </a>
+            <a href="">
+              <img src="./assets/img/company2.png" alt="">
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- Quick Links -->
       <div>
-        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Quick Links</h3>
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Schnelllinks</h3>
         <ul class="space-y-2 text-white/70 2xl:text-base text-sm ">
-          <li class="hover:underline"><a href="./index.html"  >Home</a></li>
+          <li class="hover:underline"><a href="./index.html">Home</a></li>
           <li class="hover:underline"><a href="./our work.html">Our Works</a></li>
           <li class="hover:underline"><a href="#">Network</a></li>
           <li class="hover:underline"><a href="./job.html">Jobs</a></li>
@@ -620,14 +760,14 @@ Wir kombinieren Strategie, Technologie und kreative Kommunikation, um Ergebnisse
 
       <!-- Services -->
       <div>
-        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Services</h3>
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Leistungen</h3>
         <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
           <li class="hover:underline"><a href="./job.html">Job</a></li>
           <li class="hover:underline"><a href="./services.html">Web Design & Development</a></li>
           <li class="hover:underline"><a href="./SEO.html">SEO Optimization</a></li>
           <li class="hover:underline"><a href="./E-Commerce.html">E-Commerce Development</a></li>
           <li class="hover:underline"><a href="./Brand.html">Brand Identity Creation</a></li>
-           <li class="hover:underline"><a href="./business.html">Strategy for Business Development</a></li>
+          <li class="hover:underline"><a href="./business.html">Strategy for Business Development</a></li>
           <li class="hover:underline"><a href="./socielmedia.html">Social Media Management & Post Creation</a></li>
           <li class="hover:underline"><a href="./cms.html">CMS design</a></li>
           <li class="hover:underline"><a href="./mobileapp.html">Mobile App Design and Development</a></li>
@@ -635,50 +775,54 @@ Wir kombinieren Strategie, Technologie und kreative Kommunikation, um Ergebnisse
         </ul>
       </div>
 
-         <!-- Resources -->
+      <!-- Resources -->
       <div>
-        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Privacy</h3>
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Datenschutz</h3>
         <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
           <li class="hover:underline"><a href="./privacypoliciy.html">Privacy Policies</a></li>
           <li class="hover:underline"><a href="./termandcondition.html">Terms And Condition</a></li>
-         
+
         </ul>
       </div>
-        <!-- Resources -->
+      <!-- Resources -->
       <div>
-        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Company</h3>
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Unternehmen</h3>
         <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
-          <li class="hover:underline"><a href="https://www.convinceme.de/impressum/">Impressum:</a></li>
-          <li class="hover:underline"><a href="https://www.convinceme.de/datenschutzerklaerung/">Datenschutz:</a></li>
+          <li class="hover:underline"><a href="./impressum.html">Impressum:</a></li>
+          <li class="hover:underline"><a href="./Datenschutz.html">Datenschutz:</a></li>
         </ul>
         <img src="./assets/img/attachment.png" class="mt-6" alt="">
       </div>
 
     </div>
-  <div class="flex md:justify-start justify-center gap-2 pt-6 lg:hidden block">
-          <a href="https://www.kununu.com/de/convince-me1">
-      <img src="./assets/img/company1.png" alt="">
+    <div class="flex md:justify-start justify-center gap-2 pt-6 lg:hidden block">
+      <a href="https://www.kununu.com/de/convince-me1">
+        <img src="./assets/img/company1.png" alt="">
       </a>
       <a href="">
-      <img src="./assets/img/company2.png" alt="">
+        <img src="./assets/img/company2.png" alt="">
       </a>
-        </div>
-       
+    </div>
+
     <!-- Bottom Bar -->
     <div class="border-t border-[#414141] mt-10 flex justify-between items-center">
-       <!-- Copyright -->
-        <div>© 2025, Convince me.</div>
+      <!-- Copyright -->
+      <div>© 2025, Convince me.</div>
 
-      <div class="py-4 flex flex-col md:flex-row justify-between items-center text-sm text-white/70 space-y-3 md:space-y-0">
+      <div
+        class="py-4 flex flex-col md:flex-row justify-between items-center text-sm text-white/70 space-y-3 md:space-y-0">
         <!-- Social Icons -->
         <div class="flex justify-center md:justify-start space-x-4">
-          <a href="#" class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#D2B94E]">
+          <a href="#"
+            class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#D2B94E]">
             <i class="fab fa-instagram "></i>
           </a>
-          <a href="#" class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#D2B94E]">
+          <a href="#"
+            class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#D2B94E]">
             <i class="fab fa-linkedin-in"></i>
           </a>
-          <a href="#" class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#D2B94E]">
+          <a href="#"
+            class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#D2B94E]">
             <i class="fab fa-facebook-f"></i>
           </a>
         </div>
@@ -686,499 +830,499 @@ Wir kombinieren Strategie, Technologie und kreative Kommunikation, um Ergebnisse
     </div>
   </footer>
 
-<!-- contact popup form  -->
-<div id="contactModal" 
-     class="fixed inset-0 bg-black/70 z-50 hidden overflow-y-auto">
-  
-  <!-- Center Content with Spacing -->
-  <div class="min-h-screen flex items-center justify-center py-6 px-4">
-    
-    <!-- Modal Card -->
-    <div class="bg-[#1a1a1a] rounded-2xl shadow-xl w-full max-w-5xl 2xl:max-w-7xl
+  <!-- contact popup form  -->
+  <div id="contactModal" class="fixed inset-0 bg-black/70 z-50 hidden overflow-y-auto">
+
+    <!-- Center Content with Spacing -->
+    <div class="min-h-screen flex items-center justify-center py-6 px-4">
+
+      <!-- Modal Card -->
+      <div class="bg-[#1a1a1a] rounded-2xl shadow-xl w-full max-w-5xl 2xl:max-w-7xl
                 flex flex-col-reverse md:flex-row relative animate-fadeIn">
-      
+
+        <!-- Close Button -->
+        <button id="closeModal" class="absolute top-2 right-4 text-[#A4A7AE] text-xl">
+          ✕
+        </button>
+
+        <!-- Left: Form -->
+        <div class="w-full md:w-1/2 px-6 md:px-0 md:pl-8 sm:py-8 py-6 flex flex-col justify-center text-white">
+          <h2 class="2xl:text-3xl text-2xl font-semibold mb-3">Verbinden wir Konstellationen</h2>
+          <p class="2xl:text-lg text-sm text-white mb-6">
+            Lassen Sie uns unsere Konstellationen ausrichten! Melden Sie sich und lassen Sie die Magie der
+            Zusammenarbeit unseren Himmel erleuchten.
+          </p>
+
+          <form action="#" method="POST" class="space-y-4">
+            <div class="flex flex-col sm:flex-row gap-4">
+              <input type="text" placeholder="Last Name"
+                class="w-full sm:w-1/2 p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none" />
+              <input type="text" placeholder="First Name"
+                class="w-full sm:w-1/2 p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none" />
+            </div>
+            <input type="email" placeholder="Email"
+              class="w-full p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none" />
+            <input type="tel" placeholder="Phone Number"
+              class="w-full p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none" />
+            <textarea placeholder="Message" rows="4"
+              class="w-full p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none"></textarea>
+
+            <button type="submit"
+              class="w-full bg-[#D2B94E] text-[#040404] font-medium py-3 rounded-md flex items-center justify-center gap-2 transition">
+              Send it 🚀
+            </button>
+          </form>
+        </div>
+
+        <!-- Right: Astronaut Image -->
+        <div class="w-full md:w-1/2 flex items-center justify-center px-6 py-10">
+          <img src="./assets/img/contactimg.png" alt="Astronaut"
+            class="w-full max-h-[600px] object-contain rounded-lg" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Questioning popup Modal Overlay -->
+  <div id="projectModal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50 overflow-y-auto p-4">
+
+    <!-- Modal Box -->
+    <div
+      class="relative bg-[#0F0F0F] border border-[#D2B94E] rounded-2xl shadow-xl w-full max-w-5xl my-auto p-6 sm:p-8 overflow-y-auto max-h-[90vh]">
+
       <!-- Close Button -->
-      <button id="closeModal" 
-              class="absolute top-2 right-4 text-[#A4A7AE] text-xl">
-        ✕
-      </button>
+      <button id="closeProjectModal" class="absolute top-4 right-4 text-[#D2B94E] text-2xl font-bold">&times;</button>
 
-      <!-- Left: Form -->
-      <div class="w-full md:w-1/2 px-6 md:px-0 md:pl-8 sm:py-8 py-6 flex flex-col justify-center text-white">
-        <h2 class="2xl:text-3xl text-2xl font-semibold mb-3">Let's connect constellations</h2>
-        <p class="2xl:text-lg text-sm text-white mb-6">
-          Let's align our constellations! Reach out and let the magic of collaboration illuminate our skies.
-        </p>
-
-        <form action="#" method="POST" class="space-y-4">
-          <div class="flex flex-col sm:flex-row gap-4">
-            <input type="text" placeholder="Last Name" 
-                   class="w-full sm:w-1/2 p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none" />
-            <input type="text" placeholder="First Name" 
-                   class="w-full sm:w-1/2 p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none" />
-          </div>
-          <input type="email" placeholder="Email" 
-                 class="w-full p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none" />
-          <input type="tel" placeholder="Phone Number" 
-                 class="w-full p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none" />
-          <textarea placeholder="Message" rows="4" 
-                    class="w-full p-3 rounded-md bg-white/5 border border-white/20 placeholder:text-white/60 text-sm focus:border-[#D2B94E] focus:outline-none"></textarea>
-
-          <button type="submit" 
-                  class="w-full bg-[#D2B94E] text-[#040404] font-medium py-3 rounded-md flex items-center justify-center gap-2 transition">
-            Send it 🚀
-          </button>
-        </form>
+      <!-- Page Counter -->
+      <div id="pageIndicator" class="text-[#D2B94E] text-lg font-semibold text-center mb-4">
+        Seite 1 von 5
       </div>
 
-      <!-- Right: Astronaut Image -->
-      <div class="w-full md:w-1/2 flex items-center justify-center px-6 py-10">
-        <img src="./assets/img/contactimg.png" 
-             alt="Astronaut" 
-             class="w-full max-h-[600px] object-contain rounded-lg" />
+      <!-- Steps -->
+      <div id="projectStepsContainer" class="space-y-10 lg:py-10 py-5">
+
+        <!-- Page 1 -->
+        <div class="project-step">
+          <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">Du bist...?</h2>
+          <div class="grid md:grid-cols-4 gap-5 pt-6">
+            <div class="md:block hidden"></div>
+            <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+              <img src="./assets/img/img1.avif" alt="">
+              <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Geschäftsführer</p>
+            </div>
+            <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+              <img src="./assets/img/img2.avif" alt="">
+              <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Mitarbeiter</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="project-step hidden">
+          <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">Wie viele Mitarbeiter
+            sind in Deinem Betrieb?</h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 pt-6">
+            <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+              <img src="./assets/img/img3.avif" alt="">
+              <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">1 bis 4</p>
+            </div>
+            <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+              <img src="./assets/img/img4.avif" alt="">
+              <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">5 bis 10</p>
+            </div>
+            <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+              <img src="./assets/img/img5.avif" alt="">
+              <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">11 bis 30</p>
+            </div>
+            <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+              <img src="./assets/img/img6.avif" alt="">
+              <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Über 30</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Page 3 -->
+        <div class="project-step hidden">
+          <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">Wie viele Fachkräfte
+            möchtest Du in den nächsten 30 Tagen einstellen?</h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 pt-6">
+            <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+              <img src="./assets/img/img7.avif" alt="">
+              <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">1 Fachkraft</p>
+            </div>
+            <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+              <img src="./assets/img/img8.avif" alt="">
+              <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">2 bis 3</p>
+            </div>
+            <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+              <img src="./assets/img/img9.avif" alt="">
+              <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">4 bis 5</p>
+            </div>
+            <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+              <img src="./assets/img/img10.avif" alt="">
+              <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">6 oder mehr</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Page 4 -->
+        <div class="project-step hidden">
+          <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">Wie schnell möchtest Du
+            neue Fachkräfte einstellen?</h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 pt-6">
+            <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+              <img src="./assets/img/img11.avif" alt="">
+              <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Sofort</p>
+            </div>
+            <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+              <img src="./assets/img/img12.avif" alt="">
+              <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">2 bis 4 Wochen</p>
+            </div>
+            <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+              <img src="./assets/img/img13.avif" alt="">
+              <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">1 bis 2 Monate</p>
+            </div>
+            <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+              <img src="./assets/img/img14.avif" alt="">
+              <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Weiß noch nicht</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Page 5 (Form Page) -->
+        <div class="project-step hidden">
+          <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">
+            Bitte fülle das Formular aus
+          </h2>
+
+          <form id="projectForm" class="max-w-2xl mx-auto space-y-5 pt-6">
+            <!-- Name -->
+            <div>
+              <label for="name" class="block text-[#D2B94E] text-lg mb-2">Name</label>
+              <input type="text" id="name" name="name" required
+                class="w-full px-4 py-3 rounded-lg bg-[#1A1A1A] border border-[#D2B94E] text-white focus:outline-none focus:ring-2 focus:ring-[#D2B94E]" />
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label for="email" class="block text-[#D2B94E] text-lg mb-2">E-Mail</label>
+              <input type="email" id="email" name="email" required
+                class="w-full px-4 py-3 rounded-lg bg-[#1A1A1A] border border-[#D2B94E] text-white focus:outline-none focus:ring-2 focus:ring-[#D2B94E]" />
+            </div>
+
+            <!-- Phone -->
+            <div>
+              <label for="phone" class="block text-[#D2B94E] text-lg mb-2">Telefonnummer</label>
+              <input type="tel" id="phone" name="phone"
+                class="w-full px-4 py-3 rounded-lg bg-[#1A1A1A] border border-[#D2B94E] text-white focus:outline-none focus:ring-2 focus:ring-[#D2B94E]" />
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit"
+              class="w-full bg-[#D2B94E] text-[#0F0F0F] font-semibold text-xl py-3 rounded-lg hover:bg-[#C0A83E] transition duration-300">
+              Abschicken
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- Questioning popup Modal Overlay -->
-<div id="projectModal"
-  class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50 overflow-y-auto p-4">
-  
-  <!-- Modal Box -->
-  <div
-    class="relative bg-[#0F0F0F] border border-[#D2B94E] rounded-2xl shadow-xl w-full max-w-5xl my-auto p-6 sm:p-8 overflow-y-auto max-h-[90vh]">
-    
-    <!-- Close Button -->
-    <button id="closeProjectModal"
-      class="absolute top-4 right-4 text-[#D2B94E] text-2xl font-bold">&times;</button>
+  <!-- questioning popup js -->
+  <script>
+    const openProjectButtons = document.querySelectorAll('[data-open="projectModal"]');
+    const closeProjectModal = document.getElementById('closeProjectModal');
+    const projectModal = document.getElementById('projectModal');
+    const projectSteps = document.querySelectorAll('.project-step');
+    const pageIndicator = document.getElementById('pageIndicator');
+    let projectCurrentStep = 0;
 
-    <!-- Page Counter -->
-    <div id="pageIndicator" class="text-[#D2B94E] text-lg font-semibold text-center mb-4">
-      Seite 1 von 5
-    </div>
+    const showProjectStep = (index) => {
+      projectSteps.forEach((s, i) => s.classList.toggle('hidden', i !== index));
+      pageIndicator.textContent = `Seite ${index + 1} von ${projectSteps.length}`;
+    };
 
-    <!-- Steps -->
-    <div id="projectStepsContainer" class="space-y-10 lg:py-10 py-5">
-      
-      <!-- Page 1 -->
-      <div class="project-step">
-        <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">Du bist...?</h2>
-        <div class="grid md:grid-cols-4 gap-5 pt-6">
-          <div class="md:block hidden"></div>
-          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
-            <img src="./assets/img/img1.avif" alt="">
-            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Geschäftsführer</p>
-          </div>
-          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
-            <img src="./assets/img/img2.avif" alt="">
-            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Mitarbeiter</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Page 2 -->
-      <div class="project-step hidden">
-        <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">Wie viele Mitarbeiter sind in Deinem Betrieb?</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 pt-6">
-          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
-            <img src="./assets/img/img3.avif" alt="">
-            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">1 bis 4</p>
-          </div>
-          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
-            <img src="./assets/img/img4.avif" alt="">
-            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">5 bis 10</p>
-          </div>
-          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
-            <img src="./assets/img/img5.avif" alt="">
-            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">11 bis 30</p>
-          </div>
-          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
-            <img src="./assets/img/img6.avif" alt="">
-            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Über 30</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Page 3 -->
-      <div class="project-step hidden">
-        <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">Wie viele Fachkräfte möchtest Du in den nächsten 30 Tagen einstellen?</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 pt-6">
-          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
-            <img src="./assets/img/img7.avif" alt="">
-            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">1 Fachkraft</p>
-          </div>
-          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
-            <img src="./assets/img/img8.avif" alt="">
-            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">2 bis 3</p>
-          </div>
-          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
-            <img src="./assets/img/img9.avif" alt="">
-            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">4 bis 5</p>
-          </div>
-          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
-            <img src="./assets/img/img10.avif" alt="">
-            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">6 oder mehr</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Page 4 -->
-      <div class="project-step hidden">
-        <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">Wie schnell möchtest Du neue Fachkräfte einstellen?</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 pt-6">
-          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
-            <img src="./assets/img/img11.avif" alt="">
-            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Sofort</p>
-          </div>
-          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
-            <img src="./assets/img/img12.avif" alt="">
-            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">2 bis 4 Wochen</p>
-          </div>
-          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
-            <img src="./assets/img/img13.avif" alt="">
-            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">1 bis 2 Monate</p>
-          </div>
-          <div class="rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
-            <img src="./assets/img/img14.avif" alt="">
-            <p class="text-white text-xl bg-[#D2B94E] py-4 text-center">Weiß noch nicht</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Page 5 (Form Page) -->
-      <div class="project-step hidden">
-        <h2 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-[#D2B94E] text-center mb-6">
-          Bitte fülle das Formular aus
-        </h2>
-        
-        <form id="projectForm" class="max-w-2xl mx-auto space-y-5 pt-6">
-          <!-- Name -->
-          <div>
-            <label for="name" class="block text-[#D2B94E] text-lg mb-2">Name</label>
-            <input type="text" id="name" name="name" required
-              class="w-full px-4 py-3 rounded-lg bg-[#1A1A1A] border border-[#D2B94E] text-white focus:outline-none focus:ring-2 focus:ring-[#D2B94E]" />
-          </div>
-
-          <!-- Email -->
-          <div>
-            <label for="email" class="block text-[#D2B94E] text-lg mb-2">E-Mail</label>
-            <input type="email" id="email" name="email" required
-              class="w-full px-4 py-3 rounded-lg bg-[#1A1A1A] border border-[#D2B94E] text-white focus:outline-none focus:ring-2 focus:ring-[#D2B94E]" />
-          </div>
-
-          <!-- Phone -->
-          <div>
-            <label for="phone" class="block text-[#D2B94E] text-lg mb-2">Telefonnummer</label>
-            <input type="tel" id="phone" name="phone"
-              class="w-full px-4 py-3 rounded-lg bg-[#1A1A1A] border border-[#D2B94E] text-white focus:outline-none focus:ring-2 focus:ring-[#D2B94E]" />
-          </div>
-
-          <!-- Submit Button -->
-          <button type="submit"
-            class="w-full bg-[#D2B94E] text-[#0F0F0F] font-semibold text-xl py-3 rounded-lg hover:bg-[#C0A83E] transition duration-300">
-            Abschicken
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- questioning popup js -->
-<script>
-  const openProjectButtons = document.querySelectorAll('[data-open="projectModal"]');
-  const closeProjectModal = document.getElementById('closeProjectModal');
-  const projectModal = document.getElementById('projectModal');
-  const projectSteps = document.querySelectorAll('.project-step');
-  const pageIndicator = document.getElementById('pageIndicator');
-  let projectCurrentStep = 0;
-
-  const showProjectStep = (index) => {
-    projectSteps.forEach((s, i) => s.classList.toggle('hidden', i !== index));
-    pageIndicator.textContent = `Seite ${index + 1} von ${projectSteps.length}`;
-  };
-
-  // ✅ Open modal on any button click
-  openProjectButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      projectModal.classList.remove('hidden');
-      projectModal.classList.add('flex');
-      document.body.classList.add('no-scroll');
-      projectCurrentStep = 0;
-      showProjectStep(projectCurrentStep);
+    // ✅ Open modal on any button click
+    openProjectButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        projectModal.classList.remove('hidden');
+        projectModal.classList.add('flex');
+        document.body.classList.add('no-scroll');
+        projectCurrentStep = 0;
+        showProjectStep(projectCurrentStep);
+      });
     });
-  });
 
-  // ✅ Close modal
-  closeProjectModal.addEventListener('click', () => {
-    projectModal.classList.add('hidden');
-    projectModal.classList.remove('flex');
-    document.body.classList.remove('no-scroll');
-    projectCurrentStep = 0;
-  });
-
-  // ✅ Click outside modal to close
-  projectModal.addEventListener('click', (e) => {
-    if (e.target === projectModal) {
+    // ✅ Close modal
+    closeProjectModal.addEventListener('click', () => {
       projectModal.classList.add('hidden');
       projectModal.classList.remove('flex');
       document.body.classList.remove('no-scroll');
       projectCurrentStep = 0;
-    }
-  });
+    });
 
-  // ✅ Handle step images click
-  document.querySelectorAll('.project-step img').forEach(img => {
-    img.addEventListener('click', () => {
-      if (projectCurrentStep < projectSteps.length - 1) {
-        projectCurrentStep++;
-        showProjectStep(projectCurrentStep);
+    // ✅ Click outside modal to close
+    projectModal.addEventListener('click', (e) => {
+      if (e.target === projectModal) {
+        projectModal.classList.add('hidden');
+        projectModal.classList.remove('flex');
+        document.body.classList.remove('no-scroll');
+        projectCurrentStep = 0;
       }
     });
-  });
 
-  // ✅ Handle final form submit
-  document.getElementById('projectForm').addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert('✅ Formular erfolgreich abgeschickt!');
-    projectModal.classList.add('hidden');
-    projectModal.classList.remove('flex');
-    document.body.classList.remove('no-scroll');
-    projectCurrentStep = 0;
-  });
-</script>
-
-<!--contact Script -->
-<script>
-  const openModalButtons = document.querySelectorAll("#openModal"); // Saare "Contact Us" buttons select karo
-  const closeModal = document.getElementById("closeModal");
-  const modal = document.getElementById("contactModal");
-
-  // Har ek Contact Us button pe listener lagao
-  openModalButtons.forEach(button => {
-    button.addEventListener("click", () => {
-      modal.classList.remove("hidden");
+    // ✅ Handle step images click
+    document.querySelectorAll('.project-step img').forEach(img => {
+      img.addEventListener('click', () => {
+        if (projectCurrentStep < projectSteps.length - 1) {
+          projectCurrentStep++;
+          showProjectStep(projectCurrentStep);
+        }
+      });
     });
-  });
 
-  // Close button
-  closeModal.addEventListener("click", () => {
-    modal.classList.add("hidden");
-  });
-
-  // Background click par close
-  window.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.classList.add("hidden");
-    }
-  });
-</script>
-
-<!-- client feednback  -->
-<script>
-  const feedbackSlider = document.getElementById("feedback-slider");
-  const feedbackSlides = document.querySelectorAll(".feedback-slide");
-  const feedbackDotsContainer = document.getElementById("feedback-dots");
-  let feedbackCurrentSlide = 0;
-
-  // Create dots
-  feedbackSlides.forEach((_, index) => {
-    const dot = document.createElement("div");
-    dot.classList.add("feedback-dot");
-    if (index === 0) dot.classList.add("active");
-    dot.addEventListener("click", () => feedbackGoToSlide(index));
-    feedbackDotsContainer.appendChild(dot);
-  });
-
-  const feedbackDots = document.querySelectorAll(".feedback-dot");
-
-  function feedbackGoToSlide(index) {
-    feedbackSlider.style.transform = `translateX(-${index * 100}%)`;
-    feedbackDots.forEach((dot) => dot.classList.remove("active"));
-    feedbackDots[index].classList.add("active");
-    feedbackCurrentSlide = index;
-  }
-
-  // Auto slide
-  setInterval(() => {
-    feedbackCurrentSlide = (feedbackCurrentSlide + 1) % feedbackSlides.length;
-    feedbackGoToSlide(feedbackCurrentSlide);
-  }, 5000);
-</script>
-
-    <!-- faqs js -->
- <script>
-    document.querySelectorAll('.faq-btn').forEach(button => {
-        button.addEventListener('click', () => {
-            const content = button.nextElementSibling;
-            const icon = button.querySelector('.icon');
-            const heading = button.querySelector('span:first-child');
-
-            if (content.classList.contains('open')) {
-                // Close current
-                content.style.maxHeight = null;
-                content.classList.remove('open');
-                icon.textContent = '+';
-                icon.classList.remove('faq-active');
-                heading.classList.remove('faq-active');
-            } else {
-                // Close all others
-                document.querySelectorAll('.faq-content').forEach(item => {
-                    item.style.maxHeight = null;
-                    item.classList.remove('open');
-                });
-                document.querySelectorAll('.icon').forEach(i => {
-                    i.textContent = '+';
-                    i.classList.remove('faq-active');
-                });
-                document.querySelectorAll('.faq-btn span:first-child').forEach(h => {
-                    h.classList.remove('faq-active');
-                });
-
-                // Open clicked one
-                content.style.maxHeight = content.scrollHeight + "px";
-                content.classList.add('open');
-                icon.textContent = '-';
-                icon.classList.add('faq-active');  // Yellow + bigger size
-                heading.classList.add('faq-active'); // Yellow + bigger size
-            }
-        });
+    // ✅ Handle final form submit
+    document.getElementById('projectForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('✅ Formular erfolgreich abgeschickt!');
+      projectModal.classList.add('hidden');
+      projectModal.classList.remove('flex');
+      document.body.classList.remove('no-scroll');
+      projectCurrentStep = 0;
     });
-</script>
+  </script>
 
-<!-- Navbar js  -->
-<script>
-  const menuBtn = document.getElementById('menu-btn');
-  const fullscreenMenu = document.getElementById('fullscreen-menu');
-  const servicesBtn = document.getElementById('services-btn');
-  const servicesDropdown = document.getElementById('services-dropdown');
-  const svgArrow = servicesBtn.querySelector('svg');
-  let isOpen = false;
-  let scrollPosition = 0; // store current scroll position
-
-  // Fullscreen menu toggle
-  menuBtn.addEventListener('click', () => {
-    isOpen = !isOpen;
-    const [line1, line2, line3] = menuBtn.children;
-
-    if (isOpen) {
-      // Store current scroll position and lock scroll visually
-      scrollPosition = window.scrollY;
-      document.body.style.position = 'fixed';
-      document.body.style.top = `-${scrollPosition}px`;
-      document.body.style.left = '0';
-      document.body.style.right = '0';
-      document.body.style.overflow = 'hidden';
-      fullscreenMenu.style.overflowY = 'auto';
-
-      // Animate hamburger -> X
-      line1.style.transform = 'rotate(45deg) translateY(10px)';
-      line2.style.opacity = '0';
-      line3.style.transform = 'rotate(-45deg) translateY(-10px)';
-
-      fullscreenMenu.classList.remove('pointer-events-none');
-      fullscreenMenu.classList.add('opacity-100', 'scale-100');
-      fullscreenMenu.classList.remove('opacity-0', 'scale-95');
-      
-      // Force scroll to top (menu starts from top)
-      window.scrollTo(0, 0);
-    } else {
-      // Animate X -> hamburger
-      line1.style.transform = 'rotate(0) translateY(0)';
-      line2.style.opacity = '1';
-      line3.style.transform = 'rotate(0) translateY(0)';
-
-      fullscreenMenu.classList.add('opacity-0', 'scale-95');
-      fullscreenMenu.classList.remove('opacity-100', 'scale-100');
-      setTimeout(() => fullscreenMenu.classList.add('pointer-events-none'), 500);
-
-      // Restore scroll position
-      document.body.style.position = '';
-      document.body.style.top = '';
-      document.body.style.left = '';
-      document.body.style.right = '';
-      document.body.style.overflow = '';
-      fullscreenMenu.style.overflowY = 'hidden';
-      window.scrollTo(0, scrollPosition);
-    }
-  });
-
-  // Detect mobile
-  const isMobile = () => window.innerWidth < 1024;
-
-  // Toggle dropdown on click (mobile)
-  servicesBtn.addEventListener('click', (e) => {
-    if (isMobile()) {
-      e.stopPropagation();
-      toggleDropdown();
-    }
-  });
-
-  // Hover dropdown (desktop)
-  servicesBtn.addEventListener('mouseenter', () => {
-    if (!isMobile()) openDropdown();
-  });
-  servicesBtn.addEventListener('mouseleave', () => {
-    if (!isMobile()) closeDropdown();
-  });
-  servicesDropdown.addEventListener('mouseenter', () => {
-    if (!isMobile()) openDropdown();
-  });
-  servicesDropdown.addEventListener('mouseleave', () => {
-    if (!isMobile()) closeDropdown();
-  });
-
-  // Dropdown logic
-  function toggleDropdown() {
-    const isDropdownOpen = !servicesDropdown.classList.contains('hidden');
-    if (isDropdownOpen) closeDropdown();
-    else openDropdown();
-  }
-
-  function openDropdown() {
-    servicesDropdown.classList.remove('hidden');
-    setTimeout(() => {
-      servicesDropdown.classList.add('opacity-100', 'scale-y-100');
-      servicesDropdown.classList.remove('opacity-0', 'scale-y-0');
-    }, 10);
-    svgArrow.style.transform = 'rotate(180deg)';
-  }
-
-  function closeDropdown() {
-    servicesDropdown.classList.add('opacity-0', 'scale-y-0');
-    servicesDropdown.classList.remove('scale-y-100');
-    setTimeout(() => servicesDropdown.classList.add('hidden'), 300);
-    svgArrow.style.transform = 'rotate(0deg)';
-  }
-
-  // Close dropdown when clicking outside (mobile)
-  document.addEventListener('click', (e) => {
-    if (isMobile()) {
-      if (!servicesBtn.contains(e.target) && !servicesDropdown.contains(e.target)) {
-        closeDropdown();
-      }
-    }
-  });
-
-  // Update behavior on resize
-  window.addEventListener('resize', () => {
-    closeDropdown();
-  });
-</script>
-
- <!-- navbar bg js  -->
+  <!--contact Script -->
   <script>
-  window.addEventListener("scroll", function() {
-    const navbar = document.getElementById("navbar");
-    if (window.scrollY > 50) { 
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
-    }
-  });
-</script>
+    const openModalButtons = document.querySelectorAll("#openModal"); // Saare "Contact Us" buttons select karo
+    const closeModal = document.getElementById("closeModal");
+    const modal = document.getElementById("contactModal");
 
-<script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
+    // Har ek Contact Us button pe listener lagao
+    openModalButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        modal.classList.remove("hidden");
+      });
+    });
+
+    // Close button
+    closeModal.addEventListener("click", () => {
+      modal.classList.add("hidden");
+    });
+
+    // Background click par close
+    window.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.classList.add("hidden");
+      }
+    });
+  </script>
+
+  <!-- client feednback  -->
+  <script>
+    const feedbackSlider = document.getElementById("feedback-slider");
+    const feedbackSlides = document.querySelectorAll(".feedback-slide");
+    const feedbackDotsContainer = document.getElementById("feedback-dots");
+    let feedbackCurrentSlide = 0;
+
+    // Create dots
+    feedbackSlides.forEach((_, index) => {
+      const dot = document.createElement("div");
+      dot.classList.add("feedback-dot");
+      if (index === 0) dot.classList.add("active");
+      dot.addEventListener("click", () => feedbackGoToSlide(index));
+      feedbackDotsContainer.appendChild(dot);
+    });
+
+    const feedbackDots = document.querySelectorAll(".feedback-dot");
+
+    function feedbackGoToSlide(index) {
+      feedbackSlider.style.transform = `translateX(-${index * 100}%)`;
+      feedbackDots.forEach((dot) => dot.classList.remove("active"));
+      feedbackDots[index].classList.add("active");
+      feedbackCurrentSlide = index;
+    }
+
+    // Auto slide
+    setInterval(() => {
+      feedbackCurrentSlide = (feedbackCurrentSlide + 1) % feedbackSlides.length;
+      feedbackGoToSlide(feedbackCurrentSlide);
+    }, 5000);
+  </script>
+
+  <!-- faqs js -->
+  <script>
+    document.querySelectorAll('.faq-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('.icon');
+        const heading = button.querySelector('span:first-child');
+
+        if (content.classList.contains('open')) {
+          // Close current
+          content.style.maxHeight = null;
+          content.classList.remove('open');
+          icon.textContent = '+';
+          icon.classList.remove('faq-active');
+          heading.classList.remove('faq-active');
+        } else {
+          // Close all others
+          document.querySelectorAll('.faq-content').forEach(item => {
+            item.style.maxHeight = null;
+            item.classList.remove('open');
+          });
+          document.querySelectorAll('.icon').forEach(i => {
+            i.textContent = '+';
+            i.classList.remove('faq-active');
+          });
+          document.querySelectorAll('.faq-btn span:first-child').forEach(h => {
+            h.classList.remove('faq-active');
+          });
+
+          // Open clicked one
+          content.style.maxHeight = content.scrollHeight + "px";
+          content.classList.add('open');
+          icon.textContent = '-';
+          icon.classList.add('faq-active');  // Yellow + bigger size
+          heading.classList.add('faq-active'); // Yellow + bigger size
+        }
+      });
+    });
+  </script>
+
+  <!-- Navbar js  -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const fullscreenMenu = document.getElementById('fullscreen-menu');
+    const servicesBtn = document.getElementById('services-btn');
+    const servicesDropdown = document.getElementById('services-dropdown');
+    const svgArrow = servicesBtn.querySelector('svg');
+    let isOpen = false;
+    let scrollPosition = 0; // store current scroll position
+
+    // Fullscreen menu toggle
+    menuBtn.addEventListener('click', () => {
+      isOpen = !isOpen;
+      const [line1, line2, line3] = menuBtn.children;
+
+      if (isOpen) {
+        // Store current scroll position and lock scroll visually
+        scrollPosition = window.scrollY;
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${scrollPosition}px`;
+        document.body.style.left = '0';
+        document.body.style.right = '0';
+        document.body.style.overflow = 'hidden';
+        fullscreenMenu.style.overflowY = 'auto';
+
+        // Animate hamburger -> X
+        line1.style.transform = 'rotate(45deg) translateY(10px)';
+        line2.style.opacity = '0';
+        line3.style.transform = 'rotate(-45deg) translateY(-10px)';
+
+        fullscreenMenu.classList.remove('pointer-events-none');
+        fullscreenMenu.classList.add('opacity-100', 'scale-100');
+        fullscreenMenu.classList.remove('opacity-0', 'scale-95');
+
+        // Force scroll to top (menu starts from top)
+        window.scrollTo(0, 0);
+      } else {
+        // Animate X -> hamburger
+        line1.style.transform = 'rotate(0) translateY(0)';
+        line2.style.opacity = '1';
+        line3.style.transform = 'rotate(0) translateY(0)';
+
+        fullscreenMenu.classList.add('opacity-0', 'scale-95');
+        fullscreenMenu.classList.remove('opacity-100', 'scale-100');
+        setTimeout(() => fullscreenMenu.classList.add('pointer-events-none'), 500);
+
+        // Restore scroll position
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.left = '';
+        document.body.style.right = '';
+        document.body.style.overflow = '';
+        fullscreenMenu.style.overflowY = 'hidden';
+        window.scrollTo(0, scrollPosition);
+      }
+    });
+
+    // Detect mobile
+    const isMobile = () => window.innerWidth < 1024;
+
+    // Toggle dropdown on click (mobile)
+    servicesBtn.addEventListener('click', (e) => {
+      if (isMobile()) {
+        e.stopPropagation();
+        toggleDropdown();
+      }
+    });
+
+    // Hover dropdown (desktop)
+    servicesBtn.addEventListener('mouseenter', () => {
+      if (!isMobile()) openDropdown();
+    });
+    servicesBtn.addEventListener('mouseleave', () => {
+      if (!isMobile()) closeDropdown();
+    });
+    servicesDropdown.addEventListener('mouseenter', () => {
+      if (!isMobile()) openDropdown();
+    });
+    servicesDropdown.addEventListener('mouseleave', () => {
+      if (!isMobile()) closeDropdown();
+    });
+
+    // Dropdown logic
+    function toggleDropdown() {
+      const isDropdownOpen = !servicesDropdown.classList.contains('hidden');
+      if (isDropdownOpen) closeDropdown();
+      else openDropdown();
+    }
+
+    function openDropdown() {
+      servicesDropdown.classList.remove('hidden');
+      setTimeout(() => {
+        servicesDropdown.classList.add('opacity-100', 'scale-y-100');
+        servicesDropdown.classList.remove('opacity-0', 'scale-y-0');
+      }, 10);
+      svgArrow.style.transform = 'rotate(180deg)';
+    }
+
+    function closeDropdown() {
+      servicesDropdown.classList.add('opacity-0', 'scale-y-0');
+      servicesDropdown.classList.remove('scale-y-100');
+      setTimeout(() => servicesDropdown.classList.add('hidden'), 300);
+      svgArrow.style.transform = 'rotate(0deg)';
+    }
+
+    // Close dropdown when clicking outside (mobile)
+    document.addEventListener('click', (e) => {
+      if (isMobile()) {
+        if (!servicesBtn.contains(e.target) && !servicesDropdown.contains(e.target)) {
+          closeDropdown();
+        }
+      }
+    });
+
+    // Update behavior on resize
+    window.addEventListener('resize', () => {
+      closeDropdown();
+    });
+  </script>
+
+  <!-- navbar bg js  -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const navbar = document.getElementById("navbar");
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
+
+  <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
