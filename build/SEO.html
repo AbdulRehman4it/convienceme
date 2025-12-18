@@ -183,7 +183,6 @@
   </section>
 
   <!-- Full-cycle web development -->
-
   <section class="2xl:px-24 lg:px-10 px-5 2xl:pt-28 lg:pt-20 pt-10">
     <div class="text-white">
       <h2 class="xl:text-6xl md:text-4xl text-3xl font-bold xl:leading-[78px] md:leading-[54px] leading-[45px]">
@@ -685,33 +684,40 @@ Lorem ipsum dolor sit amet?</span>
     </div>
   </section>
 
-  <!-- Footer -->
+   <!-- Footer -->
   <footer class="text-white px-6 lg:px-12 xl:px-20 2xl:px-28 py-12 xl:py-20 bg-[#0F0F0F]">
 
-    <div class="md:hidden block flex justify-center pb-10">
+    <!-- mobile div only  -->
+    <div class="pb-10 block md:hidden">
+    <div class="flex justify-center pb-6">
       <img src="./assets/img/footer.png" alt="">
     </div>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7  gap-8 text-center md:text-start">
-
-      <!-- Left Content -->
-      <div class="lg:col-span-2">
-        <div class="">
-          <img src="./assets/img/footer.png" class="md:block hidden" alt="">
+     <p class="text-white/70 2xl:text-lg text-sm leading-relaxed text-center">
+         Ein Kollektiv engagierter Köpfe, das Unternehmen <br> dabei unterstützt, digital zu wachsen.
+        </p>
         </div>
-        <p class="text-white/70 md:mt-4 2xl:text-lg text-sm leading-relaxed">
-          Ein Kollektiv engagierter Köpfe, die Unternehmen dabei unterstützen, <br class="md:block hidden"> digital zu
-          wachsen.
+
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7  gap-8 text-center md:text-start">
+      
+      <!-- Left Content -->
+      <div class="lg:col-span-2 hidden md:block">
+        <div class="">
+        <img src="./assets/img/footer.png" class="md:block hidden" alt="">
+        </div>
+        <p class="text-white/70 md:mt-4 2xl:text-lg text-sm leading-relaxed md:block hidden">
+         Ein Kollektiv engagierter Köpfe, das Unternehmen<br class="xl:block hidden"> dabei unterstützt, digital zu wachsen.
         </p>
 
         <div class="lg:block hidden">
-          <div class="flex md:justify-start justify-center gap-2 pt-6 ">
-            <a href="https://www.kununu.com/de/convince-me1">
-              <img src="./assets/img/company1.png" alt="">
-            </a>
-            <a href="">
-              <img src="./assets/img/company2.png" alt="">
-            </a>
-          </div>
+         <div class="flex md:justify-start justify-center gap-2 pt-6 ">
+          <a href="https://www.kununu.com/de/convince-me1">
+      <img src="./assets/img/company1.png" alt="">
+      </a>
+      <a href="">
+      <img src="./assets/img/company2.png" alt="">
+      </a>
+        </div>
         </div>
       </div>
 
@@ -719,7 +725,7 @@ Lorem ipsum dolor sit amet?</span>
       <div>
         <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Schnelllinks</h3>
         <ul class="space-y-2 text-white/70 2xl:text-base text-sm ">
-          <li class="hover:underline"><a href="./index.html">Home</a></li>
+          <li class="hover:underline"><a href="./index.html"  >Home</a></li>
           <li class="hover:underline"><a href="./our work.html">Our Works</a></li>
           <li class="hover:underline"><a href="#">Network</a></li>
           <li class="hover:underline"><a href="./job.html">Jobs</a></li>
@@ -744,11 +750,11 @@ Lorem ipsum dolor sit amet?</span>
         <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Leistungen</h3>
         <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
           <li class="hover:underline"><a href="./job.html">Job</a></li>
-          <li class="hover:underline"><a href="./services.html">Web Design & Development</a></li>
+          <li class="hover:underline"><a href="./web.html">Web Design & Development</a></li>
           <li class="hover:underline"><a href="./SEO.html">SEO Optimization</a></li>
           <li class="hover:underline"><a href="./E-Commerce.html">E-Commerce Development</a></li>
           <li class="hover:underline"><a href="./Brand.html">Brand Identity Creation</a></li>
-          <li class="hover:underline"><a href="./business.html">Strategy for Business Development</a></li>
+           <li class="hover:underline"><a href="./business.html">Strategy for Business Development</a></li>
           <li class="hover:underline"><a href="./socielmedia.html">Social Media Management & Post Creation</a></li>
           <li class="hover:underline"><a href="./cms.html">CMS design</a></li>
           <li class="hover:underline"><a href="./mobileapp.html">Mobile App Design and Development</a></li>
@@ -756,54 +762,68 @@ Lorem ipsum dolor sit amet?</span>
         </ul>
       </div>
 
-      <!-- Resources -->
+         <!-- Resources -->
       <div>
         <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Datenschutz</h3>
         <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
           <li class="hover:underline"><a href="./privacypoliciy.html">Privacy Policies</a></li>
           <li class="hover:underline"><a href="./termandcondition.html">Terms And Condition</a></li>
-
+         
         </ul>
-      </div>
-      <!-- Resources -->
-      <div>
+
+        <!-- for mobile only   -->
+        <div class="md:hidden block pt-6">
         <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Unternehmen</h3>
         <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
-          <li class="hover:underline"><a href="./impressum.html">Impressum:</a></li>
-          <li class="hover:underline"><a href="./Datenschutz.html">Datenschutz:</a></li>
+          <li class="hover:underline"><a href="./impressum.html">Impressum</a></li>
+          <li class="hover:underline"><a href="./Datenschutz.html">Datenschutz</a></li>
         </ul>
+        <div class="flex justify-center">
         <img src="./assets/img/attachment.png" class="mt-6" alt="">
+        </div>
+      </div>
+
+
+      </div>
+
+
+        <!-- Resources -->
+      <div class="md:block hidden">
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Unternehmen</h3>
+        <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
+        <li class="hover:underline"><a href="./impressum.html">Impressum</a></li>
+          <li class="hover:underline"><a href="./Datenschutz.html">Datenschutz</a></li>
+        </ul>
+        <div class="md:block hidden">
+        <img src="./assets/img/attachment.png" class="mt-6 " alt="">
+        </div>
       </div>
 
     </div>
-    <div class="flex md:justify-start justify-center gap-2 pt-6 lg:hidden block">
-      <a href="https://www.kununu.com/de/convince-me1">
-        <img src="./assets/img/company1.png" alt="">
+  <div class="flex md:justify-start justify-center gap-2 pt-6 lg:hidden block">
+          <a href="https://www.kununu.com/de/convince-me1">
+      <img src="./assets/img/company1.png" alt="">
       </a>
       <a href="">
-        <img src="./assets/img/company2.png" alt="">
+      <img src="./assets/img/company2.png" alt="">
       </a>
-    </div>
-
+        </div>
+       
     <!-- Bottom Bar -->
     <div class="border-t border-[#414141] mt-10 flex justify-between items-center">
-      <!-- Copyright -->
-      <div>© 2025, Convince me.</div>
+       <!-- Copyright -->
+        <div>© 2025, convince me.</div>
 
-      <div
-        class="py-4 flex flex-col md:flex-row justify-between items-center text-sm text-white/70 space-y-3 md:space-y-0">
+      <div class="py-4 flex flex-col md:flex-row justify-between items-center text-sm text-white/70 space-y-3 md:space-y-0">
         <!-- Social Icons -->
         <div class="flex justify-center md:justify-start space-x-4">
-          <a href="#"
-            class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#D2B94E]">
+          <a href="#" class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#D2B94E]">
             <i class="fab fa-instagram "></i>
           </a>
-          <a href="#"
-            class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#D2B94E]">
+          <a href="#" class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#D2B94E]">
             <i class="fab fa-linkedin-in"></i>
           </a>
-          <a href="#"
-            class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#D2B94E]">
+          <a href="#" class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#D2B94E]">
             <i class="fab fa-facebook-f"></i>
           </a>
         </div>
@@ -1171,7 +1191,6 @@ Lorem ipsum dolor sit amet?</span>
     });
   </script>
 
-
   <!-- Navbar js  -->
   <script>
     const menuBtn = document.getElementById('menu-btn');
@@ -1291,7 +1310,6 @@ Lorem ipsum dolor sit amet?</span>
       closeDropdown();
     });
   </script>
-
 
   <!-- navbar bg js  -->
   <script>

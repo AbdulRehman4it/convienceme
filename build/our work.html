@@ -398,22 +398,29 @@ Wir kombinieren Strategie, Technologie und kreative Kommunikation, um Ergebnisse
   </div>
 </section>
 
-<!-- Footer -->
+   <!-- Footer -->
   <footer class="text-white px-6 lg:px-12 xl:px-20 2xl:px-28 py-12 xl:py-20 bg-[#0F0F0F]">
 
-    <div class="md:hidden block flex justify-center pb-10">
+    <!-- mobile div only  -->
+    <div class="pb-10 block md:hidden">
+    <div class="flex justify-center pb-6">
       <img src="./assets/img/footer.png" alt="">
     </div>
+     <p class="text-white/70 2xl:text-lg text-sm leading-relaxed text-center">
+         Ein Kollektiv engagierter Köpfe, das Unternehmen <br> dabei unterstützt, digital zu wachsen.
+        </p>
+        </div>
+
+
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7  gap-8 text-center md:text-start">
       
       <!-- Left Content -->
-      <div class="lg:col-span-2">
-        <div class=""
-        >
+      <div class="lg:col-span-2 hidden md:block">
+        <div class="">
         <img src="./assets/img/footer.png" class="md:block hidden" alt="">
         </div>
-        <p class="text-white/70 md:mt-4 2xl:text-lg text-sm leading-relaxed">
-         A collective of driven minds empowering companies <br class="md:block hidden"> to grow digitally.
+        <p class="text-white/70 md:mt-4 2xl:text-lg text-sm leading-relaxed md:block hidden">
+         Ein Kollektiv engagierter Köpfe, das Unternehmen<br class="xl:block hidden"> dabei unterstützt, digital zu wachsen.
         </p>
 
         <div class="lg:block hidden">
@@ -430,7 +437,7 @@ Wir kombinieren Strategie, Technologie und kreative Kommunikation, um Ergebnisse
 
       <!-- Quick Links -->
       <div>
-        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Quick Links</h3>
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Schnelllinks</h3>
         <ul class="space-y-2 text-white/70 2xl:text-base text-sm ">
           <li class="hover:underline"><a href="./index.html"  >Home</a></li>
           <li class="hover:underline"><a href="./our work.html">Our Works</a></li>
@@ -454,10 +461,10 @@ Wir kombinieren Strategie, Technologie und kreative Kommunikation, um Ergebnisse
 
       <!-- Services -->
       <div>
-        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Services</h3>
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Leistungen</h3>
         <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
           <li class="hover:underline"><a href="./job.html">Job</a></li>
-          <li class="hover:underline"><a href="./services.html">Web Design & Development</a></li>
+          <li class="hover:underline"><a href="./web.html">Web Design & Development</a></li>
           <li class="hover:underline"><a href="./SEO.html">SEO Optimization</a></li>
           <li class="hover:underline"><a href="./E-Commerce.html">E-Commerce Development</a></li>
           <li class="hover:underline"><a href="./Brand.html">Brand Identity Creation</a></li>
@@ -471,21 +478,39 @@ Wir kombinieren Strategie, Technologie und kreative Kommunikation, um Ergebnisse
 
          <!-- Resources -->
       <div>
-        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Privacy</h3>
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Datenschutz</h3>
         <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
           <li class="hover:underline"><a href="./privacypoliciy.html">Privacy Policies</a></li>
           <li class="hover:underline"><a href="./termandcondition.html">Terms And Condition</a></li>
          
         </ul>
-      </div>
-        <!-- Resources -->
-      <div>
-        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Company</h3>
+
+        <!-- for mobile only   -->
+        <div class="md:hidden block pt-6">
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Unternehmen</h3>
         <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
-          <li class="hover:underline"><a href="./impressum.html">Impressum:</a></li>
-          <li class="hover:underline"><a href="./Datenschutz.html">Datenschutz:</a></li>
+          <li class="hover:underline"><a href="./impressum.html">Impressum</a></li>
+          <li class="hover:underline"><a href="./Datenschutz.html">Datenschutz</a></li>
         </ul>
+        <div class="flex justify-center">
         <img src="./assets/img/attachment.png" class="mt-6" alt="">
+        </div>
+      </div>
+
+
+      </div>
+
+
+        <!-- Resources -->
+      <div class="md:block hidden">
+        <h3 class="font-semibold mb-4 2xl:text-xl text-lg">Unternehmen</h3>
+        <ul class="space-y-2 text-white/70 2xl:text-base text-sm">
+        <li class="hover:underline"><a href="./impressum.html">Impressum</a></li>
+          <li class="hover:underline"><a href="./Datenschutz.html">Datenschutz</a></li>
+        </ul>
+        <div class="md:block hidden">
+        <img src="./assets/img/attachment.png" class="mt-6 " alt="">
+        </div>
       </div>
 
     </div>
@@ -501,7 +526,7 @@ Wir kombinieren Strategie, Technologie und kreative Kommunikation, um Ergebnisse
     <!-- Bottom Bar -->
     <div class="border-t border-[#414141] mt-10 flex justify-between items-center">
        <!-- Copyright -->
-        <div>© 2025, Convince me.</div>
+        <div>© 2025, convince me.</div>
 
       <div class="py-4 flex flex-col md:flex-row justify-between items-center text-sm text-white/70 space-y-3 md:space-y-0">
         <!-- Social Icons -->
